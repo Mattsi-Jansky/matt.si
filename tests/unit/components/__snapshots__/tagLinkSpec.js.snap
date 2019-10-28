@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagLink hasn't changed 1`] = `
+<a
+  href="/tags/test/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+/>
+`;

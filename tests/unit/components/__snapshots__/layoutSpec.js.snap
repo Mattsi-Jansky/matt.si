@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Layout hasn't changed 1`] = `
+<div
+  className="wrapper"
+>
+  <aside
+    className="sidebar"
+  >
+    <header>
+      <div
+        className="about"
+      >
+        <div
+          className="cover-author-image"
+        >
+          <a
+            aria-current="page"
+            className=""
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            style={Object {}}
+          >
+            <img
+              alt="Mattsi Jansky"
+              className="author-image"
+              src="/pic.jpg"
+            />
+          </a>
+        </div>
+        <div
+          className="author-name"
+        >
+          Mattsi Jansky
+        </div>
+        <p>
+          I'm a Software Craftsman at
+           
+          <img
+            alt="Codurane Logo"
+            className="codurance-logo"
+            src="/codurance.png"
+          />
+           Codurance. I enjoy long walks on the beach.
+           
+        </p>
+      </div>
+    </header>
+    <footer>
+      <section
+        className="contact"
+      >
+        <hr />
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/mattsijansky"
+              target="_blank"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-twitter"
+              />
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://github.com/mattsi-jansky"
+              target="_blank"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-github"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/mjjansky"
+              target="_blank"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-linkedin"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:mattsi@jansky.dev"
+              target="_blank"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-envelope-o"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="/rss.xml"
+              target="_blank"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-rss"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div
+        className="copyright"
+      >
+        <p>
+          Made with 
+          <a
+            href="https://www.gatsbyjs.org"
+          >
+            Gatsby
+          </a>
+           and
+           
+          <a
+            href="https://github.com/wangonya/flexible-gatsby/"
+          >
+            Flexible
+          </a>
+        </p>
+      </div>
+    </footer>
+  </aside>
+  <main
+    className="content-box clearfix"
+  >
+    test
+  </main>
+</div>
+`;
