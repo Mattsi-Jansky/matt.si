@@ -16,13 +16,7 @@ const Sidebar = ({ siteMetadata }) => (
         </div>
         <div className="author-name">{siteMetadata.author}</div>
         <p>
-          I'm a Software Craftsman at{' '}
-          <img
-            alt="Codurane Logo"
-            src="/codurance.png"
-            className="codurance-logo"
-          />
-          &nbsp;Codurance. I enjoy long walks on the beach.{' '}
+          I'm a Software Craftsman at <a href="https://codurance.com/" target="_blank">Codurance</a>. I love solving problems, learning, and empowering my team.
         </p>
       </div>
     </header>

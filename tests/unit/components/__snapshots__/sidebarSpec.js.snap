@@ -32,15 +32,14 @@ exports[`Sidebar hasn't changed 1`] = `
         Mattsi Jansky
       </div>
       <p>
-        I'm a Software Craftsman at
-         
-        <img
-          alt="Codurane Logo"
-          className="codurance-logo"
-          src="/codurance.png"
-        />
-         Codurance. I enjoy long walks on the beach.
-         
+        I'm a Software Craftsman at 
+        <a
+          href="https://codurance.com/"
+          target="_blank"
+        >
+          Codurance
+        </a>
+        . I love solving problems, learning, and empowering my team.
       </p>
     </div>
   </header>
