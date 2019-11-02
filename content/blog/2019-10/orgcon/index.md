@@ -1,6 +1,6 @@
 ---
 title: Open Rights Group Conference 2019 Review
-date: 2019-10-26 00:00:00 +0000
+date: 2019-11-02 00:00:00 +0000
 description: A review of ORG's 2019 digital rights conference # Add post description (optional)
 img: ./orgcon19-banner.jpg # Add image post (optional)
 imgCaption: Image from official ORGCon Marketing
