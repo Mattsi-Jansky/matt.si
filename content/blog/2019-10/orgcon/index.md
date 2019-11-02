@@ -12,7 +12,7 @@ In July I attended this year's Open Rights Group Conference, a one-day multi-tra
 
 ## Session one- Keynote by Edward Snowden
 
-<figure src="orgcon19-snowden.jpg" width="750px">Image from <a href="https://twitter.com/greekemmy/status/1149971927848669184">@greekemmy</a></figure> 
+<figure src="orgcon19-snowden.jpg">Image from <a href="https://twitter.com/greekemmy/status/1149971927848669184">@greekemmy</a></figure> 
 
 For the first session of the day American whistleblower Edward Snowden gave a keynote speech followed by Q&A, via videocall from Russia. No-one in the room missed the irony of relying on Google's Hangouts service to talk at a digital rights conference, and the audio was appropriately unreliable. In spite of that Snowden delivered an enlightening, inspiring speech. On discussing his whistleblowing, he made an interesting clarification: That his motivation was about democracy, not about surveillance. What disturbed him more was not the orwellian surveillance of hundreds of millions of innocent people, but the fact that none of them had agreed to it. The fact that there'd been no debate, no chance to object before this policy was implemented. Other highlights from the session:
 
@@ -23,7 +23,7 @@ For the first session of the day American whistleblower Edward Snowden gave a ke
 
 ## Session two- "How Can I Trust What I See Online?" panel from Teen AI
 
-<figure src="orgcon19-teenai.jpg" width="750px">Image from <a href="https://medium.com/@AcornAspiration/truth-fiction-and-accountability-how-can-i-trust-what-i-see-online-orgcon-panel-2019-18a443b1b41c">Acorn Aspirations</a></figure> 
+<figure src="orgcon19-teenai.jpg">Image from <a href="https://medium.com/@AcornAspiration/truth-fiction-and-accountability-how-can-i-trust-what-i-see-online-orgcon-panel-2019-18a443b1b41c">Acorn Aspirations</a></figure> 
 
 This panel consisted of four teenagers from Teen AI who've been studying computers, security and AI as well as attending various tech events for young people. It was really inspiring to see young people so interested in technology, they were each well in advance of where I'd been at their age. Unfortunately I've forgotten exactly which panelists said what, having misplaced some notes. Nontheless, my highlights were: 
 
@@ -34,7 +34,7 @@ This panel consisted of four teenagers from Teen AI who've been studying compute
 
 ## Session three- Can Tech be Truly Ethical?
 
-<figure src="orgcon19-ethics-panel.jpg" width="750px">Image from <a href="https://twitter.com/DavidRaho/status/1149998408075272193">David Raho</a></figure>
+<figure src="orgcon19-ethics-panel.jpg">Image from <a href="https://twitter.com/DavidRaho/status/1149998408075272193">David Raho</a></figure>
 
 This was a fantastic session, it really began to open my eyes to how complex ethics in technology can get. We had Paul Dourish (University of California), Lilian Edwards (Newcastle University), Ann Light (University of Sussex) and Gina Neff (University of Oxford) discussing the topic, and each demonstrated obvious expertise in the subject. Among numerous enlightening moments were:
 
@@ -49,7 +49,7 @@ This was a fantastic session, it really began to open my eyes to how complex eth
 
 ## Session four- Facial Recognition is Now a Reality in the UK
 
-<figure src="orgcon19-facial-recognition.png" width="750px"></figure>
+<figure src="orgcon19-facial-recognition.png"></figure>
 
 This panel was packed with talented and interesting people- a senior technology correspondent at The Financial Times, the director of Big Brother Watch, the Chair of the London Policing Ethics Panel, and Sian Berry co-leader of the Green Party. The topic was on facial recognition in the UK, and in particular how it's been deployed at Notting Hill Carnival in recent years. The Met Police started using the technology without notice or discussion, and studies have found that it's grossly ineffective[^5]. My notes from the session:
 
@@ -62,7 +62,7 @@ This panel was packed with talented and interesting people- a senior technology 
 
 ## Session five- The Encryption Dilemma
 
-<figure src="orgcon19-ghost-proposal.png" width="750px"></figure>
+<figure src="orgcon19-ghost-proposal.png"></figure>
 
 This was perhaps my favourite session, it was really remarkable and speaks to the integrity of the organisers and the whole community. The first thing to notice in the picture is that Dr. Ian Levy is missing a photograph. This is because he was added at the last possible minute. This session was supposed to be a one-on-one interview, where Cori Crider and the audience asks questions of Nate Cardozo, privacy policy manager at Facebook and former senior policy-maker at the Electronic Frontier Foundation (EFF), the biggest digital rights advocacy group in the United States. Today Nate mostly works with WhatsApp, which is setting new standards for private digital communications by popularising the end-to-end encryption model. This model is infuriating to the likes of GCHQ because it removes their ability to intercept communications. GCHQ's Ghost Proposal is supposed to be a middle-ground where end-to-end encryption can exist between a server and their client, but the state can sit in the middle and read everything. Nate is a big time digital privacy advocate and a very outspoken critic of the Ghost Proposal. He even wrote a well publicised article for the EFF in which he called the Ghost Proposal a "backdoor by another name"[^7]. 
 
@@ -79,7 +79,7 @@ Enter Dr. Ian Levy, co-author of The Ghost Proposal and Technical Director of th
 
 ## Session six- Jack Poulson on Censorship
 
-<figure src="orgcon19-censorship.png" width="750px"></figure>
+<figure src="orgcon19-censorship.png"></figure>
 
 Jack Poulson is known for quite publicly leaving Google, where he was a Senior Research Scientist, over their "Dragonfly" project to censor search results in China[^8]. The project would have blocked results for searches like "human rights", "Nobel Prize" and "student protest"[^9]. My notes:
 
@@ -92,15 +92,15 @@ Jack Poulson is known for quite publicly leaving Google, where he was a Senior R
 
 Lastly, there were a number of interesting art installations around the conference. I particularly liked these:
 
-<figure src="orgcon19-zuck.png" width="450px"></figure>
+<figure src="orgcon19-zuck.png"></figure>
 
 This display demonstrated the amount of land that Mark Zuckerberg has purchased, at great expense, around his home to ensure privacy. The author asks; are we entering a world where only the rich can afford privacy?
 
-<figure src="orgcon19-alphabet.png" width="450px"></figure>
+<figure src="orgcon19-alphabet.png"></figure>
 
 A children's connect-the-dot game in which each dot is a subsidiary of Alphabet, Google's parent company. A great way to visually demonstrate the sheer scale technology corporations are reaching.
 
-<figure src="orgcon19-informatics.png" width="450px"></figure>
+<figure src="orgcon19-informatics.png"></figure>
 
 Each talk in the biggest room was accompanied by an artist drawing a wonderful piece to summarise the topics covered in the talk.
 
