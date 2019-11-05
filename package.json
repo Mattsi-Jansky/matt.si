@@ -29,7 +29,7 @@
     "gatsby-transformer-remark": "2.6.32",
     "gatsby-transformer-sharp": "2.2.20",
     "identity-obj-proxy": "3.0.0",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.0",
     "prismjs": "1.17.1",
     "prop-types": "15.7.2",
     "react": "16.10.2",
