@@ -24,7 +24,7 @@
     "gatsby-plugin-sharp": "2.2.37",
     "gatsby-remark-footnotes": "0.0.7",
     "gatsby-remark-images": "3.1.30",
-    "gatsby-remark-prismjs": "3.3.21",
+    "gatsby-remark-prismjs": "3.3.22",
     "gatsby-source-filesystem": "2.1.35",
     "gatsby-transformer-remark": "2.6.32",
     "gatsby-transformer-sharp": "2.3.3",
