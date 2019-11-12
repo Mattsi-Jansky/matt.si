@@ -22,7 +22,7 @@ class Tags extends React.Component {
           keywords={[`blog`, `mattsi`, `jansky`, `programming`, `technology`]}
         />
         <div>
-          <h1 class="clearfix">{tagHeader}</h1>
+          <h1 className="clearfix">{tagHeader}</h1>
           <ul>
             {edges.map(({ node }) => {
               const { title, date } = node.frontmatter
