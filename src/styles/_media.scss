@@ -24,7 +24,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  .sidebar {
+.sidebar {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -48,17 +48,21 @@
       border-radius: 100%;
       margin-bottom: 10px;
     }
-}
+  }
 
-  .content-box {
-    padding: 20px 10px;
+  main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+    padding: 0px 10px 10px 10px;
   }
 
-.contact-title, .copyright {
+  p, li, ul, ol {
+    padding: 0 0 0 10px;
+  }
+
+.copyright {
   display: none;
 }
 
@@ -66,8 +70,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  .content-box {
-    padding: 10px;
+  main {
+    padding: 0px 5px 5px 5px;
   }
   .post {
     width: 98%;
