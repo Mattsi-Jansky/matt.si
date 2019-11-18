@@ -109,7 +109,7 @@ Array [
         </ul>
       </section>
       <div
-        className="copyright"
+        className="sidebar-footer-message"
       >
         <p>
           Made with 
