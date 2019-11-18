@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Default Layout hasn't changed 1`] = `
-<div
-  className="wrapper"
->
+Array [
   <aside
     className="sidebar"
   >
@@ -130,11 +128,11 @@ exports[`Default Layout hasn't changed 1`] = `
         </p>
       </div>
     </footer>
-  </aside>
+  </aside>,
   <main
-    className="content-box clearfix"
+    className="clearfix"
   >
     test
-  </main>
-</div>
+  </main>,
+]
 `;
