@@ -57,8 +57,9 @@
     }
   }
   p {
-    font-size: $fontSize;
-    margin: 0 0 10px;
+    font-size: $smallFontSize;
+    margin: 0 0 10px 0;
+    padding:0;
   }
 }
 
