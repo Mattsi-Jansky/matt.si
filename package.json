@@ -8,6 +8,9 @@
     "dev": "gatsby develop",
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot",
+    "test:visual": "docker-compose run visual-regression-tests test",
+    "test:visual:update": "docker-compose run visual-regression-tests reference",
+    "test:visual:accept": "docker-compose run visual-regression-tests accept",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'"
   },
