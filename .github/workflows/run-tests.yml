@@ -1,0 +1,15 @@
+name: Run tests
+on: [check_run]
+
+jobs:
+    build:
+        name: Unit Tests
+        runs-on: ubuntu-latest
+        steps:
+            - uses: borales/actions-yarn@v2.0.0
+            with:
+                cmd: install
+            - uses: borales/actions-yarn@v2.0.0
+            with:
+                cmd: test
+                
