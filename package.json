@@ -8,7 +8,7 @@
     "dev": "gatsby develop",
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot",
-    "test:visual": "docker-compose run visual-regression-tests test",
+    "test:visual": "./scripts/run-visual-regression-tests.sh",
     "test:visual:update": "docker-compose run visual-regression-tests reference",
     "test:visual:accept": "docker-compose run visual-regression-tests accept",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "babel-preset-gatsby": "0.2.26",
-    "backstopjs": "4.4.2",
     "gatsby": "2.18.17",
     "gatsby-image": "2.2.31",
     "gatsby-plugin-feed": "2.3.25",
