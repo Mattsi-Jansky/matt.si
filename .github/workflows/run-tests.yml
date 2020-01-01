@@ -1,20 +1,28 @@
 name: Run tests
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
     name: Unit Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: borales/actions-yarn@v2.0.0
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install Dependencies
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-      - uses: borales/actions-yarn@v2.0.0
+
+      - name: Run Unit Tests
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: test
-      - uses: borales/actions-yarn@v2.0.0
+
+      - name: Build Site
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build
+
       - name: Run Visual Regression Tests
-        run: docker-compose run visual-regression-tests test
+        run: ./scripts/run-visual-regression-tests.sh
