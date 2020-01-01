@@ -4,14 +4,14 @@
 
 My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
 
-  * [Gatsby](https://www.gatsbyjs.org/)
-  * [Flexible Gatsby](https://github.com/wangonya/flexible-gatsby/)
-  * [Netlify](https://www.netlify.com)
-  * [React](https://reactjs.org/)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [Flexible Gatsby](https://github.com/wangonya/flexible-gatsby/)
+* [Netlify](https://www.netlify.com)
+* [React](https://reactjs.org/)
 
 ## Requirements
 
-```
+```(bash)
 brew install gatsby-cli
 brew install yarn
 nvm use
@@ -19,12 +19,21 @@ nvm use
 
 ## Run locally
 
-`gatsby develop`
+`yarn dev`
 
 ## Build
 
-`gatsby build`
+`yarn build`
 
 ## Tests
 
-`yarn test`
+### Unit Tests
+
+To run them: `yarn test`
+To update the snapshots: `yarn test:updateSnapshots`
+
+### Visual Regression Tests
+
+To run them: `yarn test:visual`
+To update the references: `yarn test:visual:update`
+To accept the test snapshots as the new references: `yarn test:visual:accept`
