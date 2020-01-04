@@ -1,17 +1,25 @@
 .tags-container {
   margin: 0;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   span {
     display: inline-block;
     margin: 5px;
     list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+    text-transform: uppercase;
     a {
+      color: $text-color;
       text-decoration: none;
       display: inline-block;
       padding: 5px 10px;
       transition: all .3s;
+      font-size: $smallFontSize;
       &:hover {
-        font-size:12px;
+        font-size:$fontSize;
       }
     }
   }

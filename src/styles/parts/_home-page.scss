@@ -40,7 +40,7 @@
     margin: 0 0 10px;
     position: relative;
     padding-bottom: 15px;
-    font-size: 16px;
+    font-size: $fontSize;
     text-transform: uppercase;
     font-weight: 700;
     &::after {
@@ -57,52 +57,13 @@
     }
   }
   p {
-    font-size: 16px;
-    margin: 0 0 10px;
+    font-size: $smallFontSize;
+    margin: 0 0 10px 0;
+    padding:0;
   }
-}
-.content-box {
-  padding: 20px;
-  padding-left: 260px;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
 }
 
 .contact {
-  .contact-title {
-    position: relative;
-    color: $dark;
-    font-weight: 400;
-    font-size: 12px;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-    text-align: center;
-    &::before {
-      content: "";
-      display: block;
-      height: 2px;
-      width: calc(50% - 48px);
-      transform: translateY(-50%);
-      position: absolute;
-      top: 50%;
-      left: 0;
-      background-color: $text-color;
-    }
-    &::after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: calc(50% - 48px);
-      transform: translateY(-50%);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      background-color: $text-color;
-    }
-  }
   ul {
     margin: 0;
     padding: 0;
@@ -110,6 +71,7 @@
     text-align: center;
     li {
       display: inline-block;
+      padding:0;
       margin-left: 10px;
       &:first-child {
         margin-left: 0;
@@ -118,7 +80,7 @@
         color: $text-color;
         display: block;
         padding: 5px;
-        font-size: 18px;
+        font-size: $fontSize;
         transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
         &:hover {
           color: $dark;
@@ -130,7 +92,7 @@
 }
 
 footer {
-  .copyright {
+  .sidebar-footer-message {
     font-size: 14px;
     text-align: center;
     margin: 0;
@@ -140,7 +102,8 @@ footer {
 .post {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -167,7 +130,7 @@ footer {
     width: 70%;
     .post-date,
     .post-words {
-      font-size: 12px;
+      font-size: $smallFontSize;
     }
     .post-title {
       margin: 0 0 10px;
@@ -185,7 +148,7 @@ footer {
 }
 
 a.older-posts, a.newer-posts {
-  font-size: 18px;
+  font-size: $fontSize;
   display: inline-block;
   color: $text-color;
   transition: transform .2s;

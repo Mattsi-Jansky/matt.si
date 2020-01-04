@@ -8,6 +8,7 @@
 
 html {
   line-height: 1.5;
+  font-size: $fontSize;
 }
 
 a {
@@ -23,8 +24,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  padding: 20px;
+  padding-left: 260px;
+  padding: 0 20px 20px 260px;
+  max-width:1250px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 h1 {
   font-weight: 400;
+}
+
+p, li, ul, ol {
+  list-style-position: inside;
 }
 
 img {
@@ -112,11 +130,6 @@ table tfoot td {
   font-size: 14px;
 }
 
-.wrapper {
-  max-width: 1250px;
-  position: relative;
-}
-
 .post, .article-page {
   background-color: $body-alt-color;
 }
@@ -159,7 +172,7 @@ figure {
 }
 
 .footnotes {
-  font-size: 0.8em;
+  font-size: $verySmallFontSize;
   ol {
     padding-left: 25px;
   }
@@ -167,6 +180,8 @@ figure {
 
 ul p {
   margin:0;
+  padding:0;
+  display: inline;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */

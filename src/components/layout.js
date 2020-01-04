@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
@@ -8,7 +8,7 @@ import '../styles/main.scss'
 import '../styles/fonts/font-awesome/css/font-awesome.min.css'
 
 const InnerLayout = ({ data, children }) => (
-  <div className="wrapper">
+  <Fragment>
     <Helmet>
       <link
         href="https://fonts.googleapis.com/css?family=Lato|PT+Serif&display=swap"
@@ -16,8 +16,8 @@ const InnerLayout = ({ data, children }) => (
       />
     </Helmet>
     <Sidebar siteMetadata={data.site.siteMetadata} />
-    <main className="content-box clearfix">{children}</main>
-  </div>
+    <main className="clearfix">{children}</main>
+  </Fragment>
 )
 
 const DefaultLayout = ({ children }) => (

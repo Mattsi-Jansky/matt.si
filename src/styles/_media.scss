@@ -3,7 +3,6 @@
   .post {
     width: 48%;
     max-width: 100%;
-    margin: 0 0.9% 1.5%;
     flex-direction: column;
 
     .post-thumbnail {
@@ -36,8 +35,8 @@
     footer {
       margin-bottom: 10px;
     }
-
   }
+
   .about {
     text-align: center;
     max-width: 480px;
@@ -48,31 +47,41 @@
       border-radius: 100%;
       margin-bottom: 10px;
     }
-}
+  }
 
-  .content-box {
-    padding: 20px 10px;
+  main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
+    padding: 0px 10px 10px 10px;
   }
 
-.contact-title, .copyright {
-  display: none;
-}
+  .article-page {
+    p, li, ul, ol {
+      padding: 0 0 0 10px;
+    }
+  }
 
+  .sidebar-footer-message {
+    display: none;
+  }
+
+  .post {
+    .post-title {
+      line-height: 1;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  .content-box {
-    padding: 10px;
+  main {
+    padding: 0px 5px 5px 5px;
   }
   .post {
     width: 98%;
     max-width: 100%;
-    margin: 2%;
     flex-direction: column;
 
     .post-thumbnail {

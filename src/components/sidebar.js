@@ -78,7 +78,7 @@ const Sidebar = ({ siteMetadata }) => (
           </li>
         </ul>
       </section>
-      <div className="copyright">
+      <div className="sidebar-footer-message">
         <p>
           Made with <a href="https://www.gatsbyjs.org">Gatsby</a> and{' '}
           <a href="https://github.com/wangonya/flexible-gatsby/">Flexible</a>
