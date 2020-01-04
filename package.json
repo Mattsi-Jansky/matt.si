@@ -8,9 +8,9 @@
     "dev": "gatsby develop",
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot",
-    "test:visual": "./scripts/run-visual-regression-tests.sh",
+    "test:visual": "yarn build && ./scripts/run-visual-regression-tests.sh",
     "test:visual:update": "docker-compose run visual-regression-tests reference",
-    "test:visual:accept": "docker-compose run visual-regression-tests accept",
+    "test:visual:approve": "docker-compose run visual-regression-tests approve",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'"
   },
@@ -48,7 +48,8 @@
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.17.0",
     "jest": "24.9.0",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "wait-on": "3.3.0"
   },
   "license": "GPL-3.0-only"
 }

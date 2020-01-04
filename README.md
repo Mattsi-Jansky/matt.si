@@ -37,4 +37,4 @@ To update the snapshots: `yarn test:updateSnapshots`
 
 To run them: `yarn test:visual`
 To update the references: `yarn test:visual:update`
-To accept the test snapshots as the new references: `yarn test:visual:accept`
+To approve the test snapshots as the new references: `yarn test:visual:approve`
