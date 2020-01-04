@@ -3,7 +3,6 @@
   .post {
     width: 48%;
     max-width: 100%;
-    margin: 0 0.9% 1.5%;
     flex-direction: column;
 
     .post-thumbnail {
@@ -24,7 +23,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-.sidebar {
+  .sidebar {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -36,8 +35,8 @@
     footer {
       margin-bottom: 10px;
     }
-
   }
+
   .about {
     text-align: center;
     max-width: 480px;
@@ -58,14 +57,21 @@
     padding: 0px 10px 10px 10px;
   }
 
-  p, li, ul, ol {
-    padding: 0 0 0 10px;
+  .article-page {
+    p, li, ul, ol {
+      padding: 0 0 0 10px;
+    }
   }
 
-.sidebar-footer-message {
-  display: none;
-}
+  .sidebar-footer-message {
+    display: none;
+  }
 
+  .post {
+    .post-title {
+      line-height: 1;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -76,7 +82,6 @@
   .post {
     width: 98%;
     max-width: 100%;
-    margin: 2%;
     flex-direction: column;
 
     .post-thumbnail {
