@@ -8,4 +8,5 @@ cleanup
 docker-compose up -d website
 npx wait-on http://localhost:8000
 docker-compose run visual-regression-tests test
+open tests/visual/backstop_data/html_report/index.html
 cleanup
