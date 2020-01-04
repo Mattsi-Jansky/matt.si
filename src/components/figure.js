@@ -7,7 +7,9 @@ const InnerFigure = ({ data, children, width }) => {
   return (
     <div id="content-figure" style={{width: width}}>
       <figure>
-        <Img fluid={data} onClick={() => { window.open(data.src)}} />
+        <a href={data.src} target="_blank">
+          <Img fluid={data}/>
+        </a>
         {children && <figcaption>{children}</figcaption>}
       </figure>
     </div>)
