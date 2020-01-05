@@ -12,11 +12,10 @@ My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
 
 ## Requirements
 
-```(bash)
-brew install gatsby-cli
-brew install yarn
-nvm use
-```
+* Node (I recommend using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm#installing-and-updating)
+  * With NVM run `nvm use` in the root dir to set the appropriate Node version in your terminal
+* Yarn (`brew install yarn`)
+  * Run `yarn` (no args) in root to download all dependencies, before doing anything else.
 
 ## Run locally
 
