@@ -2,6 +2,7 @@
 
 [![Deploy Status](https://api.netlify.com/api/v1/badges/dcadbc17-697b-4194-9871-cab8ba07309a/deploy-status)](https://app.netlify.com/sites/mattsi/deploys)
 [![Automated Tests Status](https://github.com/mattsi-jansky/matt.si/workflows/Run%20tests/badge.svg)](https://github.com/Mattsi-Jansky/matt.si/actions)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Mattsi-Jansky/matt.si)](https://dependabot.com)
 
 My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
 
