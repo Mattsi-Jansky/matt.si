@@ -15,7 +15,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'"
   },
   "dependencies": {
-    "babel-preset-gatsby": "0.2.26",
+    "babel-preset-gatsby": "0.2.27",
     "gatsby": "2.18.18",
     "gatsby-image": "2.2.37",
     "gatsby-plugin-feed": "2.3.25",
