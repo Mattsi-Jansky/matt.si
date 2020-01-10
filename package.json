@@ -11,7 +11,6 @@
     "test:visual": "yarn build && ./scripts/run-visual-regression-tests.sh",
     "test:visual:update": "docker-compose run visual-regression-tests reference",
     "test:visual:approve": "docker-compose run visual-regression-tests approve",
-    "info": "gatsby info",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'"
   },

@@ -22,7 +22,7 @@ jobs:
       - name: Gatsby Info
         uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: info
+          cmd: npx info
 
       - name: Build Site
         uses: borales/actions-yarn@v2.0.0
