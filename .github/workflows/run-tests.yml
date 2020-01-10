@@ -20,9 +20,9 @@ jobs:
           cmd: test
 
       - name: Gatsby Info
-        uses: borales/actions-yarn@v2.0.0
+        uses: mikeal/npx@1.0.0
         with:
-          cmd: npx info
+          args: info
 
       - name: Build Site
         uses: borales/actions-yarn@v2.0.0
