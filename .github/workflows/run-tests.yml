@@ -19,6 +19,11 @@ jobs:
         with:
           cmd: test
 
+      - name: Gatsby Info
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: info
+
       - name: Build Site
         uses: borales/actions-yarn@v2.0.0
         with:
