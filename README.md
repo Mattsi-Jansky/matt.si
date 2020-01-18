@@ -13,7 +13,7 @@ My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
 
 ## Requirements
 
-* Node (I recommend using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm#installing-and-updating)
+* Node (I recommend using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm#installing-and-updating))
   * With NVM run `nvm use` in the root dir to set the appropriate Node version in your terminal
 * Yarn (`brew install yarn`)
   * Run `yarn` (no args) in root to download all dependencies, before doing anything else.
@@ -30,11 +30,11 @@ My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
 
 ### Unit Tests
 
-To run them: `yarn test`
-To update the snapshots: `yarn test:updateSnapshots`
+* To run them: `yarn test`
+* To update the snapshots: `yarn test:updateSnapshots`
 
 ### Visual Regression Tests
 
-To run them: `yarn test:visual`
-To update the references: `yarn test:visual:update`
-To approve the test snapshots as the new references: `yarn test:visual:approve`
+* To run them: `yarn test:visual`
+* To update the references: `yarn test:visual:update`
+* To approve the test snapshots as the new references: `yarn test:visual:approve`
