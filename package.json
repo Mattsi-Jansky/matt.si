@@ -11,6 +11,7 @@
     "test:visual": "yarn build && ./scripts/run-visual-regression-tests.sh",
     "test:visual:update": "docker-compose run visual-regression-tests reference",
     "test:visual:approve": "docker-compose run visual-regression-tests approve",
+    "test:visual:report": "open tests/visual/backstop_data/html_report/index.html",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public ."
   },
   "dependencies": {
