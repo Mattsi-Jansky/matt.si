@@ -27,7 +27,7 @@ jobs:
       - name: Run Visual Regression Tests
         run: ./scripts/run-visual-regression-tests.sh
 
-      - name: Archive code coverage results
+      - name: Archive visual regression tests report
         uses: actions/upload-artifact@v1
         with:
           name: visual-regression-tests-report
