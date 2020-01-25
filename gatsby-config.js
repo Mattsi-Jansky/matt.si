@@ -25,13 +25,21 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              maxWidth: 970,
-              showCaptions: true
-            },
+              
+            }
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-footnotes`,
+            options: {
+              footnoteBackRefPreviousElementDisplay: "inline",
+              footnoteBackRefDisplay: "inline",
+              footnoteBackRefInnerText: "^",
+              footnoteBackRefAnchorStyle: `text-decoration: none;`,
+              footnoteBackRefInnerTextStartPosition: "front",
+            }
+          }
         ],
       },
     },
@@ -55,23 +63,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `./static/favicon.png`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-footnotes`,
-            options: {
-              footnoteBackRefPreviousElementDisplay: "inline",
-              footnoteBackRefDisplay: "inline",
-              footnoteBackRefInnerText: "^",
-              footnoteBackRefAnchorStyle: `text-decoration: none;`,
-              footnoteBackRefInnerTextStartPosition: "front",
-            }
-          }
-        ]
-      }
     },
     // `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
