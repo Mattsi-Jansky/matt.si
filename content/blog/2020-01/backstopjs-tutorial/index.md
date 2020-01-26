@@ -43,14 +43,14 @@ The first step to creating a repeatable visual regression test is to run the tes
 
 Add the following entry to your root `docker-compose.yml` ([create one](https://docs.docker.com/compose/gettingstarted/) if necessary):
 
-```docker-compose
+```yaml
   visual_regression_tests:
     image: backstopjs/backstopjs:4.4.2
     volumes:
       - ./test/visual:/src
 ```
 
-This describes a `visual_regression_tests` Docker container using the official `backstopjs` image, version `4.4.2`. The version can be left out, but it's important that it be there for repeatability. You can use Dependabot to keep it up-to-date by creating a Dockerfile for it (until [Dependabot adds Docker Compose support](https://github.com/dependabot/feedback/issues/82)), which is [described below](#customfonts). Of course, you should copy the latest version number from [the BackstopJS Docker image releases](https://hub.docker.com/r/backstopjs/backstopjs/builds) and use that; `4.4.2` may be outdated at time of reading. If you're using a Docker container for your website as well you should add [a `depends_on` entry](https://docs.docker.com/compose/compose-file/#depends_on) to that container.
+This describes a `visual_regression_tests` Docker container using the official `backstopjs` image, version `4.4.2`. The version can be left out, but it's important that it be there for repeatability. You can use Dependabot to keep it up-to-date by creating a Dockerfile for it (until [Dependabot adds Docker Compose support](https://github.com/dependabot/feedback/issues/82)), which is [described below](#customfonts). Of course, you should copy the latest version number from [the BackstopJS Docker image releases](https://hub.docker.com/r/backstopjs/backstopjs/builds) and use that; `4.4.2` may be outdated at time of reading. If you're using a Docker container for your website as well you should add [a depends_on entry](https://docs.docker.com/compose/compose-file/#depends_on) to that container.
 
 The last part is the key; the volume configuration `./test/visual:/src`. This maps the local relative path `./test/visual` to `/src` in the container. You may change `./test/visual` to any relative path you like, but `/src` must be constant because that is where BackstopJS will look inside the container for it's configuration.
 
@@ -179,7 +179,7 @@ Don't worry if your tests aren't passing the first time; I'll explain some ways 
 
 Just in case I haven't said this enough times: **Repeatability is key**. One of the obstacles to this repeatability is ensuring that your dependencies are consistent. If you depend on a web service or a database that sends you some data to display on the page, then that service needs to send the same data every time the visual regression tests are run. This means that you need the capability to fake your dependencies. If you depend on a database, then you may want to achieve this by creating a Docker container of your particular database dependency with some minimal fake data. If you're dependent on web services, then I'd recommend using [Mockingjay Server](https://github.com/quii/mockingjay-server). It's a Docker container around the mocking service Mockingjay. This makes for a painless and platform agnostic way to fake your dependencies with web services that respond with fake data. Just add something like the following to your `docker-compose.yml`:
 
-```docker-compose
+```yaml
   fake_my_service:
     image: quii/mockingjay-server:1.10.4
     volumes:
@@ -203,7 +203,7 @@ RUN apt-get update && apt-get install -y fonts-font-awesome
 
 This is a very basic Dockerfile that extends the official BackstopJS image (remember to include the version!) and uses `apt-get` to install the requisite fonts. This way the browser emulator won't need to download the fonts as they're already installed. You should be able to find the package name of any font you need by searching [Debian's package registry](https://www.debian.org/distrib/packages). Then you just need to change your docker-compose entry to build your BackstopJS directory, like so:
 
-```docker-compose
+```yaml
   visual_regression_tests:
     image: build: ./tests/visual
     volumes:
