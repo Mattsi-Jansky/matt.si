@@ -9,6 +9,8 @@ tags: ["testing", "visual regression testing", "javascript", "front-end"]
 canonicalLink: https://codurance.com/2020/01/16/backstopjs-tutorial/
 ---
 
+_First posted on [the Codurance blog](https://codurance.com/2020/01/16/backstopjs-tutorial/)_
+
 Snapshot testing compares a "snapshot" of the output of a prior version of your software to output from the latest version, to check for unintended changes. When a difference is found you either approve it, by updating the expected output snapshot, or fix the cause of the difference.
 
 Visual regression testing is a form of snapshot testing that tests a web front-end. It goes beyond testing the markup or layout by testing the rendered page captured in an emulated browser. As such they can "catch CSS Curve Balls" [as BackstopJS says](https://garris.github.io/BackstopJS/).
