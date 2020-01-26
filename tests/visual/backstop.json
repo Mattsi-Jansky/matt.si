@@ -2,6 +2,11 @@
   "id": "backstop_default",
   "viewports": [
     {
+      "label": "xsmall",
+      "width": 240,
+      "height": 320
+    },
+    {
       "label": "small",
       "width": 640,
       "height": 480
