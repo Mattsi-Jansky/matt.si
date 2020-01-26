@@ -68,24 +68,6 @@ blockquote {
   color: #ada8a8;
 }
 
-pre {
-  padding: 1rem 2rem;
-  overflow: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-all;
-
-  code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-}
-
 table {
   border: 1px solid #aaa;
   background-color: #eee;
@@ -195,3 +177,6 @@ ul p {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
+
+/* - - - - - - - - - - Code Highlighting Styles - - - - - - - - - - */
+@import 'code-highlighting'
