@@ -6,6 +6,7 @@ img: ./heading.jpg
 imgCaption: Photo by Alexander Popov on Unsplash
 imgCaptionLink: https://unsplash.com/photos/-1qb8SIBzKY
 tags: ["testing", "visual regression testing", "javascript", "front-end"]
+canonicalLink: https://codurance.com/2020/01/16/backstopjs-tutorial/
 ---
 
 Snapshot testing compares a "snapshot" of the output of a prior version of your software to output from the latest version, to check for unintended changes. When a difference is found you either approve it, by updating the expected output snapshot, or fix the cause of the difference.
