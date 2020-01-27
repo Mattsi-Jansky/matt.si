@@ -19,7 +19,7 @@ BackstopJS is a framework for visual regression testing, written in Javascript. 
 
 This article will explain how to set up BackstopJS and some good practices I've picked up from using it in anger. You'll need to have some awareness of Docker Compose and Yarn or NPM.
 
-![An image of BackstopJS's interactive diff between two snapshots of a website. A red line separates each snapshot, demonstrating that the difference between them is how they render an image on the page; one is blurry and the other is not]({{site.baseurl}}/assets/custom/img/blog/2019-12-30-backstopjs/backstopjs-scrubber.png)
+<figure src="backstopjs-scrubber.png"></figure> 
 
 ## Why
 
