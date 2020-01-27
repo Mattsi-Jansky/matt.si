@@ -26,3 +26,12 @@ jobs:
 
       - name: Run Visual Regression Tests
         run: ./scripts/run-visual-regression-tests.sh
+
+      - name: Package Visual Regression Tests Report
+        run: tar -zcvf tests/visual/report.tar.gz tests/visual/backstop_data
+
+      - name: Archive Visual Regression Tests Report
+        uses: actions/upload-artifact@v1
+        with:
+          name: visual-regression-tests-report.tar.gz
+          path: tests/visual/report.tar.gz

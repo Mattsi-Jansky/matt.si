@@ -2,6 +2,11 @@
   "id": "backstop_default",
   "viewports": [
     {
+      "label": "xsmall",
+      "width": 240,
+      "height": 320
+    },
+    {
       "label": "small",
       "width": 640,
       "height": 480
@@ -32,7 +37,7 @@
   "scenarios": [
     {
       "label": "Blog List",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "cookiePath": "",
       "url": "http://website:80",
       "referenceUrl": "",
       "readyEvent": "",
@@ -51,7 +56,7 @@
     },
     {
       "label": "Blog Page",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "cookiePath": "",
       "url": "http://website:80/2019-10/orgcon/",
       "referenceUrl": "",
       "readyEvent": "",
@@ -71,7 +76,7 @@
     },
     {
       "label": "Tag Page",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "cookiePath": "",
       "url": "http://website:80/tags/conference/",
       "referenceUrl": "",
       "readyEvent": "",
@@ -90,7 +95,7 @@
     },
     {
       "label": "Tags List",
-      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "cookiePath": "",
       "url": "http://website:80/tags",
       "referenceUrl": "",
       "readyEvent": "",
@@ -111,7 +116,7 @@
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
     "bitmaps_test": "backstop_data/bitmaps_test",
-    "engine_scripts": "backstop_data/engine_scripts",
+    "engine_scripts": "backstop_engine_scripts",
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },

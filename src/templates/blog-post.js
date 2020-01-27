@@ -22,6 +22,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.excerpt}
           keywords={post.frontmatter.tags}
+          canonicalLink={post.frontmatter.canonicalLink}
         />
         <article className="article-page">
           <div className="page-content">
@@ -102,6 +103,7 @@ export const pageQuery = graphql`
         }
         imgCaption
         imgCaptionLink
+        canonicalLink
       }
     }
   }
