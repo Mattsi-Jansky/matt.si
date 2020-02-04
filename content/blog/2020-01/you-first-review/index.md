@@ -4,7 +4,7 @@ date: 2020-01-30 00:00:00 +0000
 description: A review of Liane Davey's book "You First; Inspire Your Team to Grow Up, Get Along, and Get Stuff Done"
 img: ./youfirst-banner.jpg
 imgCaption: Photo by cloudvisual.co.uk on Unsplash
-tags: ["Reading", "Soft Skills"] # add tag
+tags: ["Reading", "Soft Skills"]
 imgCaptionLink: https://unsplash.com/photos/DCtwjzQ9uVE
 ---
 
