@@ -34,7 +34,6 @@ jobs:
       - name: Archive Visual Regression Tests Report
         if: failure()
         uses: actions/upload-artifact@v1
-        if: always()
         with:
           name: visual-regression-tests-report.tar.gz
           path: tests/visual/report.tar.gz
