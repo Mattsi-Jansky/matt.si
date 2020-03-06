@@ -75,6 +75,26 @@
       "scrollToSelector": ""
     },
     {
+      "label": "Blog Page With Code Blocks",
+      "cookiePath": "",
+      "url": "http://website:80/2020-01/backstopjs-tutorial/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": ".author-image",
+      "delay": 5000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "scrollToSelector": ""
+    },
+    {
       "label": "Tag Page",
       "cookiePath": "",
       "url": "http://website:80/tags/conference/",
