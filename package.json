@@ -30,7 +30,7 @@
     "gatsby-remark-prismjs": "3.3.31",
     "gatsby-source-filesystem": "2.1.48",
     "gatsby-transformer-remark": "2.6.52",
-    "gatsby-transformer-sharp": "2.3.14",
+    "gatsby-transformer-sharp": "2.3.17",
     "identity-obj-proxy": "3.0.0",
     "node-sass": "4.13.1",
     "prismjs": "1.19.0",
