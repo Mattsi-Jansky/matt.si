@@ -22,7 +22,7 @@
     "gatsby-plugin-google-analytics": "2.1.38",
     "gatsby-plugin-manifest": "2.2.48",
     "gatsby-plugin-offline": "3.0.42",
-    "gatsby-plugin-react-helmet": "3.1.24",
+    "gatsby-plugin-react-helmet": "3.2.0",
     "gatsby-plugin-sass": "2.1.31",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-remark-footnotes": "0.0.7",
