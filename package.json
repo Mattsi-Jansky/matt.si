@@ -23,7 +23,7 @@
     "gatsby-plugin-manifest": "2.3.5",
     "gatsby-plugin-offline": "3.1.4",
     "gatsby-plugin-react-helmet": "3.2.2",
-    "gatsby-plugin-sass": "2.2.2",
+    "gatsby-plugin-sass": "2.2.3",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-remark-footnotes": "0.0.7",
     "gatsby-remark-images": "3.2.3",
