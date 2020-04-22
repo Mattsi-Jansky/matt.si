@@ -29,7 +29,7 @@
     "gatsby-remark-images": "3.2.3",
     "gatsby-remark-prismjs": "3.4.4",
     "gatsby-source-filesystem": "2.2.4",
-    "gatsby-transformer-remark": "2.7.2",
+    "gatsby-transformer-remark": "2.7.4",
     "gatsby-transformer-sharp": "2.4.6",
     "identity-obj-proxy": "3.0.0",
     "node-sass": "4.13.1",
