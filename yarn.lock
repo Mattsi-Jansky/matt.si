@@ -6275,7 +6275,7 @@ gatsby-cli@^2.8.27:
     ink "^2.6.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.26, gatsby-core-utils@^1.0.28, gatsby-core-utils@^1.0.34, gatsby-core-utils@^1.1.2, gatsby-core-utils@^1.1.3:
+gatsby-core-utils@^1.0.26, gatsby-core-utils@^1.0.28, gatsby-core-utils@^1.0.34, gatsby-core-utils@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.1.3.tgz#1011ae6ae252b809c66fe62fe9da9d419bd29650"
   integrity sha512-PntSiNCFo1/ZKjp00qgLBj2jdwY7M+maV21RXb1k7Ud9Vv9j0dGQsaVb9YXFTqXAf8bG0Xyqsqq4mPU1iNYLDw==
@@ -6334,10 +6334,10 @@ gatsby-plugin-feed@2.4.3:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.2.3.tgz#d2a9ae9a1409a147dcfee878d4cbd2867efbe5ed"
-  integrity sha512-Aji5BsN8vlpTUHjmAPfNpXvYnRCadmcd4zbZXkoHW6rfUAiD5tYcc6rQXrvvgt+2i+j5GdILWXLYAI1bqqmKbQ==
+gatsby-plugin-google-analytics@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.2.4.tgz#d03ae7b8088240f283a82d5ac5f843ee636a0f32"
+  integrity sha512-PupngEov6tod6AOybZMq4Iaaeo6MmzgwBcWljMWLetO5ugPV5rAkTSLJsaINk8wzImQsIDNMBg2GIaU94g1vJw==
   dependencies:
     "@babel/runtime" "^7.8.7"
     minimatch "3.0.4"
