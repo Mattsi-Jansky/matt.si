@@ -18,12 +18,15 @@ exports[`Figure hasn't changed 1`] = `
         className=" gatsby-image-wrapper"
         style={
           Object {
+            "maxHeight": null,
+            "maxWidth": null,
             "overflow": "hidden",
             "position": "relative",
           }
         }
       >
         <div
+          aria-hidden={true}
           style={
             Object {
               "paddingBottom": "54.69301340860974%",
@@ -33,6 +36,7 @@ exports[`Figure hasn't changed 1`] = `
         />
         <img
           alt=""
+          aria-hidden={true}
           src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwABBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAES6MFko//EABoQAAICAwAAAAAAAAAAAAAAAAECAAMREyH/2gAIAQEAAQUCNx17OclKKy4AmJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAeEAACAQMFAAAAAAAAAAAAAAAAARICIYEQEUFRYf/aAAgBAQAGPwKLqt6Rkng5wi6Kdu9P/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAERITFBUWGBkf/aAAgBAQABPyFm4M1E7Sb2Oc+wamtug3YokOW/T//aAAwDAQACAAMAAAAQEz//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EGrpEf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCVr//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExQVFhcZHR8f/aAAgBAQABPxBeEekldrM/ICQMFAPF2wuXceUeSFWGDpt0imNAa3ISy441+5//2Q=="
           style={
             Object {
