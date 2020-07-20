@@ -48,7 +48,7 @@
     "eslint": "7.5.0",
     "eslint-plugin-react": "7.20.3",
     "jest": "26.1.0",
-    "wait-on": "5.0.3"
+    "wait-on": "5.1.0"
   },
   "resolutions": {
     "sharp": "0.24.0"
