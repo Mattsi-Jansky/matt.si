@@ -28,7 +28,7 @@
     "gatsby-remark-footnotes": "0.0.7",
     "gatsby-remark-images": "3.3.19",
     "gatsby-remark-prismjs": "3.5.10",
-    "gatsby-source-filesystem": "2.3.19",
+    "gatsby-source-filesystem": "2.3.20",
     "gatsby-transformer-remark": "2.8.25",
     "gatsby-transformer-sharp": "2.5.11",
     "identity-obj-proxy": "3.0.0",
