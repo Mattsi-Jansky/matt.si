@@ -47,7 +47,7 @@
     "enzyme-adapter-react-16": "1.15.2",
     "eslint": "7.5.0",
     "eslint-plugin-react": "7.20.4",
-    "jest": "26.1.0",
+    "jest": "26.2.1",
     "wait-on": "5.1.0"
   },
   "resolutions": {
