@@ -42,7 +42,7 @@
     "rehype-react": "6.1.0"
   },
   "devDependencies": {
-    "babel-jest": "26.6.0",
+    "babel-jest": "26.6.1",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "eslint": "7.11.0",
