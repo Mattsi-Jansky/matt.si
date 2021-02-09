@@ -9,6 +9,9 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
 
+      - name: Display Python directory
+        run: which python
+
       - name: Checkout
         uses: actions/checkout@v1
 
