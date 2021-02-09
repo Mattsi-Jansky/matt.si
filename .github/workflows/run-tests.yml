@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Install build dependencies
         run: sudo apt-get install build-essential
+
+      - name: Install more build dependencies
         run: yum install -y make gcc*
 
       - name: Checkout
