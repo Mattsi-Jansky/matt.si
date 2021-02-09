@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Install build dependencies
         run: sudo apt-get install build-essential
+        run: yum install -y make gcc*
 
       - name: Checkout
         uses: actions/checkout@v1
