@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install build dependencies
-        run: apt-get install build-essential
+        run: sudo apt-get install build-essential
 
       - name: Checkout
         uses: actions/checkout@v1
