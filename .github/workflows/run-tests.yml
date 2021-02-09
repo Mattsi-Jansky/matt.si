@@ -6,11 +6,8 @@ jobs:
     name: Run Tests
     runs-on: ubuntu-latest
     steps:
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
-
-      - name: Set Python install directory
-        run: npm config set python "/usr/bin/python"
+      - name: Install build dependencies
+        run: apt-get install build-essential
 
       - name: Checkout
         uses: actions/checkout@v1
