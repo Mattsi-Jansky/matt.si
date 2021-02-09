@@ -9,6 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Install build Dependencies
+        run: sudo apt-get install autoconf
+
       - name: Install Dependencies
         uses: borales/actions-yarn@v2.1.0
         with:
