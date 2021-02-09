@@ -10,7 +10,7 @@ jobs:
         run: sudo apt-get install build-essential
 
       - name: Install more build dependencies
-        run: yum install -y make gcc*
+        run: sudo apt-get install make gcc*
 
       - name: Checkout
         uses: actions/checkout@v1
