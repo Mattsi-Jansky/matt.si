@@ -11,7 +11,10 @@ jobs:
       
       - uses: actions/setup-node@v2
         with:
-          node-version: '11'
+          node-version: '8'
+
+      - name: check node version
+        run: node -v
 
       - name: Install build Dependencies
         run: sudo apt-get install libtool libpng-dev dpkg automake autoconf nasm pkg-config build-essential 
