@@ -8299,10 +8299,10 @@ gatsby-recipes@^0.9.2:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-remark-footnotes@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-footnotes/-/gatsby-remark-footnotes-0.0.7.tgz#14d5888621765c6b8f60f37ae3eedba4908d7c68"
-  integrity sha512-TMtzhbwred2P0xhkL62RduqWtrGvSpcieWsAsss3Xv6+d4XdiccjtrgNIbV4gvPcFkV1upE1ygJQIV9T04pg/A==
+gatsby-remark-footnotes@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-footnotes/-/gatsby-remark-footnotes-0.0.8.tgz#9c44ebaaf7c34ecbd79dfdca13aa77ba1bb6ad86"
+  integrity sha512-yoVH6XvOG10n7F2JZlhC4gkpUSF8dBDMiSwOZC5IxF69qyP89u6c/yjVkZzYo/hllJV+MJ12F2Z68klH49zVOw==
   dependencies:
     hast-util-to-html "5.0.0"
     mdast-util-to-hast "5.0.0"
