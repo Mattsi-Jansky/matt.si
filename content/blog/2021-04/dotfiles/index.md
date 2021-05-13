@@ -161,9 +161,11 @@ Something else neat to note here us `pushd` and `popd`. These change directory u
 
 ### Idempotent
 
-One important thing to consider when scripting dotfiles is that everything must be idempotent. That is, they must be capable of being called numerous times and always returning the same result. Your dotfiles aren't going to be called just once- you'll frequently make changes, re-run them, or run them just to update your dependencies. If you have a function that installs something you need to ensure that it won't start acting strangely (eg installing multiple versions or erasing configuration files) if it's installed more than once.
+One important thing to consider when scripting dotfiles is that everything must be idempotent. That is, they must be capable of being called numerous times and always returning the same result. Your dotfiles aren't going to be called just once- you'll frequently make changes, re-run them, or run them just to update your dependencies. If you have a function that installs something you need to ensure that it won't start acting strangely (eg installing multiple versions or overwriting configuration files) if it's installed more than once.
 
-On some occasions a process can't easily be made idempotent, so I wrap it in a conditional. For example a couple difference dependencies require checking out a git repo, but if you run that command twice it will fail because the directory already exists. So I made a little helper that checks whether the clone needs to be done first:
+Most processes are already idempotent. Linking a dotfile or calling install on a package manager can be done numerous times with the same result.
+
+When a process can't easily be made idempotent I wrap it in a conditional. For example a couple different dependencies require checking out a git repo, but if you run that command twice it will fail because the directory already exists. So I made a little helper that checks whether the clone needs to be done first:
 
 ```bash
 function tryGitClone() {
@@ -178,3 +180,4 @@ function tryGitClone() {
 }
 ```
 
+That way even get a helpful little output telling us that nothing was done, the directory already existed.
