@@ -1,6 +1,6 @@
 ---
 title: Want to learn a new skill? Start a study group, here's how
-date: 2021-04-14 00:00:00 +0000
+date: 2021-05-17 00:00:00 +0000
 description: The story of how I began learning a new programming language by starting a study group, and you can too
 img: ./banner-study-group.jpg
 imgCaption: Photo by Marvin Meyer on Unsplash
