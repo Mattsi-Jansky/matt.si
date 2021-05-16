@@ -63,4 +63,4 @@ Lastly feel free to switch up the format on occasion, keeping it fresh and less 
 
 ## Conclusion
 
-I really recommend this approach, it's worked great for me. If you do try it, let me know how you get on. And if you know any other study group formats let me know, I'd love to try some new session formats out.
+I really recommend this approach, it has worked great for me. If you try it, let me know how you get on. And if you know any other study group formats let me know, I'd love to try some new ones out.
