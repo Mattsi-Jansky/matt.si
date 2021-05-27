@@ -24,6 +24,7 @@ jobs:
 
       - name: Run Visual Regression Tests
         run: ./scripts/run-visual-regression-tests.sh
+        if: ${{ false }}
 
       - name: Package Visual Regression Tests Report
         if: failure()
