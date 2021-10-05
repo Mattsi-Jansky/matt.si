@@ -39,7 +39,7 @@
     "react-dom": "16.14.0",
     "react-helmet": "6.1.0",
     "react-test-renderer": "16.14.0",
-    "rehype-react": "7.0.2"
+    "rehype-react": "7.0.3"
   },
   "devDependencies": {
     "babel-jest": "26.6.3",
