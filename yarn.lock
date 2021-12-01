@@ -8305,10 +8305,10 @@ gatsby-plugin-feed@2.13.1:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.14.0.tgz#9a65c9b2b0ad0a2350c0318327101f637e285ef0"
-  integrity sha512-yfSBRrGZZWruKDQMAJOHp7S1nUBQewT9MuvqegCqFsHhxUtm6PZ5JFv3k8385DfQ/+ux9MmzpY20vQ0E5/30fA==
+gatsby-plugin-google-analytics@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.3.0.tgz#1db01c2607a0c2c55f070b68a70c83928ed2165f"
+  integrity sha512-waHU0b7eTQuub7GgMDxJ4E5MjqXFqmQ8UaFMAWrdaCtRmj4CNdee36xYMbobzqOmtU5L40IFZ3kifIda6M1Pow==
   dependencies:
     "@babel/runtime" "^7.15.4"
     minimatch "3.0.4"
