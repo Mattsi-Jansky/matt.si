@@ -24,7 +24,7 @@
     "gatsby-plugin-offline": "3.10.2",
     "gatsby-plugin-react-helmet": "3.10.0",
     "gatsby-plugin-sass": "2.8.0",
-    "gatsby-plugin-sharp": "2.14.4",
+    "gatsby-plugin-sharp": "4.4.0",
     "gatsby-remark-footnotes": "0.0.8",
     "gatsby-remark-images": "5.11.0",
     "gatsby-remark-prismjs": "3.13.0",
