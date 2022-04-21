@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "babel-preset-gatsby": "0.5.1",
-    "gatsby": "2.32.13",
+    "gatsby": "3.14.6",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-feed": "2.13.1",
     "gatsby-plugin-google-analytics": "3.14.0",

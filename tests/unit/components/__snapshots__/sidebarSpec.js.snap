@@ -60,6 +60,7 @@ exports[`Sidebar hasn't changed 1`] = `
             />
           </a>
         </li>
+        
         <li>
           <a
             href="https://github.com/mattsi-jansky"
