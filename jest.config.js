@@ -12,5 +12,6 @@ module.exports = {
     __PATH_PREFIX__: ``,
   },
   setupFiles: [`<rootDir>/tests/loadershim.js`, '<rootDir>/tests/enzymeSetup.js'],
-  "testMatch": [ "**/tests/unit/**/*.[jt]s?(x)" ]
+  "testMatch": [ "**/tests/unit/**/*.[jt]s?(x)" ],
+  testEnvironment: "jsdom"
 }
