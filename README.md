@@ -17,6 +17,7 @@ My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
   * With NVM run `nvm use` in the root dir to set the appropriate Node version in your terminal
 * Yarn (`brew install yarn`)
   * Run `yarn` (no args) in root to download all dependencies, before doing anything else.
+* G++ (due to Parcel/LMDB dependency)
 
 ## Run locally
 
