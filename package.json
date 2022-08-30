@@ -15,7 +15,7 @@
     "lint": "eslint --ext .js,.jsx --ignore-pattern public ."
   },
   "dependencies": {
-    "babel-preset-gatsby": "2.12.1",
+    "babel-preset-gatsby": "2.22.0",
     "gatsby": "4.11.0",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-feed": "4.12.1",
