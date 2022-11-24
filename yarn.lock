@@ -6572,7 +6572,7 @@ gatsby-cli@^4.24.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.12.1, gatsby-core-utils@^3.15.0, gatsby-core-utils@^3.24.0:
+gatsby-core-utils@^3.12.1, gatsby-core-utils@^3.24.0:
   version "3.24.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.24.0.tgz#0e757bac28ad953a929046138403b3663b733cf7"
   integrity sha512-P4tbcYOJ1DSYKRP4gIAR9Xta/d/AzjmsK2C6PzX7sNcGnviDKtAIoeV9sE0kNXOqBfUCez25zmAi2cq8NlaxKw==
@@ -6658,16 +6658,16 @@ gatsby-parcel-config@0.15.1:
     "@parcel/transformer-js" "2.6.2"
     "@parcel/transformer-json" "2.6.2"
 
-gatsby-plugin-feed@4.12.1:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.12.1.tgz#88e4a423d9160f9140eeb3d6248cb337d6de5fa8"
-  integrity sha512-4wfZxNt2eRLwBb67QyBf4WyQWxImyKZ5mDozDsKcYdPp5LTCkfjSOlTrE8BC2W2Fd83fLCYNlagEFIwJHEHBQQ==
+gatsby-plugin-feed@4.24.0:
+  version "4.24.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.24.0.tgz#c6b2674b45dd2b8037e301daaab62d57a2dd5ee3"
+  integrity sha512-lTCpIjvgZZjkciBm2jsibk6+5Opd9ToQWrb363Y/7Mm26TYK/xuLLCuFBuAi76YekbBZJc5HnMcZcFHB4lIIUw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@hapi/joi" "^15.1.1"
     common-tags "^1.8.2"
-    fs-extra "^10.0.0"
-    gatsby-plugin-utils "^3.6.1"
+    fs-extra "^10.1.0"
+    gatsby-plugin-utils "^3.18.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
@@ -6782,7 +6782,7 @@ gatsby-plugin-typescript@^4.24.0:
     "@babel/runtime" "^7.15.4"
     babel-plugin-remove-graphql-queries "^4.24.0"
 
-gatsby-plugin-utils@^3.18.0, gatsby-plugin-utils@^3.6.1:
+gatsby-plugin-utils@^3.18.0:
   version "3.18.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.18.0.tgz#898e9416e3d4fa25195e9ca50d17a5435dfe91a3"
   integrity sha512-3c2iHYV93+zV8AfUhpWSuU0Bd5sgNDaUMkBYNuJAWrUqUfJY4i+QAD/H4Hvie8dhdGrX6QRWEyKo1k5gV+jERQ==
