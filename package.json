@@ -46,7 +46,7 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.7",
     "eslint": "8.14.0",
-    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react": "7.32.2",
     "jest": "27.5.1",
     "wait-on": "6.0.1",
     "sass": "1.58.2"
