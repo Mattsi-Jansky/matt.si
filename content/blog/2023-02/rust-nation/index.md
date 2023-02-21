@@ -1,6 +1,6 @@
 ---
 title: Rust Nation 2023 Review
-date: 2023-02-19 00:00:00 +0000
+date: 2023-02-21 00:00:00 +0000
 description: A review of Rust Nation 2023! Delivering a day-long workshop, meeting cool people, attending great talks…
 img: ./logo_header.jpeg
 tags: ["Conference", "Event", "Rust", "Talk", "gamedev"]
