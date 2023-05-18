@@ -3,7 +3,7 @@ title: Introduction to Rust
 date: 2022-04-21 00:00:00 +0000
 description: At Codebar 2022 I gave a talk introducing newcomers to the Rust programming language. It covers what Rust is, why you might want to use it and where to go to learn more.
 img: ./intro-to-rust-codebar.png
-tags: ["Talk", "Rust"]
+tags: ["Talk", "Rust", "Video"]
 ---
 
 At codebar festival 2022 I gave a talk introducing newcomers to the Rust programming language. It covers what Rust is, why you might want to use it and where to go to learn more.

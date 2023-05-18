@@ -3,7 +3,7 @@ title: Rust Screenkatas
 date: 2023-05-18 00:00:00 +0000
 description: Recently I've published a few screencasts solving programming challenges in Rust. Come 
 img: ./screenkata_header.jpg
-tags: ["Screencast", "Rust"]
+tags: ["Screencast", "Rust", "Video"]
 ---
 
 Recently I've published a few screencasts solving programming challenge katas with Codurance (part of the screenkatas series) in Rust. The first is a basic introduction, installing Rust and writing a basic FizzBuzz. The next two are parts of a two-parter which is a bit more complex, solving the N-Queens problem with TDD. I also take time to explain the theory behind search problems and the N-Queen problem in particular using diagrams.

@@ -3,7 +3,7 @@ title: Rust Macros - The What, Why and How
 date: 2022-05-26 00:00:00 +0000
 description: I delivered a "Thursdays Matter" talk with SkillsMatter about Rust macros; what they are, why to use them and how they work.
 img: ./macros-thursdays-matter.jpeg
-tags: ["Talk", "Rust"]
+tags: ["Talk", "Rust", "Video"]
 ---
 
 I delivered a "Thursdays Matter" talk with SkillsMatter about Rust macros; what they are, why to use them and how they work.
