@@ -110,8 +110,6 @@ Each talk in the biggest room was accompanied by an artist drawing a wonderful p
 
 ORGCon is great. I never imagined I'd learn so much about ethics in technology. There were some really unexpected and interesting sessions. I definitely recommend going next year, and perhaps you'll consider [joining the Open Rights Group](https://www.openrightsgroup.org/join/).
 
-## Footnotes
-
 [^1]: Alex Hearn, The Guardian, [Apple and WhatsApp Condem GCHQ Plans to Eavesdrop on Encrypted Chats](https://www.theguardian.com/uk-news/2019/may/30/apple-and-whatsapp-condemn-gchq-plans-to-eavesdrop-on-encrypted-chats)
 [^2]: Nicole Perlroth, David E. Sanger, New York Times, [How Chinese Spies Got the N.S.A.’s Hacking Tools, and Used Them for Attacks](https://www.nytimes.com/2019/05/06/us/politics/china-hacking-cyber.html)
 [^3]: Anthony Cuthberston, The Independent, [Indian Police Trace 3,000 Missing Children In Just Four Days Using Facial Recognition Technology](https://www.independent.co.uk/life-style/gadgets-and-tech/news/india-police-missing-children-facial-recognition-tech-trace-find-reunite-a8320406.html)

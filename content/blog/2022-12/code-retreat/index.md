@@ -4,7 +4,7 @@ date: 2022-12-11 00:00:00 +0000
 description: I ran London's Global Day of Code Retreat meetup at Codurance. Find out more about Global Day of Code Retreat and how the event went
 img: ./code-retreat-banner.jpg
 canonicalLink: https://www.codurance.com/publications/coderetreat-london-2022
-tags: ["Event"]
+tags: ["Event", "TDD"]
 ---
 
 _First posted on [the Codurance Blog](https://www.codurance.com/publications/coderetreat-london-2022)._
