@@ -126,9 +126,118 @@ fn generate_e2_pawn_moves() {
 }
 ```
 
-Now we're getting closer to the meat of the problem, all while maintaining a simple clean API. Here we've added an enum to represent a move that can be made, and we're using `contains` for the assert because the full size of the list will grow over time as we implement more of move generation.
+Now we're getting closer to the meat of the problem, all while maintaining a simple clean API. Here we've added an enum to represent a move that can be made, and we're using `contains` for the assert because the full size of the list will grow over time as we implement more of move generation. As more pieces are added and the move generation becomes more complex it becomes necessary to introduce a board. I go with a `PieceType` enum representing pawn/bishop/knight/etc, and a `Piece` struct that includes a `PieceType` and a bool to define whether it is owned by the first player. Using this simple, naive model may have been a mistake. In outside-in TDD we try to avoid planning up-front, instead taking baby steps and gradually designing the system as it grows in complexity. I wanted to follow follow that, but I was also aware that board representation is quite a complex topic in and of itself[^5] and I'd have to delve into that sooner or later for optimisation. I also felt that it was best to avoid "premature optimisation", that I could develop it natively and later optimise it when I have performance tests in place. But when I did I found that the basic naive API I'd created early on would need big changes, a messy major surgery to the whole codebase that left tests broken for long periods of time. This may be an area where the principle of not planning up-front doesn't apply well, because I could have saved myself a decent bit of trouble by investing time in researching and implementing board representation up-front.
+
+With `Board` in place the function to generate moves is just `generate_moves(is_first_player_turn: bool, board: &Board) -> Vec<Move>`. While implementing this I don't drive purely from the acceptance tests. If you only test from the acceptance tests then you can't test all the internal mechanisms in how the library works, only treating it as a black box from the outside. This would force you to take big steps without tests. With move generation it needs to be able to select all types instances of a particular type of piece on the board for a given player, but that is an internal API you can't test externally. So as I grow the library I'm adding small, isolated unit test cases to each unit of code to test their internal APIs. For example, this tests the aforementioned functionality of `Board`:
+
+```rust
+#[test]
+fn get_all_pieces_of_type_and_ownership() {
+    let board = Board::new();
+
+    let result = board.get_all(PieceType::Pawn, true);
+
+    assert_that!(&result, contains_in_any_order(vec![
+        (PieceType::Pawn,0,1),
+        (PieceType::Pawn,1,1),
+        (PieceType::Pawn,2,1),
+        (PieceType::Pawn,3,1),
+        (PieceType::Pawn,4,1),
+        (PieceType::Pawn,5,1),
+        (PieceType::Pawn,6,1),
+        (PieceType::Pawn,7,1)
+    ]));
+}
+```
+
+From there I was able to grow the solution bit by bit per each piece type by adding knight, then king, then bishop, then rook, and finally queen move generation. I figured that the knight and king are actually very similar because they check only certain static patterns, whereas the other pices check patterns in lines that grow and shrink based on whether they are blocked by other pieces. So these became separate static and dynamic move generators and that abstraction seemed to help.
+
+## Making use of types
+
+Rust has a really strong type system, and you are encourages to encode as much information in the type system as possible because it enables the compiler to check for mistakes earlier _before_ they get to runtime, and it can improve the developer experience. My design of the high-level types went through a few iterations but I ended up on something like this: You have a separate `Game` and `GameState`, where `GameState` is a struct containing all the data relating to the state of the game and `Game` is an enum like so: 
+
+```rust
+#[derive(Clone)]
+pub enum Game {
+    Ongoing {
+        state: GameState,
+    },
+    IllegalMove {
+        state: GameState,
+    },
+    Draw {
+        state: GameState,
+    },
+    Win {
+        is_first_player_win: bool,
+        state: GameState,
+    },
+}
+```
+
+The big idea here is to encapsulate the current game state as a type, to ensure the user won't make mistakes like trying to play a move when the game is already completed. Though, 
+
+```rust
+pub fn make_move_san(&self, san: &str) -> Game {
+    self.determine_status(match self {
+        Game::Ongoing { state } => state.make_move_san(san),
+        Game::IllegalMove { state } => state.make_move_san(san),
+        Game::Draw { .. } | Game::Win { .. } => {
+            panic!("Cannot make move on a finished game")
+        }
+    })
+}
+```
+
+## Architecture
+
+``` sh
+.
+├── error.rs
+├── game.rs
+├── heuristics
+│   ├── attacks.rs
+│   ├── cache.rs
+│   ├── checkmates.rs
+│   ├── checks.rs
+│   ├── material.rs
+│   ├── mobility.rs
+│   ├── mod.rs
+│   └── weightings.rs
+├── lib.rs
+├── moves
+│   ├── castling_moves.rs
+│   ├── coordinate_transformers.rs
+│   ├── dynamic_moves.rs
+│   ├── mod.rs
+│   ├── move_generation.rs
+│   ├── pawn_moves.rs
+│   ├── resolve_move.rs
+│   └── static_moves.rs
+├── search
+│   ├── evaluation.rs
+│   ├── mod.rs
+│   └── possible_move.rs
+├── serialisers
+│   ├── fen.rs
+│   ├── mod.rs
+│   ├── pgn.rs
+│   └── san.rs
+└── state
+    ├── board.rs
+    ├── captured_pieces.rs
+    ├── check.rs
+    ├── coordinates.rs
+    ├── mod.rs
+    └── tile.rs
+```
+
+## Checking and checkmating
+
+
 
 [^1]: Bill Wall, Bill Wall's Chess Page, [The Telegraph and Chess](http://billwall.phpwebhosting.com/articles/telegraph.htm)
 [^2]: FTL Design, History of Atlantic Cable & Undersea Communications, [Cable Chess Matches](https://atlantic-cable.com/Article/1926CableChess/index.htm)
 [^3]: I actually got this wrong first time and had a blank string for the test case. There are several other small details I've changed about those early test cases for simplicity/conciseness.
 [^4]: See the [Chess Programming Wiki](https://www.chessprogramming.org/Main_Page)
+[^5]: Board Representation, [Chess Programming Wiki](https://www.chessprogramming.org/Board_Representation)
