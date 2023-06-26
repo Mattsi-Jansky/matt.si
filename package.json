@@ -48,8 +48,8 @@
     "eslint": "8.14.0",
     "eslint-plugin-react": "7.32.2",
     "jest": "27.5.1",
-    "wait-on": "6.0.1",
-    "sass": "1.58.2"
+    "sass": "1.58.2",
+    "wait-on": "6.0.1"
   },
   "license": "GPL-3.0-only"
 }
