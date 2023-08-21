@@ -42,7 +42,7 @@
     "sharp": "0.31.3"
   },
   "devDependencies": {
-    "babel-jest": "29.3.1",
+    "babel-jest": "29.6.3",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.7",
     "eslint": "8.14.0",
