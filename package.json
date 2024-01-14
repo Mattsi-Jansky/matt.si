@@ -38,7 +38,7 @@
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
     "react-test-renderer": "18.2.0",
-    "rehype-react": "7.1.1",
+    "rehype-react": "8.0.0",
     "sharp": "0.31.3"
   },
   "devDependencies": {
