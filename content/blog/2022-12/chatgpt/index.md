@@ -3,7 +3,7 @@ title: ChatGPT Can Do Astonishing Things. But Is It a Helpful Development Tool?
 date: 2022-12-12 00:00:00 +0000
 description: A chatbot that can write code. The reaction to ChatGPT has been very polarising - some reactions very hyperbolic, others overly cynical. I explore what practical uses it has and ponder about where this might lead.
 img: ./chatgpt-banner.png
-tags: ["AI","Rust"]
+tags: ["artificial intelligence","large language models","Rust"]
 ---
 
 On November 30th OpenAI [published a chatbot called ChatGPT](https://chat.openai.com/) that allows anyone to interact with their latest, greatest language model. You can ask it to do various things for you like writing screenplays, explaining difficult concepts or, most impressively, writing code. Since then it has made headlines for making programmers fret about their career prospects, getting banned from StackOverflow, and for [writing poems about hotwiring cars](https://twitter.com/NickEMoran/status/1598101579626057728). For the past week, I've been playing around with this bot on and off to see what it can do, what its limitations are, and what practical use cases it may have.

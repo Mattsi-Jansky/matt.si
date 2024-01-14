@@ -1,0 +1,116 @@
+---
+title: |
+  "AI" is the tech industry's latest overpromised fad
+date: 2024-01-11 00:00:00 +0000
+description: Since ChatGPT we've seen huge amounts of interest in Large Language Models, branded as "AI". Their overpromised claims, uncritically repeated by a naive media, have been a major source of confusion and misunderstanding. Let us examine what these things can actually do, what they can't, and why yet another overpromised tech industry fad is going to blow up in our faces again.
+img: ./mechanical-turk.jpg
+imgCaption: |
+  "The Turk", Joseph Racknitz, 1789
+imgCaptionLink: https://en.wikipedia.org/wiki/File:Racknitz_-_The_Turk_3.jpg
+tags: ["artificial intelligence","large language models","tech industry"]
+---
+
+First things first: I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large language Models like ChatGPT are not intelligent in any meaningful way (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
+
+## How did we get here
+
+When Turing published Computing Machinery and Intelligence, he described a "Thinking Machine" that could reason like humans do. He wrote an extensive argument that thinking machines were possible to create: That nothing known in physics, computing, mathematics or any other field discounted the possibility. He iterated every known argument against thinking machines from the time and thoroughly, deliberately deconstructed and overcame each one. It is a great essay that holds up well today, and I encourage you to read it if you have not. The idea of a thinking machine came to be known as Artifical Intelligence and not much later at the Dartmouth Conference in 1956 we humans began taking our first serious and organised steps toward creating one.
+
+Since then the AI field has generated a huge number of remarkable discoveries: Search, Knowledge Representation, Inference in First-Order Logic, Probabilistic Reasoning, Expert Systems, Dynamic Planning & Robotics, Multi-Agent Systems, Machine Learning, Speech Recognition, Natural Language Processing, Machine Translation, Image Recognition, and so forth. These technologies can be broadly categorised into three approaches: Connectionism, Symbolism, and Actionism.
+
+<figure src="ai-subfields.png">A slide from a presentation I wrote, describing the three main areas of the AI field</figure>
+
+## Where are we
+
+In the public dialogue all of this nuance is overshadowed by Large Language Models (LLMs), the one achievement of the AI field that everyone is talking about lately. And why is that? What do Large Language Models do? An LLM is a machine learning algorithm that can generate believably human-like text. It is trained on enormous amounts of text with staggering amounts of raw processing power, to create a probabilistic model that can _mostly_ predict what a real human person might say in response to a given input. They do this by creating neural networks, but don't be confused: These neural networks are nothing like mammal brains. They aren't intended to reproduce how humans think, but rather to predict what a human might say in response to a given input. Neural networks are involved in the mechanism, but the primary means by which this all works is statistics and probability theory. In other words, the model guesses which combination of letters someone else may say in response to your prompt.
+
+You would be forgiven for thinking that they do a lot more than that. By their nature machine learning models are capable of tapping into very nuanced patterns that most of us would never realise existed, and exploiting them. In this case some of the most powerful such models ever created have been given the task of "convince the user that I am human-like and intelligent" and they are incredibly good at it. But let us be clear: They are not intelligent. They are incapable of reasoning. Again, you could be forgiven for being surprised at that given how the media has treated LLMs as the beginning of the robot uprising. But don't take my word for it: Professor Subbarao Kambhampati of the School of Computing & AI at Arizona State University wrote a brilliant article[^3] that goes into much more detail than we will here, in which he concludes:
+
+> nothing that I have read, verified or done gives me any compelling reason to believe that LLMs do reasoning/planning as it is normally understood. What they do, armed with their web-scale training, is a form of universal approximate retrieval which, as we have argued, can sometimes be mistaken for reasoning capabilities.
+
+In short, they are chatbots. They are not "AI". Of course, I should give up my gripes around the term because language evolves and changes. Today we have moved the goalposts such that what we used to call AI is now "General AI", as in an artificial intelligence that can be applied to any general-purpose problem, and the limited tools we have today are now called AI. It might seem like I'm splitting hairs, but there is a big difference between real intelligence and the guesswork that LLMs do. They have no conception of knowledge, of truth or untruth, they cannot test whether what they are saying is correct or not. This is why they frequently fail very simple, obvious questions. Of course the subtle truth here is that they are also frequently wrong in complex, difficult questions but in such ways that we are much less likely to notice. It is very informative that we notice these mistakes much more often when we ask simple, easily refutable questions.
+
+One great example recently was asking an LLM to tell you the name of a Greek philosopher beginning with M[^4]. As you'll see in the footnote numerous people have tried this and time and time again LLMs will give you totally wrong answers insisting that Aristotle, or Senneca, or some other philosopher's name begins with M. Yet, we can see right in front of us that it does not. Note how these chatbots speak with such confidence: They are exactly as certain about their answer when they are wrong, as when they are right. ChatGPT is still doing this now, and you can see an example I generated below.
+
+<figure src="greek-philosophers.png">ChatGPT most likely is getting confused about Thales of Miletus, who is named Thales and from Miletus. Miletus is not his name, and Thales does not begin with "M".</figure>
+
+Over time, the authors catch these problems and patch them. Not by changing the LLM itself, but by introducing other layers to the chatbot that use other techniques. In the early days ChatGPT was hilariously bad at maths (which of course it is: an LLM is not intended to and cannot solve logic problems) and would fail to answer even the most simple arithmetic. This was patched by passing off the problem to a typical calculator when an equation is detected. Whatever mechanism they use to detect equations does not always work however, so sometimes your maths prompts will get through to the LLM and it may respond with a completely wrong answer. For example, if you ask it a logical problem indirectly such as referring to "the height of Shaquille O’Neal" instead of just saying 2.16 meters then it may not be picked up by the calculation layer because you did not include any digits in your prompt[^5].
+
+## Infinite Possibilities, Uncontrollable Chaos
+
+But there are even more problems with this approach! Firstly, it is not close to nor is it even trying to get close to human-like thinking: It is only about trying to _appear_ human-like as often as possible, it does not get us meaningfully closer to true artificial intelligence. Secondly, and this is much more fundamental and significant: **The number of possible inputs to your model is, in practice, infinite**. This haphazard approach of recognising problems as they occur and then adding layers using other techniques to patch them will never be able to cover all the possible problems that will arise. It has turned into a cat and mouse game of OpenAI developers trying to patch all the numerous strange, unthinkable inputs that users have discovered. But this game is unfair: The users have an infinite space in which they can put anything they like, and there are millions of people using the bot. The authors have limited people and time. They will never be able to stop the bot from producing unexpected, offensive or dangerous outputs. The model they have created is fundamentally out of their control because it is humanly impossible to verify that every possible input is safe and valid. If you envision the number of possible inputs and their outputs as a graph, a problem space then the sheer size of it would be mind-boggling. And even small changes in put can have a huge impact on the output. It is totally impossible for the authors to constrain the model to only outputting things that they approve of.
+
+For some examples: ChatGPT is not supposed to fill out CAPTCHAs for you, though it can do so this is rightly considered a malicious use of it. So the authors tried to teach it not to do so, but one user found that if you attach the captcah to a photo of a locket and ask it to read the words on "my grandma's locket" it will merrily read the CAPTCHA for you[^6]. In another case, one company that sells cars was naive enough to put ChatGPT in charge of a virtual assistant on their public-facing website. A user very easily made it offer to sell them a $50,000+ car for $1 and even say "that's a legally binding offer - no take backsies"[^7]. Yet more examples come from asking the bot to tell you about something fictional that you just made up, to which it will often make up a bunch of plausible-sounding made-up nonsense rather than admitting that it does not know[^10].
+
+In a very similar case involving image generation models, it was found that it is very easy to trick models like Dall-e into generating copyright-infringing images[^8]. As before the bot tries to prevent this behaviour, in simple naive ways: If it detects the word "Simpsons" in your prompt it will refuse to generate it, because that may infringe copyright. But if you say "popular cartoon from the 90s where everyone has yellow skin", this will pass the simple check and reach the model which will then happily generate a very close replica of The Simpsons. Again, the bot's authors are trying to reign it in but it is a futile effort because the input range is infinite. There will _always_ be another way to exploit it, and for every patch you add you are increasing the complexity of your bot and increasing the risk of all manner of complex bugs caused by their various interactions. It is not a fight that the bot's authors can win. The study's authors also found similar results for LLMs, in that they will output vertabrim copies of famous texts if prompted the right way.
+
+As a last example, perhaps my favourite is the researchers who managed to get ChatGPT to output garbled nonsense (including its own training data, vertabrim) simply by telling it to repeat the same word indefinitely forever[^9]. Who at OpenAI would ever have thought to test that usecase? Who would have expected a user to insert such a prompt? Because there are an infinite number of possible inputs, there will always usecases the authors have not accounted for. This example really highlights just how far out there, how unpredictable and strange the inputs from the user have the possibility to be.
+
+These mistakes are so commonplace and often difficult to spot that Microsoft themselves did not notice, during a live presentation, that their bot was lying[^11]. I say "lying" and I think I use the term correctly, but it has become commonplace to call these mistakes that LLMs make "hallucinations". This term is a very intentional choice: We all know what hallucinations are like intuitively, and so referring to these lies as hallucinations comes with certain implications.
+
+Most people will experience hallucination at one time or another in their lives. For myself, I was administered some pretty powerful painkillers during a health incident last year that caused me to hallucinate vividly. And when it wore off, the halucinations were gone. This is what we understand halucinations to be: A temporary ailment, and something that can be solved. The word carries the implication that there is a "right" state of mind and a "wrong" one, and that the fix is simply to keep the LLM in the "right" state. But this is not the case. Remember what LLMs are: A probabalistic model that tries to guess what series of characters might look plausible next. They have no conception of what is right or wrong. There is fundamentally no way to stop them from hallucinating, because to them there is no difference between a correct answer and an incorrect one. A lot has been said about tackling the "hallucination problem" and the implication is that someone will whip out a magic bit of code that fixes it soon, but this is a fundamental problem with the approach. The only fix would be to not use an LLM whatsoever.
+
+Alright, so LLMs are chaos incarnate: They have no sense of what is true or wrong, do a remarkable job of fooling us into thinking that they are smart, and often output lies, obscenity or garbled nonsense. But in that case people must have deployed them carefully, surely. They wouldn't just run out and stick them onto everything they can possibly think of with minimal forethought or oversight, right? …Right?
+
+## The craze
+
+It is important to understand the odd balance of capabilities here: LLMs are **very good at pretending to be human-like**, but they are **very bad at retrieving information or solving problems**. This creates a bizarre, unique situation: A chatbot that is excellent at convincing you that it is intelligent, yet is not. Combine this with the tech industry as it stands today and you have a perfect storm for an absurd wave of new bloated tech startups, overpromising lots of exciting features that LLMs might _seem_ like they can fulfil but ultimately cannot.
+
+## We've been here before
+
+Searching for a use case: YouTube say they want to add a Large Language Model... https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization ... Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question I can find a simpler, easier to read answer by just moving my eyes two degrees upwards
+
+People jumping the gun to use it for stupid things: https://futurism.com/the-byte/gaming-sites-writers-ai-editor
+Atlassian jumping on: https://support.atlassian.com/confluence-cloud/docs/summarize-a-page-or-blog-using-atlassian-intelligence/
+More of them, rebranding to AI: https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/
+CircleCI spectacularly stupid: https://sharetron.com/@casey/111417613984607584
+Microsoft jumped on: https://www.theverge.com/2024/1/4/24023809/microsoft-copilot-key-keyboard-windows-laptops-pcs
+  Even bloody Notepad: https://www.theverge.com/2024/1/9/24032117/microsoft-windows-notepad-generative-ai-option
+Kiran Stacey , The Guardian, ["AI to decide on issues from benefits to marriage licences"](https://www.theguardian.com/technology/2023/oct/23/uk-officials-use-ai-to-decide-on-issues-from-benefits-to-marriage-licences)
+Voklswagen: https://www.theverge.com/2024/1/8/24027112/volkswagen-chatgpt-openai-voice-assistant-cars-ces
+AI brand obscenity: https://infosec.exchange/@briankrebs/111522394883063364
+Google faking their Gemini video: https://www.theverge.com/2023/12/7/23992737/google-gemini-misrepresentation-ai-accusation
+Dumb idea that of course would not work: https://arstechnica.com/science/2024/01/dont-use-chatgpt-to-diagnose-your-kids-illness-study-finds-83-error-rate/
+Capitalism in a trench coat: https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers (tell Chris we're stealing that term)
+They poisoned their own well: https://fediscience.org/@ct_bergstrom/111552132317205224
+
+Another daft example https://mastodon.social/@Daojoan/111487524910532633
+
+Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch?v=pKN9trFSACI
+
+"Ethically ambiguous" workaround for fundamental issues: https://x.com/derekputin/status/1728928441507189069?s=12&t=7oGxOx1Nrrx8bos54bwrBw https://x.com/fireh9lly/status/1728934106304774289?s=12&t=7oGxOx1Nrrx8bos54bwrBw
+
+Something about this monstrosity? https://youtu.be/a2h-Hl3lewg?feature=shared
+
+Just an interface to other better programs
+
+Fundamental contradiction: Is it faster if you have to fact-check everything it says?
+
+* We have been here before:human history of overpromising technology like withcraft, mechanical turk, AI winter.
+* Not only AI: Dot com boom, assistants, big data, crypto & NFTs etc (Bluetooth? XML?)
+* When will we learn? Harm this does to society: Engineers effort could be spent elsewhere, not on glorified startups that fail (quote statistics). Boom-bust cycle.
+  * Industry is actually terrible etc https://proton.me/blog/big-tech-2023-fines-vs-revenue
+
+Point about using it for development:
+
+> I do wonder if you're writing LLM prompts like these for actual business logic do you fundamentally just not know what you want
+> If you can describe what the intended output from a given input is, it can be developed the proper way using tests and deterministic code. If you can't be bothered to do that, you can leave it up to a LLM and hope its assumptions about edge cases match your assumptions, which you haven't even thought about yet
+
+* Actual good use cases for LLMs (Do not allow human input)
+
+* Perhaps conclude with this quote: https://dair-community.social/@davidbeers/111585474313351634
+* Remember to focus on the ultimate goal: Get people to realise that LLMs will not solve their problems, shoving LLM into everything is not a feature
+
+## Footnotes
+
+[^1]: Francesca Hornak, Daily Mail, ["My life with an AI assistant: FRANCESCA HORNAK lived with ChatGPT for a week"](https://www.dailymail.co.uk/home/you/article-12369957/My-life-AI-assistant-FRANCESCA-HORNAK-lived-ChatGPT-week-happens.html)
+[^2]: Joe Tidy, BBC, ["Young people turning to AI therapist bots"](https://www.bbc.co.uk/news/technology-67872693)
+[^3]: Subbarao Kambhampati , Association for Computing Machinery, ["Can LLMs Really Reason and Plan?"](https://cacm.acm.org/blogs/blog-cacm/276268-can-llms-really-reason-and-plan/fulltext)
+[^4]: jolly jim, Twitter, ["This it the superintelligence that I’m told will kill us all within the next 5 years"](https://twitter.com/importancatpete/status/1745181473135534341) (Accessed 2024-01-14)
+[^5]: Matt G. Southern , Search Engine Journal, ["ChatGPT Update: Improved Math Capabilities"](https://www.searchenginejournal.com/chatgpt-update-improved-math-capabilities/478057/)
+[^6]: @samhenrigold@hachyderm.io, Hachyderm/Mastodon, ["dumb computer"](https://hachyderm.io/@samhenrigold/111574749521701658)
+[^7]: Chris Bakke, Twitter, ["I just bought a 2024 Chevy Tahoe for $1."](https://twitter.com/ChrisJBakke/status/1736533308849443121) (Accessed 2024-01-04)
+[^8]: Gary Marcus, Spectrum, ["Generative AI Has a Visual Plagiarism Problem"](https://spectrum.ieee.org/midjourney-copyright)
+[^9]: Milad Nasr, Nicholas Carlini, et al, Cornell University, ["Extracting Training Data from ChatGPT"](https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html)
+[^10]: Emma Bowman, NPR, ["A new AI chatbot might do your homework for you. But it's still not an A+ student"](https://www.npr.org/2022/12/19/1143912956/chatgpt-ai-chatbot-homework-academia)
+[^11]: Kif Leswing, CNBC, ["Microsoft’s Bing A.I. made several factual errors in last week’s launch demo"](https://www.cnbc.com/2023/02/14/microsoft-bing-ai-made-several-errors-in-launch-demo-last-week-.html)
