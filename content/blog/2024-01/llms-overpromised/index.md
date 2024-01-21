@@ -54,27 +54,35 @@ Alright, so LLMs are chaos incarnate: They have no sense of what is true or wron
 
 ## The craze
 
-It is important to understand the odd balance of capabilities here: LLMs are **very good at pretending to be human-like**, but they are **very bad at retrieving information or solving problems**. This creates a bizarre, unique situation: A chatbot that is excellent at convincing you that it is intelligent, yet is not. Combine this with the tech industry as it stands today and you have a perfect storm for an absurd wave of new bloated tech startups, overpromising lots of exciting features that LLMs might _seem_ like they can fulfil but ultimately cannot.
+It is important to understand the odd balance of capabilities here: LLMs are **very good at pretending to be human-like**, but they are **very bad at retrieving information or solving problems**. This creates a bizarre, unique situation: A chatbot that is excellent at convincing you that it is intelligent, yet is not. Combine this with the tech industry as it stands today and you have a perfect storm for a wave of new bloated tech startups, overpromising lots of exciting features that LLMs might _seem_ like they can fulfil but ultimately cannot.
+
+The wave began very quickly and still has a long way to go before the fad burns itself out. DPD deployed a LLM chatbot that ended up swearing at customers[^30]. Tech journalists fire their staff thinking, mistakenly, that ChatGPT will do just as good a job[^12]. Some people have worked it into their CI pipelines, so that it can give you hilariously unhelpful advice[^13]. Volkswagen seem to think you'll benefit from being able to talk to an LLM while driving[^14]. A Formula E team created a bizarre "virtual influencer" that was later "fired" (shut down) when it was noticed just how offensive this was to real women trying to find opportunities in the industry[^35]. Meanwhile Google is so insecure about their capabilities versus OpenAI that they've taken to grossly misrepresenting and exaggerating what their bot can do[^15]. The exaggeration and misinformation around the capabilities of LLMs is so great that we see ridiculous studies like "ChatGPT bombs test on diagnosing kids’ medical cases with 83% error rate"[^16], to which I can only say… Well, yeah? Why would you expect a chatbot known for guessing and lying to be capable of diagnosing medical cases?
+
+New tools and whole businesses built around LLMs have cropped up left, right and centre. Want to write a sincere and earnest thankyou letter to someone, but you aren't sincere or ernest? Don't worry, there are at least nine tools that some people somehow felt the need to write for this one niche apparent use case[^17]. In fact, you can pretty much name any inconvenience no matter how big or small, throw in "AI" and find multiple startups trying to hit the problem with an LLM in the hope that investors' money comes out. In the UK we saw investment in AI startups surge by over 200% shortly after ChatGPT[^18], the average funding for an AI startup increased by 66%[^19]. Some of these companies have precisely zero revenue yet raise $150M valuations[^21]. If you take these ridiculous headlines at face value LLMs are being used for brewing beer[^22], replacing CEOs[^23], even creating perfumes[^24], to name just a few. It seems you can easily get investment and media coverage by saying that you are the first in the world to apply AI to some problem: the media will mostly eat it up with little scrutiny, even if it is obviously nonsense. Many of these companies are most likely not even using AI techniques in any significant ways really, but saying that you are "the first to use AI to solve dog grooming" or some such thing is a sure-fire way to get some coverage and investment. I made that last example up, but it seems that the AI craze is stranger than fiction because someone has actually gone and done it[^25].
+
+Some places are are even using the "AI" buzzword to generate capital and interest without actually employing any any novel AI techniques. Take the case of recruitment startup Apply Pro[^31], who are trying to automate the CV screening process. Glossing over why that is a bad idea, the funny thing about them is that they advertise themselves as "AI for talent acquisition", yet if we view their website through the internet archive all mention of being "built with AI" is curiously absent on before the LLM craze begins[^32]. Similarly, fintech company RedCloud now advertises itself as "AI Powered technology" and refers to itself as "the world's Open AI Commerce Platform"[^33]. Yet, if you open the most recent archive before the release of ChatGPT[^34] there is no mention of AI whatsoever. We see this yet again in fintech app Cleo, who today market themselves as "AI Meets Money", and advertise the "Try the world's first AI assistant dedicated to personal finance"[^37]. Yet again, if you go back a year in the archives the "AI" marketing push is absent[^37]. This is particularly odd because Cleo's whole thing is a smart assistant, yet they seemingly didn't think to include "AI" in their marketing until after the ChatGPT craze made "AI" such a big buzzword. What has changed? Have these companies suped up their technology with the magical power of AI in the past year? No, they work the same way they always did. The buzzword just became popular and now everyone feels they have to use it.
+
+So huge has been this AI tsunami that the island of Anguilla, which happens to own exclusive rights to the `.ai` domain, is seeing an estimated $45m windfall from startups purchasing domain names[^29]. And this is not some fringe conspiracy. The Wall Street Journal has noted this strange phenomenon; "ChatGPT Fever Has Investors Pouring Billions Into AI Startups, No Business Plan Required"[^20].
+
+But it is not only tech businesses being taken by the AI craze: The UK government wasted no time in applying LLMs to a wide range of issues, despite the well known and documented biases against minorities these models frequently show[^26]. The Guardian's investigation into the matter even found that dozens of people have had their benefits taken away due to an "AI algorithm". And no company is too small to jump on this bandwagon, with Microsoft declaring that 2024 will be the "year of AI" and, in the weirdest stunt since Microsoft added a LinkedIn shortcut to their office keyboards, added  an "AI button" to their new keyboards[^27]. Not even Windows' Notepad app can escape this wave of AI exposure[^28].
+
+## Searching for a use-case
+
+Many of these...
+
+https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization ... Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question I can find a simpler, easier to read answer by just moving my eyes two degrees upwards
 
 ## We've been here before
 
-Searching for a use case: YouTube say they want to add a Large Language Model... https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization ... Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question I can find a simpler, easier to read answer by just moving my eyes two degrees upwards
-
-People jumping the gun to use it for stupid things: https://futurism.com/the-byte/gaming-sites-writers-ai-editor
-Atlassian jumping on: https://support.atlassian.com/confluence-cloud/docs/summarize-a-page-or-blog-using-atlassian-intelligence/
-More of them, rebranding to AI: https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/
-CircleCI spectacularly stupid: https://sharetron.com/@casey/111417613984607584
-Microsoft jumped on: https://www.theverge.com/2024/1/4/24023809/microsoft-copilot-key-keyboard-windows-laptops-pcs
-  Even bloody Notepad: https://www.theverge.com/2024/1/9/24032117/microsoft-windows-notepad-generative-ai-option
-Kiran Stacey , The Guardian, ["AI to decide on issues from benefits to marriage licences"](https://www.theguardian.com/technology/2023/oct/23/uk-officials-use-ai-to-decide-on-issues-from-benefits-to-marriage-licences)
-Voklswagen: https://www.theverge.com/2024/1/8/24027112/volkswagen-chatgpt-openai-voice-assistant-cars-ces
-AI brand obscenity: https://infosec.exchange/@briankrebs/111522394883063364
-Google faking their Gemini video: https://www.theverge.com/2023/12/7/23992737/google-gemini-misrepresentation-ai-accusation
-Dumb idea that of course would not work: https://arstechnica.com/science/2024/01/dont-use-chatgpt-to-diagnose-your-kids-illness-study-finds-83-error-rate/
-Capitalism in a trench coat: https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers (tell Chris we're stealing that term)
+"AI-Generated Influencer" for motorsports "fired": https://www.caranddriver.com/news/a46353319/formula-e-team-fires-ai-generated-influencer/
 They poisoned their own well: https://fediscience.org/@ct_bergstrom/111552132317205224
 
-Another daft example https://mastodon.social/@Daojoan/111487524910532633
+Capitalism in a trench coat: https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers (tell Chris we're stealing that term)
+  * Note also [^23] about not working weekends
+https://www.theverge.com/2019/8/14/20805676/engineer-ai-artificial-intelligence-startup-app-development-outsourcing-humans "This AI startup claims to automate app making but actually just uses humans"
+https://www.bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots?leadSource=uverify%20wall
+https://www.theguardian.com/technology/2018/jul/06/artificial-intelligence-ai-humans-bots-tech-companies
+https://www.404media.co/kaedim-ai-startup-2d-to-3d-used-cheap-human-labor/
 
 Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch?v=pKN9trFSACI
 
@@ -114,3 +122,29 @@ Point about using it for development:
 [^9]: Milad Nasr, Nicholas Carlini, et al, Cornell University, ["Extracting Training Data from ChatGPT"](https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html)
 [^10]: Emma Bowman, NPR, ["A new AI chatbot might do your homework for you. But it's still not an A+ student"](https://www.npr.org/2022/12/19/1143912956/chatgpt-ai-chatbot-homework-academia)
 [^11]: Kif Leswing, CNBC, ["Microsoft’s Bing A.I. made several factual errors in last week’s launch demo"](https://www.cnbc.com/2023/02/14/microsoft-bing-ai-made-several-errors-in-launch-demo-last-week-.html)
+[^12]: Frank Landymore, The Byte, ["Owner of Gaming Sites Fires Writers, Hires for "AI Editor" to Churn Out Hundreds of Articles Per Week"](https://futurism.com/the-byte/gaming-sites-writers-ai-editor)
+[^13]: @casey@sharetron.com, Sharetron/Mastodon, ["I’m so glad CircleCI now has the power of AI to tell me how to fix my test failures"](https://sharetron.com/@casey/111417613984607584)
+[^14]: Andrew J. Hawkins, The Verge, ["Volkswagen says it’s putting ChatGPT in its cars for ‘enriching conversations’"](https://www.theverge.com/2024/1/8/24027112/volkswagen-chatgpt-openai-voice-assistant-cars-ces)
+[^15]: Emilia David, The Verge, ["Google just launched a new AI and has already admitted at least one demo wasn’t real"](https://www.theverge.com/2023/12/7/23992737/google-gemini-misrepresentation-ai-accusation)
+[^16]: Beth Mole, Ars Technica, ["ChatGPT bombs test on diagnosing kids’ medical cases with 83% error rate"](https://arstechnica.com/science/2024/01/dont-use-chatgpt-to-diagnose-your-kids-illness-study-finds-83-error-rate/)
+[^17]: "Robo", TopAI.Tools, ["9 Top AI Thank you note generator tools"](https://topai.tools/s/Thank-you-note-generator)
+[^18]: Paige West, Startup Magazine, ["AI innovation in the UK triples post-ChatGPT"](https://startupsmagazine.co.uk/article-ai-innovation-uk-triples-post-chatgpt)
+[^19]: Fernanda Alvarez Pineiro, Startups, ["Average funding for AI startups increased by 66%, Startups 100 Index data reveals "](https://startups.co.uk/news/average-funding-for-ai-startups-increased-by-66-startups-100-index-data-reveals/)
+[^20]: Deepa Seetharaman  Wall Street Journal, ["ChatGPT Fever Has Investors Pouring Billions Into AI Startups, No Business Plan Required"](https://www.wsj.com/amp/articles/no-business-plan-no-problem-chatgpt-spawns-an-investor-gold-rush-in-ai-6bdbed3c)
+[^21]: Maggie Harrison, The Byte, ["AI Company With Zero Revenue Raises $150 Million"](https://futurism.com/the-byte/ai-company-no-revenue-fundraising)
+[^22]: James Temperton, Wired, ["Beer brewed with the help of AI? Yup, that's now a thing"](https://www.wired.co.uk/article/beer-brewed-by-ai-intelligentx)
+[^23]: Jyoti Mann, Business Insider, ["The humanoid-robot CEO of a drinks company says it doesn't have weekends and is 'always on 24/7' "](https://www.businessinsider.com/humanoid-ai-robot-ceo-says-she-doesnt-have-weekends-2023-9?r=US&IR=T)
+[^24]: Akhil Mahajan, Take One, ["This is the UK’s first ever AI fragrance machine "](https://www.takeonedigitalnetwork.com/this-is-the-uks-first-ever-ai-fragrance-machine/)
+[^25]: PawCare \(writing about themselves\), ["Tech-Driven Grooming: How AI and Smart Tools Dominated Pet Salons in 2023"](https://blog.mypawcare.com/pawcare-for-pet-parents/tech-driven-grooming-how-ai-and-smart-tools-dominated-pet-salons-in-2023)
+[^26]: Kiran Stacey , The Guardian, ["AI to decide on issues from benefits to marriage licences"](https://www.theguardian.com/technology/2023/oct/23/uk-officials-use-ai-to-decide-on-issues-from-benefits-to-marriage-licences)
+[^27]: Tom Warren, The Verge, ["Microsoft’s new Copilot key is the first big change to Windows keyboards in 30 years"](https://www.theverge.com/2024/1/4/24023809/microsoft-copilot-key-keyboard-windows-laptops-pcs)
+[^28]: Tom Warren, The Verge, ["Not even Notepad is safe from Microsoft’s big AI push in Windows"](https://www.theverge.com/2024/1/9/24032117/microsoft-windows-notepad-generative-ai-option)
+[^29]: Anthony Cuthbertson, Independent, ["Tiny island of Anguilla set for $45m windfall from .ai domain"](https://www.independent.co.uk/tech/anguilla-ai-domain-xai-musk-b2460155.html)
+[^30]: Tom Gerken, BBC, ["DPD error caused chatbot to swear at customer"](https://www.bbc.co.uk/news/technology-68025677)
+[^31]: Apply Pro, Promotion Tech Limited, ["AI for Talent Acquisition"](https://www.applypro.co.uk/) (Accessed 2024-01-21)
+[^32]: Apply Pro, Promotion Tech Limited, ["Talen Acquisition" (Archived 2023-01-12)](https://web.archive.org/web/20230120054702/https://www.applypro.co.uk/)
+[^33]: RedCloud Technology, ["AI powered technology that..."](https://redcloudtechnology.com/) (Accessed 2024-01-21)
+[^34]: RedCloud Technology, ["Open Commerce" (Archived 2022-09-01)](https://web.archive.org/web/20220901140041/https://redcloudtechnology.com/)
+[^35]: Benjamin Hunting, Car And Driver, ["Formula E Team Fires Its AI-Generated Influencer after Fans Balk"](https://www.caranddriver.com/news/a46353319/formula-e-team-fires-ai-generated-influencer/)
+[^37]: Cleo, ["AI Meets Money"](https://web.meetcleo.com/)
+[^38]: Cleo, ["Stres less about money" (archived 2022-10-04)](https://web.archive.org/web/20221004161311/https://web.meetcleo.com/)
