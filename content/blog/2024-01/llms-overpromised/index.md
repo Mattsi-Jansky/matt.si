@@ -28,13 +28,13 @@ You would be forgiven for thinking that they do a lot more than that. By their n
 
 > nothing that I have read, verified or done gives me any compelling reason to believe that LLMs do reasoning/planning as it is normally understood. What they do, armed with their web-scale training, is a form of universal approximate retrieval which, as we have argued, can sometimes be mistaken for reasoning capabilities.
 
-In short, they are chatbots. They are not "AI". Of course, I should give up my gripes around the term because language evolves and changes. Today we have moved the goalposts such that what we used to call AI is now "General AI", as in an artificial intelligence that can be applied to any general-purpose problem, and the limited tools we have today are now called AI. It might seem like I'm splitting hairs, but there is a big difference between real intelligence and the guesswork that LLMs do. They have no conception of knowledge, of truth or untruth, they cannot test whether what they are saying is correct or not. This is why they frequently fail very simple, obvious questions. Of course the subtle truth here is that they are also frequently wrong in complex, difficult questions but in such ways that we are much less likely to notice. It is very informative that we notice these mistakes much more often when we ask simple, easily refutable questions.
+For an easier to read "laymans" explanation I recommend Spencer Torene's (Computational Neuroscience PhD, Lead Research Scientist at Reuters) October article "Do LLMs Reason?"[^39]. In short, they are chatbots. They are not the thinking machines that Turing envisioned. It might seem like I'm splitting hairs, but there is a big difference between real intelligence and the guesswork that LLMs do. They have no conception of knowledge, of truth or untruth: They cannot test whether what they are saying is correct or not. This is why they frequently fail very simple, obvious questions. Of course the subtle truth here is that they are also frequently wrong in complex, difficult questions but in such ways that we are much less likely to notice, because the answer is complex and so takes much more effort to verify. It is very informative that we notice these mistakes much more often when we ask simple, easily refutable questions.
 
 One great example recently was asking an LLM to tell you the name of a Greek philosopher beginning with M[^4]. As you'll see in the footnote numerous people have tried this and time and time again LLMs will give you totally wrong answers insisting that Aristotle, or Senneca, or some other philosopher's name begins with M. Yet, we can see right in front of us that it does not. Note how these chatbots speak with such confidence: They are exactly as certain about their answer when they are wrong, as when they are right. ChatGPT is still doing this now, and you can see an example I generated below.
 
 <figure src="greek-philosophers.png">ChatGPT most likely is getting confused about Thales of Miletus, who is named Thales and from Miletus. Miletus is not his name, and Thales does not begin with "M".</figure>
 
-Over time, the authors catch these problems and patch them. Not by changing the LLM itself, but by introducing other layers to the chatbot that use other techniques. In the early days ChatGPT was hilariously bad at maths (which of course it is: an LLM is not intended to and cannot solve logic problems) and would fail to answer even the most simple arithmetic. This was patched by passing off the problem to a typical calculator when an equation is detected. Whatever mechanism they use to detect equations does not always work however, so sometimes your maths prompts will get through to the LLM and it may respond with a completely wrong answer. For example, if you ask it a logical problem indirectly such as referring to "the height of Shaquille O’Neal" instead of just saying 2.16 meters then it may not be picked up by the calculation layer because you did not include any digits in your prompt[^5].
+Over time, the authors catch these problems and patch them. But not by changing the LLM itself. You can't "fix" these problems in the LLM when you spot them because they are fundamental issues with LLMs as a concept, but even if you patch them by changing the training data you risk causing undesired changes in behaviour else where in the infinite range of possible inputs. No, you "fix" them by introducing other layers to the chatbot that use other non-LLM techniques. In the early days ChatGPT was hilariously bad at maths (of course it is: an LLM is not intended to and cannot solve logic problems) and would fail to answer even the most simple arithmetic. This was patched by passing off the problem to a typical calculator when an equation is detected. Whatever mechanism they use to detect equations does not always work however, so sometimes your maths prompts will get through to the LLM and it may respond with a completely wrong answer. For example, if you ask it a logical problem indirectly such as referring to "the height of Shaquille O’Neal" (instead of just saying 2.16 meters) then it may not be picked up by the calculation layer because you did not include any digits in your prompt, in which case the query reaches the LLM and it tries and fails to answer it[^5].
 
 ## Is this Artificial Intelligence?
 
@@ -80,9 +80,14 @@ Many of these...
 
 https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization ... Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question I can find a simpler, easier to read answer by just moving my eyes two degrees upwards
 
+How horrifying: https://replyguy.com/
+
+
+
 ## We've been here before
 
-"AI-Generated Influencer" for motorsports "fired": https://www.caranddriver.com/news/a46353319/formula-e-team-fires-ai-generated-influencer/
+Sam Altman "within 10 years" absurd statement - https://indianexpress.com/article/technology/artificial-intelligence/sam-altman-talks-about-agi-gpt-5-mira-murati-8997692/
+
 They poisoned their own well: https://fediscience.org/@ct_bergstrom/111552132317205224
 
 Capitalism in a trench coat: https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers (tell Chris we're stealing that term)
@@ -156,3 +161,4 @@ Point about using it for development:
 [^35]: Benjamin Hunting, Car And Driver, ["Formula E Team Fires Its AI-Generated Influencer after Fans Balk"](https://www.caranddriver.com/news/a46353319/formula-e-team-fires-ai-generated-influencer/)
 [^37]: Cleo, ["AI Meets Money"](https://web.meetcleo.com/)
 [^38]: Cleo, ["Stres less about money" (archived 2022-10-04)](https://web.archive.org/web/20221004161311/https://web.meetcleo.com/)
+[^39]: Spencer Torene, Medium, ["Do LLMs Reason?"](https://medium.com/@spencertorene/do-llms-reason-d33fa885872f)
