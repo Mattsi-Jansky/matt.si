@@ -34,7 +34,9 @@ One great example recently was asking an LLM to tell you the name of a Greek phi
 
 <figure src="greek-philosophers.png">ChatGPT most likely is getting confused about Thales of Miletus, who is named Thales and from Miletus. Miletus is not his name, and Thales does not begin with "M".</figure>
 
-Over time, the authors catch these problems and patch them. But not by changing the LLM itself. You can't "fix" these problems in the LLM when you spot them because they are fundamental issues with LLMs as a concept, but even if you patch them by changing the training data you risk causing undesired changes in behaviour else where in the infinite range of possible inputs. No, you "fix" them by introducing other layers to the chatbot that use other non-LLM techniques. In the early days ChatGPT was hilariously bad at maths (of course it is: an LLM is not intended to and cannot solve logic problems) and would fail to answer even the most simple arithmetic. This was patched by passing off the problem to a typical calculator when an equation is detected. Whatever mechanism they use to detect equations does not always work however, so sometimes your maths prompts will get through to the LLM and it may respond with a completely wrong answer. For example, if you ask it a logical problem indirectly such as referring to "the height of Shaquille O’Neal" (instead of just saying 2.16 meters) then it may not be picked up by the calculation layer because you did not include any digits in your prompt, in which case the query reaches the LLM and it tries and fails to answer it[^5].
+Over time, the authors catch these problems and patch them. But not by changing the LLM itself. You can't "fix" these problems in the LLM when you spot them because they are fundamental issues with LLMs as a concept, but even if you patch them by changing the training data you risk causing undesired changes in behaviour elsewhere in the infinite range of possible inputs. You risk getting stuck in an endless whack-a-mole game with a model that is ultimately not capable of what you want from it.
+
+No, you "fix" them by introducing other layers to the chatbot that use other non-LLM techniques. In the early days ChatGPT was hilariously bad at maths (of course it is: an LLM is not intended to and cannot solve logic problems) and would fail to answer even the most simple arithmetic. This was patched by passing off the problem to a typical calculator when an equation is detected. Whatever mechanism they use to detect equations does not always work however, so sometimes your maths prompts will get through to the LLM and it may respond with a completely wrong answer. For example, if you ask it a logical problem indirectly such as referring to "the height of Shaquille O’Neal" (instead of just saying 2.16 meters) then it may not be picked up by the calculation layer because you did not include any digits in your prompt, in which case the query reaches the LLM and it tries and fails to answer it[^5].
 
 ## Is this Artificial Intelligence?
 
@@ -74,15 +76,19 @@ So huge has been this AI tsunami that the island of Anguilla, which happens to o
 
 But it is not only tech businesses being taken by the AI craze: The UK government wasted no time in applying LLMs to a wide range of issues, despite the well known and documented biases against minorities these models frequently show[^26]. The Guardian's investigation into the matter even found that dozens of people may have had their benefits mistakenly taken away due to an "AI algorithm". And no company is too small to jump on this bandwagon, with Microsoft declaring that 2024 will be the "year of AI" and, in the weirdest stunt since Microsoft added a LinkedIn shortcut to their office keyboards, added  an "AI button" to their new keyboards[^27]. Not even Windows' Notepad app can escape this wave of AI exposure[^28].
 
-## Searching for a use-case
+## There but for a use-case
 
-Many of these...
+Many of these hyped usecases feel, to me, a bit desparate. AI for dog grooming[^25], a mirror that gives you compliments[^40], and just to make sure you don't escape the hustle for even a microsecond a toothbrush that explains how to best brush your teeth while you're using it[^41]. Am I alone in thinking that these aren't exactly fulfilling the grand vision of AI? It feels like some entrepeneur is throwning darts labelled "AI" at a wall covered in notes like "dog grooming", "mirrors" and "teeth cleaning", and then going with whatever it lands on regardless of whether it is really a valuable idea or not. If ChatGPT is so ground-breaking, where are the ground-breaking products?
 
-https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization ... Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question I can find a simpler, easier to read answer by just moving my eyes two degrees upwards
+One of the silliest such use-cases comes from YouTube, who want to add a chatbot to videos that will answer questions about the videos[^42]. What exciting things can it do? Well it can tell you how many comments, likes or views a video has. But, all that information was already readily available on the page right in front of you. Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question when I can find a simpler, easier to read answer just by moving my eyes a few degrees? You can also ask it to summarise the content of the comments, which is an… interesting proposition. Knowing what YouTube comment sections are like, I doubt YouTube will let that feature get to general availability. But that aside, given that the thing frequently hallucinates you'll need to fact-check everything it says if you are doing any real work with it. In which case, can LLMs summarising information really save you any time? Or will it just lead misplaced trust and mistakes?
 
-How horrifying: https://replyguy.com/
+The search for a use-case has driven some to reach to brazenly unethical, anti-social use-cases such as Reply Guy[^43], the LLM chatbot that spams social media on your behalf to plug your company. Yes, this 21st century equivalent of an auto-dialler is an actual business model they are promoting without the slightest bit of self-awareness or shame.
 
+Ultimately, for ethical use-cases you are very limited. An LLM is not autonamous, and cannot solve logical problems. The only thing it can really do is provide a human-like dialogue interface. This is rarely going to be faster or more productive than GUI interfaces, but it may have applications for accessibility. Even then though there is the difficult question of trust, because the material the bot is reading may be designed to hack it, or may accidentally happen to trigger a state in the bot that leads to unexpected behaviour. Moreover, it just isn't that interesting: As a technology, it's only purpose is to provide an interface into better, more interesting technology.
 
+### Valid use-cases
+
+Alright, what do I think valid use-cases for LLMs are? Well, the #1 rule I would say is to _never_ feed input into an LLM from a human. These bots are just too vulnerable to unexpected or malicious behaviour and there is no way to lock them down. The only robust, reliable LLM is one that is only dealing with a small set of known, expected, already tested inputs. One example might be...
 
 ## We've been here before
 
@@ -105,8 +111,6 @@ Something about this monstrosity? https://youtu.be/a2h-Hl3lewg?feature=shared
 
 Just an interface to other better programs
 
-Fundamental contradiction: Is it faster if you have to fact-check everything it says?
-
 * We have been here before:human history of overpromising technology like withcraft, mechanical turk, AI winter.
 * Not only AI: Dot com boom, assistants, big data, crypto & NFTs etc (Bluetooth? XML?)
 * When will we learn? Harm this does to society: Engineers effort could be spent elsewhere, not on glorified startups that fail (quote statistics). Boom-bust cycle.
@@ -116,8 +120,6 @@ Point about using it for development:
 
 > I do wonder if you're writing LLM prompts like these for actual business logic do you fundamentally just not know what you want
 > If you can describe what the intended output from a given input is, it can be developed the proper way using tests and deterministic code. If you can't be bothered to do that, you can leave it up to a LLM and hope its assumptions about edge cases match your assumptions, which you haven't even thought about yet
-
-* Actual good use cases for LLMs (Do not allow human input)
 
 * Perhaps conclude with this quote: https://dair-community.social/@davidbeers/111585474313351634
 * Remember to focus on the ultimate goal: Get people to realise that LLMs will not solve their problems, shoving LLM into everything is not a feature
@@ -162,3 +164,7 @@ Point about using it for development:
 [^37]: Cleo, ["AI Meets Money"](https://web.meetcleo.com/)
 [^38]: Cleo, ["Stres less about money" (archived 2022-10-04)](https://web.archive.org/web/20221004161311/https://web.meetcleo.com/)
 [^39]: Spencer Torene, Medium, ["Do LLMs Reason?"](https://medium.com/@spencertorene/do-llms-reason-d33fa885872f)
+[^40]: Allison Murray, ZD Net, ["This smart mirror uses AI to boost your confidence and mood "](https://www.zdnet.com/article/this-smart-mirror-uses-ai-to-boost-your-confidence-and-mood/)
+[^41]: Steven Musil, CNet, ["This Smart Toothbrush Talks Through Your Bones to Improve Your Brushing"](https://www.cnet.com/health/medical/this-smart-toothbrush-talks-through-your-bones-to-improve-your-brushing/)
+[^42]: Jon Porter, The Verge, ["YouTube is testing a chatbot that will appear under select videos"](https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization)
+[^43]: Reply Guy, ["The AI That Plugs Your Product on Reddit and Twitter"](https://replyguy.com/)
