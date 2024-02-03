@@ -86,6 +86,13 @@ The search for a use-case has driven some to reach to brazenly unethical, anti-s
 
 Ultimately, for ethical use-cases you are very limited. An LLM is not autonamous, and cannot solve logical problems. The only thing it can really do is provide a human-like dialogue interface. This is rarely going to be faster or more productive than GUI interfaces, but it may have applications for accessibility. Even then though there is the difficult question of trust, because the material the bot is reading may be designed to hack it, or may accidentally happen to trigger a state in the bot that leads to unexpected behaviour. Moreover, it just isn't that interesting: As a technology, it's only purpose is to provide an interface into better, more interesting technology.
 
+---
+
+Point about using it for development:
+
+> I do wonder if you're writing LLM prompts like these for actual business logic do you fundamentally just not know what you want
+> If you can describe what the intended output from a given input is, it can be developed the proper way using tests and deterministic code. If you can't be bothered to do that, you can leave it up to a LLM and hope its assumptions about edge cases match your assumptions, which you haven't even thought about yet
+
 ### Valid use-cases
 
 Alright, what do I think valid use-cases for LLMs are? Well, the #1 rule I would say is to _never_ feed input into an LLM from a human. These bots are just too vulnerable to unexpected or malicious behaviour and there is no way to lock them down. The only robust, reliable LLM is one that is only dealing with a small set of known, expected, already tested inputs. One example might be...
@@ -115,11 +122,6 @@ Just an interface to other better programs
 * Not only AI: Dot com boom, assistants, big data, crypto & NFTs etc (Bluetooth? XML?)
 * When will we learn? Harm this does to society: Engineers effort could be spent elsewhere, not on glorified startups that fail (quote statistics). Boom-bust cycle.
   * Industry is actually terrible etc https://proton.me/blog/big-tech-2023-fines-vs-revenue
-
-Point about using it for development:
-
-> I do wonder if you're writing LLM prompts like these for actual business logic do you fundamentally just not know what you want
-> If you can describe what the intended output from a given input is, it can be developed the proper way using tests and deterministic code. If you can't be bothered to do that, you can leave it up to a LLM and hope its assumptions about edge cases match your assumptions, which you haven't even thought about yet
 
 * Perhaps conclude with this quote: https://dair-community.social/@davidbeers/111585474313351634
 * Remember to focus on the ultimate goal: Get people to realise that LLMs will not solve their problems, shoving LLM into everything is not a feature
