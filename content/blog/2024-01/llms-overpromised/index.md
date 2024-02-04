@@ -10,7 +10,7 @@ imgCaptionLink: https://en.wikipedia.org/wiki/File:Racknitz_-_The_Turk_3.jpg
 tags: ["artificial intelligence","large language models","tech industry"]
 ---
 
-I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large language Models like ChatGPT are not meaningfully intelligent (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
+I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large Language Models like ChatGPT are not meaningfully intelligent (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
 
 ## How did we get here
 
@@ -28,11 +28,13 @@ You would be forgiven for thinking that they do a lot more than that. By their n
 
 > nothing that I have read, verified or done gives me any compelling reason to believe that LLMs do reasoning/planning as it is normally understood. What they do, armed with their web-scale training, is a form of universal approximate retrieval which, as we have argued, can sometimes be mistaken for reasoning capabilities.
 
-For an easier to read "laymans" explanation I recommend Spencer Torene's (Computational Neuroscience PhD, Lead Research Scientist at Reuters) October article "Do LLMs Reason?"[^39]. In short, they are chatbots. They are not the thinking machines that Turing envisioned. It might seem like I'm splitting hairs, but there is a big difference between real intelligence and the guesswork that LLMs do. They have no conception of knowledge, of truth or untruth: They cannot test whether what they are saying is correct or not. This is why they frequently fail very simple, obvious questions. Of course the subtle truth here is that they are also frequently wrong in complex, difficult questions but in such ways that we are much less likely to notice, because the answer is complex and so takes much more effort to verify. It is very informative that we notice these mistakes much more often when we ask simple, easily refutable questions.
+For an easier to read "laymans" explanation I recommend Spencer Torene's (Computational Neuroscience PhD, Lead Research Scientist at Reuters) October article "Do LLMs Reason?"[^39]. In short, they are like parrots. Their behaviour may appear logical at times because their training set is so vast and the compute power dedicated to their training so enormous that they are capable of retrieving the correct answer, but they do not actually perform the logical steps to solve the problem. As such they cannot solve novel problems, nor verify whether their answers are correct or incorrect.
+
+They are not the thinking machines that Turing envisioned. It might seem like I'm splitting hairs, but there is a big difference between real intelligence and the guesswork that LLMs do. They have no conception of knowledge, of truth or untruth: They cannot test whether what they are saying is correct or not. This is why they frequently fail very simple, obvious questions. Of course the subtle truth here is that they are also frequently wrong in complex, difficult questions but in such ways that we are much less likely to notice, because the answer is complex and so takes much more effort for us to verify. It is very informative that we notice these mistakes much more often when we ask simple, easily refutable questions.
 
 One great example recently was asking an LLM to tell you the name of a Greek philosopher beginning with M[^4]. As you'll see in the footnote numerous people have tried this and time and time again LLMs will give you totally wrong answers insisting that Aristotle, or Senneca, or some other philosopher's name begins with M. Yet, we can see right in front of us that it does not. Note how these chatbots speak with such confidence: They are exactly as certain about their answer when they are wrong, as when they are right. ChatGPT is still doing this now, and you can see an example I generated below.
 
-<figure src="greek-philosophers.png">ChatGPT most likely is getting confused about Thales of Miletus, who is named Thales and from Miletus. Miletus is not his name, and Thales does not begin with "M".</figure>
+<figure src="greek-philosophers.png">ChatGPT most likely is getting confused (insofar as we can attribute "confusion" to a mathematical model) about Thales of Miletus, who is named Thales and from Miletus. Miletus is not his name, and Thales does not begin with "M".</figure>
 
 Over time, the authors catch these problems and patch them. But not by changing the LLM itself. You can't "fix" these problems in the LLM when you spot them because they are fundamental issues with LLMs as a concept, but even if you patch them by changing the training data you risk causing undesired changes in behaviour elsewhere in the infinite range of possible inputs. You risk getting stuck in an endless whack-a-mole game with a model that is ultimately not capable of what you want from it.
 
@@ -72,26 +74,21 @@ New tools and whole businesses built around LLMs have cropped up left, right and
 
 Some places are are even using the "AI" buzzword to generate capital and interest without actually employing any any novel AI techniques. Take the case of recruitment startup Apply Pro[^31], who are trying to automate the CV screening process. Glossing over why that is a bad idea, the funny thing about them is that they advertise themselves as "AI for talent acquisition", yet if we view their website through the internet archive all mention of being "built with AI" is curiously absent on before the LLM craze begins[^32]. Similarly, fintech company RedCloud now advertises itself as "AI Powered technology" and refers to itself as "the world's Open AI Commerce Platform"[^33]. Yet, if you open the most recent archive before the release of ChatGPT[^34] there is no mention of AI whatsoever. We see this yet again in fintech app Cleo, who today market themselves as "AI Meets Money", and advertise the "world's first AI assistant dedicated to personal finance"[^37]. Yet again, if you go back a year in the archives the "AI" marketing push is absent[^37]. This is particularly odd because Cleo's whole thing is a smart assistant, yet they seemingly didn't think to include "AI" in their marketing until after the ChatGPT craze made "AI" such a big buzzword. What has changed? Have these companies suped up their technology with the magical power of AI in the past year or two? No, they work the same way they always did. The buzzword just became popular and now everyone feels they have to use it.
 
-So huge has been this AI tsunami that the island of Anguilla, which happens to own exclusive rights to the `.ai` domain, is seeing an estimated $45m windfall from startups purchasing domain names[^29]. And this is not some fringe conspiracy. The Wall Street Journal has noted this strange phenomenon; "ChatGPT Fever Has Investors Pouring Billions Into AI Startups, No Business Plan Required"[^20].
+Others still have actually faked using AI, claiming that their magic black box is a robot when it is really an underpaid remote worker in the Philippines[^48]. In fact, this is happened repeatedly. An "AI drive-thru"[^44], "AI auto-fill" for credit card details[^45], "AI" that creates apps for you[^46], "AI" chatbots[^47], "AI" for creating 3D models[^49], all of them were really just remote workers in countries where labour is cheap and employment regulations may be more lenient. This is the true face of the recent AI craze: All hype, no substance, just a novel way to market old exploitative practices. It is just capitalism in a trench coat.
 
 But it is not only tech businesses being taken by the AI craze: The UK government wasted no time in applying LLMs to a wide range of issues, despite the well known and documented biases against minorities these models frequently show[^26]. The Guardian's investigation into the matter even found that dozens of people may have had their benefits mistakenly taken away due to an "AI algorithm". And no company is too small to jump on this bandwagon, with Microsoft declaring that 2024 will be the "year of AI" and, in the weirdest stunt since Microsoft added a LinkedIn shortcut to their office keyboards, added  an "AI button" to their new keyboards[^27]. Not even Windows' Notepad app can escape this wave of AI exposure[^28].
 
+So huge has been this AI tsunami that the island of Anguilla, which happens to own exclusive rights to the `.ai` domain, is seeing an estimated $45m windfall from startups purchasing domain names[^29]. And this is not some fringe conspiracy. The Wall Street Journal has noted this strange phenomenon; "ChatGPT Fever Has Investors Pouring Billions Into AI Startups, No Business Plan Required"[^20].
+
 ## There but for a use-case
 
-Many of these hyped usecases feel, to me, a bit desparate. AI for dog grooming[^25], a mirror that gives you compliments[^40], and just to make sure you don't escape the hustle for even a microsecond a toothbrush that explains how to best brush your teeth while you're using it[^41]. Am I alone in thinking that these aren't exactly fulfilling the grand vision of AI? It feels like some entrepeneur is throwning darts labelled "AI" at a wall covered in notes like "dog grooming", "mirrors" and "teeth cleaning", and then going with whatever it lands on regardless of whether it is really a valuable idea or not. If ChatGPT is so ground-breaking, where are the ground-breaking products?
+Outright fraudsters aside, there are some companies that have genuinely applied LLMs to their products. Many of these hyped usecases feel to me a bit desparate. AI for dog grooming[^25], a mirror that gives you compliments[^40], and just to make sure you don't escape the hustle for even a microsecond a toothbrush that explains how to best brush your teeth while you're using it[^41]. Am I alone in thinking that these aren't exactly fulfilling the grand vision of AI? It feels like some entrepeneur is throwning darts labelled "AI" at a wall covered in notes like "dog grooming", "mirrors" and "teeth cleaning", and then going with whatever it lands on regardless of whether it is really a valuable idea or not. If ChatGPT is so ground-breaking, where are the ground-breaking products?
 
-One of the silliest such use-cases comes from YouTube, who want to add a chatbot to videos that will answer questions about the videos[^42]. What exciting things can it do? Well it can tell you how many comments, likes or views a video has. But, all that information was already readily available on the page right in front of you. Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question when I can find a simpler, easier to read answer just by moving my eyes a few degrees? You can also ask it to summarise the content of the comments, which is an… interesting proposition. Knowing what YouTube comment sections are like, I doubt YouTube will let that feature get to general availability. But that aside, given that the thing frequently hallucinates you'll need to fact-check everything it says if you are doing any real work with it. In which case, can LLMs summarising information really save you any time? Or will it just lead misplaced trust and mistakes?
+One of the silliest such use-cases comes from YouTube, who want to add a chatbot to videos that will answer questions about the videos[^42]. What exciting things can it do? Well it can tell you how many comments, likes or views a video has. But, all that information was already readily available on the page right in front of you. Why would I go to the effort of typing the question just to get a longer, more convoluted answer to a question when I can find a simpler, easier to read answer just by moving my eyes a few degrees? You can also ask it to summarise the content of the comments, which is an… interesting proposition. Knowing what YouTube comment sections are like, I doubt YouTube will let that feature get to general availability. But that aside, given that the thing frequently hallucinates you'll need to fact-check everything it says if you are doing any real work with it. In which case, can LLMs summarising information really save you any time? It sounds to me like a stretch.
 
 The search for a use-case has driven some to reach to brazenly unethical, anti-social use-cases such as Reply Guy[^43], the LLM chatbot that spams social media on your behalf to plug your company. Yes, this 21st century equivalent of an auto-dialler is an actual business model they are promoting without the slightest bit of self-awareness or shame.
 
 Ultimately, for ethical use-cases you are very limited. An LLM is not autonamous, and cannot solve logical problems. The only thing it can really do is provide a human-like dialogue interface. This is rarely going to be faster or more productive than GUI interfaces, but it may have applications for accessibility. Even then though there is the difficult question of trust, because the material the bot is reading may be designed to hack it, or may accidentally happen to trigger a state in the bot that leads to unexpected behaviour. Moreover, it just isn't that interesting: As a technology, it's only purpose is to provide an interface into better, more interesting technology.
-
----
-
-Point about using it for development:
-
-> I do wonder if you're writing LLM prompts like these for actual business logic do you fundamentally just not know what you want
-> If you can describe what the intended output from a given input is, it can be developed the proper way using tests and deterministic code. If you can't be bothered to do that, you can leave it up to a LLM and hope its assumptions about edge cases match your assumptions, which you haven't even thought about yet
 
 ### Valid use-cases
 
@@ -99,29 +96,16 @@ Alright, what do I think valid use-cases for LLMs are? Well, the #1 rule I would
 
 ## We've been here before
 
-Sam Altman "within 10 years" absurd statement - https://indianexpress.com/article/technology/artificial-intelligence/sam-altman-talks-about-agi-gpt-5-mira-murati-8997692/
+Sam Altman, CEO of OpenAI who really kick-started this whole LLM craze, recently said that he believes we could produce an Artificial General Intelligence within the next decade[^50]. I'm not sure if he really believes this or is just trying to generate more excitement, but I find it very difficult to believe. In fact, I'd give it about the same amount of credence as would have been appropriate to give Marvin Minsky's (perhaps the most important AI researcher of the 20th century) 1970 statement that "[In] three to eight years we will have a machine with the general intelligence of an average human being."[^51], or Herbert Simon's (pioneered the very earliest AI research) 1965 claim that "machines will be capable, within twenty years, of doing any work a man can do."[^52]. Or the US Navy's excitement in 1958 at the creation of the first neural nets who believed it would soon be able to "walk, talk, see, write, reproduce itself and be conscious of its existence".
 
-They poisoned their own well: https://fediscience.org/@ct_bergstrom/111552132317205224
-
-Capitalism in a trench coat: https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers (tell Chris we're stealing that term)
-  * Note also [^23] about not working weekends
-https://www.theverge.com/2019/8/14/20805676/engineer-ai-artificial-intelligence-startup-app-development-outsourcing-humans "This AI startup claims to automate app making but actually just uses humans"
-https://www.bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots?leadSource=uverify%20wall
-https://www.theguardian.com/technology/2018/jul/06/artificial-intelligence-ai-humans-bots-tech-companies
-https://www.404media.co/kaedim-ai-startup-2d-to-3d-used-cheap-human-labor/
-
-Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch?v=pKN9trFSACI
-
-"Ethically ambiguous" workaround for fundamental issues: https://x.com/derekputin/status/1728928441507189069?s=12&t=7oGxOx1Nrrx8bos54bwrBw https://x.com/fireh9lly/status/1728934106304774289?s=12&t=7oGxOx1Nrrx8bos54bwrBw
-
-Something about this monstrosity? https://youtu.be/a2h-Hl3lewg?feature=shared
-
-Just an interface to other better programs
+At the time these 
 
 * We have been here before:human history of overpromising technology like withcraft, mechanical turk, AI winter.
 * Not only AI: Dot com boom, assistants, big data, crypto & NFTs etc (Bluetooth? XML?)
 * When will we learn? Harm this does to society: Engineers effort could be spent elsewhere, not on glorified startups that fail (quote statistics). Boom-bust cycle.
   * Industry is actually terrible etc https://proton.me/blog/big-tech-2023-fines-vs-revenue
+
+Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch?v=pKN9trFSACI
 
 * Perhaps conclude with this quote: https://dair-community.social/@davidbeers/111585474313351634
 * Remember to focus on the ultimate goal: Get people to realise that LLMs will not solve their problems, shoving LLM into everything is not a feature
@@ -150,7 +134,7 @@ Just an interface to other better programs
 [^20]: Deepa Seetharaman  Wall Street Journal, ["ChatGPT Fever Has Investors Pouring Billions Into AI Startups, No Business Plan Required"](https://www.wsj.com/amp/articles/no-business-plan-no-problem-chatgpt-spawns-an-investor-gold-rush-in-ai-6bdbed3c)
 [^21]: Maggie Harrison, The Byte, ["AI Company With Zero Revenue Raises $150 Million"](https://futurism.com/the-byte/ai-company-no-revenue-fundraising)
 [^22]: James Temperton, Wired, ["Beer brewed with the help of AI? Yup, that's now a thing"](https://www.wired.co.uk/article/beer-brewed-by-ai-intelligentx)
-[^23]: Jyoti Mann, Business Insider, ["The humanoid-robot CEO of a drinks company says it doesn't have weekends and is 'always on 24/7' "](https://www.businessinsider.com/humanoid-ai-robot-ceo-says-she-doesnt-have-weekends-2023-9?r=US&IR=T)
+[^23]: Jyoti Mann, Business Insider, ["The humanoid-robot CEO of a drinks company says it doesn't have weekends and is 'always on 24/7' "](https://www.businessinsider.com/humanoid-ai-robot-ceo-says-she-doesnt-have-weekends-2023-9)
 [^24]: Akhil Mahajan, Take One, ["This is the UK’s first ever AI fragrance machine "](https://www.takeonedigitalnetwork.com/this-is-the-uks-first-ever-ai-fragrance-machine/)
 [^25]: PawCare \(writing about themselves\), ["Tech-Driven Grooming: How AI and Smart Tools Dominated Pet Salons in 2023"](https://blog.mypawcare.com/pawcare-for-pet-parents/tech-driven-grooming-how-ai-and-smart-tools-dominated-pet-salons-in-2023)
 [^26]: Kiran Stacey , The Guardian, ["AI to decide on issues from benefits to marriage licences"](https://www.theguardian.com/technology/2023/oct/23/uk-officials-use-ai-to-decide-on-issues-from-benefits-to-marriage-licences)
@@ -170,3 +154,13 @@ Just an interface to other better programs
 [^41]: Steven Musil, CNet, ["This Smart Toothbrush Talks Through Your Bones to Improve Your Brushing"](https://www.cnet.com/health/medical/this-smart-toothbrush-talks-through-your-bones-to-improve-your-brushing/)
 [^42]: Jon Porter, The Verge, ["YouTube is testing a chatbot that will appear under select videos"](https://www.theverge.com/2023/11/7/23950327/youtube-artificial-intelligence-chatbot-video-summaries-ask-comments-topics-categorization)
 [^43]: Reply Guy, ["The AI That Plugs Your Product on Reddit and Twitter"](https://replyguy.com/)
+[^44]: Mila Sato, The Verge, ["An ‘AI’ fast food drive-thru is mostly just human workers in the Philippines"](https://www.theverge.com/2023/12/8/23993427/artificial-intelligence-presto-automation-fast-food-drive-thru-philippines-workers)
+[^45]: Mia Sato, The Verge, ["Go read this report on an AI shopping app that was actually just using humans"](https://www.theverge.com/2022/6/6/23156318/artificial-intelligence-nate-app-ecommerce-go-read-this)
+[^46]: Nick Statt, The Verge, ["This AI startup claims to automate app making but actually just uses humans"](https://www.theverge.com/2019/8/14/20805676/engineer-ai-artificial-intelligence-startup-app-development-outsourcing-humans)
+[^47]: Ellen Huet, Bloomberg, ["The Humans Hiding Behind the Chatbots"](https://www.bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots)
+[^48]: Olivia Solon, The Guardian, ["The rise of 'pseudo-AI': how tech firms quietly use humans to do bots' work"](https://www.theguardian.com/technology/2018/jul/06/artificial-intelligence-ai-humans-bots-tech-companies)
+[^49]: Joseph Cox et al, 404 Media, ["Buzzy AI Startup for Generating 3D Models Used Cheap Human Labor"](https://www.404media.co/kaedim-ai-startup-2d-to-3d-used-cheap-human-labor/)
+[^50]: Bijin Jose, The Indian Express, ["AGI likely in next 10 years: Sam Altman reveals OpenAI’s plans for GPT-5, and more"](https://indianexpress.com/article/technology/artificial-intelligence/sam-altman-talks-about-agi-gpt-5-mira-murati-8997692/)
+[^51]: AIWS, ["This week in The History of AI at AIWS.net", Dec 23 2022](https://aiws.net/the-history-of-ai/this-week-in-the-history-of-ai-at-aiws-net-in-three-to-eight-years-we-will-have-a-machine-with-the-general-intelligence-of-an-average-human-being/)
+[^52]: Hebert A. Simon , 1960, "The New Science of Management Decision”
+[^53]: New York Times, 1958, ["NEW NAVY DEVICE LEARNS BY DOING; Psychologist Shows Embryo of Computer Designed to Read and Grow Wiser"](https://www.nytimes.com/1958/07/08/archives/new-navy-device-learns-by-doing-psychologist-shows-embryo-of.html)
