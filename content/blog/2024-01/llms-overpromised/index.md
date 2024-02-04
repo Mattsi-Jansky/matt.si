@@ -1,6 +1,6 @@
 ---
 title: |
-  Is the tech industry overpromising AI again?
+  Are we overpromising AI again?
 date: 2024-01-11 00:00:00 +0000
 description: Since ChatGPT we've seen huge amounts of interest in Large Language Models, branded as "AI". Their overpromised claims, uncritically repeated by a naive media, have been a major source of confusion and misunderstanding. Let us examine what these things can actually do, what they can't, and why yet another overpromised tech industry fad is going to blow up in our faces again.
 img: ./mechanical-turk.jpg
@@ -10,7 +10,9 @@ imgCaptionLink: https://en.wikipedia.org/wiki/File:Racknitz_-_The_Turk_3.jpg
 tags: ["artificial intelligence","large language models","tech industry"]
 ---
 
-I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large Language Models like ChatGPT are not meaningfully intelligent (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
+I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large Language Models (LLMs) like ChatGPT are not meaningfully intelligent (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
+
+Using the term AI can generate a lot of media buzz and interest in your business. But referring to something as AI also leaves the user with certain expectations as to it's competencies that you are unlikely to be able to fulfil. We will look at just how the current LLM craze came about, what LLMs can and can't do, and the implications this has for the tech industry.
 
 ## How did we get here
 
