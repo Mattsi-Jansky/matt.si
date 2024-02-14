@@ -7,7 +7,7 @@ img: ./mechanical-turk.jpg
 imgCaption: |
   "The Turk", Joseph Racknitz, 1789
 imgCaptionLink: https://en.wikipedia.org/wiki/File:Racknitz_-_The_Turk_3.jpg
-tags: ["artificial intelligence","large language models","tech industry"]
+tags: ["artificial intelligence","large language models","tech industry", "opinion"]
 ---
 
 I am an Artificial Intelligence proponent. I want to see the field succeed and go on to do great things, which is precisely why the current exaggerated publicity and investment around "AI" concerns me. I use quote marks there because what is often referred to as AI today is not whatsoever what the term once described. Large Language Models (LLMs) like ChatGPT are not meaningfully intelligent (and we will get into to that), yet it has become common parlance to refer to these chatbots as "AI"[^1] [^2].
@@ -108,15 +108,21 @@ While it was not the only cause, this contributed directly to the 1970s AI Winte
 
 We've made this mistake before, too. The dot com boom, the IoT craze, the big data trend, smart assistants, the crypto craze, NFTs and more. Our industry has a habit of promising the moon to investors, only for the funding to dry up when we can't deliver. Perhaps we don't feel the ramifications as strongly as we could do because by the time the last bubble bursts, we are already hyping up investors for the next big fad. I recall how during the big data craze I worked at a startups that had no production systems or customers, yet hired a data scientist. After a few weeks he quietly confessed to me that he had nothing to do, no work. Yet when the investors came to the office, one of the first places the executives would take them to was to see the data scientist so they could proudly show off that they were following the latest tech trend. Even if it made no sense in the context of their business. Around that time the same company produced multiple smart assistants because that was the cool thing to do, for a product that didn't have any customers for the growing collection of smart assistants to talk to.
 
-Today I see businesses clamouring to add LLMs to their products and I smell the same scent.
+Today I see businesses clamouring to add LLMs to their products and I smell the same scent. I'm not the only one to notice it, either. While I was writing this Rodney Brooks, one of the most influential AI researchers of the 20th century and a founder of the actionist AI field, wrote up a great blog around the state of technology today versus our expectations. Te finds that LLMs are "following a well worn hype cycle that we have seen again, and again, during the 60+ year history of AI"[^55] and concludes that we should "Get [our] thick coats now. There may be yet another AI winter, and perhaps even a full scale tech winter, just around the corner. And it is going to be cold."
 
-* When will we learn? Harm this does to society: Engineers effort could be spent elsewhere, not on glorified startups that fail (quote statistics). Boom-bust cycle.
-  * Industry is actually terrible etc https://proton.me/blog/big-tech-2023-fines-vs-revenue
+## Why does this matter
 
-Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch?v=pKN9trFSACI
+With this post I really want to convince you to not jump head-first onto the LLM bandwagon. But I think there is a more grim aspect to this that deserves observing, too. This weird, unsustainable boom-bust cycle based on fantasy marketing that our industry lives on is not okay. In education, an overwhelming majority of educational staff see that cost and availability of technology is a major barrier to improving technology in education[^56]. In the UK's National Health Service, thousands of computers still rely on Windows XP[^57]. And our public sector is still hugely vulnerable to basic security issues[^58]. Where is all the tech talent needed to solve these problems? Building "the first AI dog grooming service", apparently.
 
-* Perhaps conclude with this quote: https://dair-community.social/@davidbeers/111585474313351634
-* Remember to focus on the ultimate goal: Get people to realise that LLMs will not solve their problems, shoving LLM into everything is not a feature
+These hype-based boom-bust cycles drive up the salaries of software engineers and have us spending our effort in deeply unproductive parts of the economy. Meanwhile serious, fundamental issues in the software that our society depends on to function is left to rot. But in a world where big tech is so wealthy and influential that regulation hardly seems to faze them[^59] what can we do? We can only hope that the end of low interest rates and more regulation from an incoming Labour government will lead to a correction in our industry.
+
+## Conclusion
+
+LLMs are the solution to really very few problems. When someone knocks on your door promising to sell you a bridge with LLMs, look at them very skeptically. And then close the door in their face. A lot of the organisations I've seen investing into LLM fantasies have one thing in common: Their product has tons of problems that their time would be better spent addressing. Think seriously about the design of your software, its reliability, its usability. Spend your resources, your time and attention where it is most needed.
+
+Whether you are a developer, designer, or anything else in all your dealings with LLMs please reflect soberly on your professionalism, and your duty to your users and stakeholders as someone that creates software. If we aspire to the same earnest commitment and integrity that is seen in engineering, architecture, law and so forth then let us act like it. I will leave you with this quote from the Engineers Council for Professional Development's definition of engineering[^60] [^61]:
+
+> The **creative application of scientific principles** to design or develop structures, machines, apparatus, or manufacturing processes, or works utilizing them singly or in combination; or to construct or operate the same **with full cognizance of their design**; or to **forecast their behaviour under specific operating conditions**; all as respects an intended function, economics of operation and **safety to life and property**.
 
 ## Footnotes
 
@@ -173,3 +179,10 @@ Morpheus? "God is a dream of good government", etc https://www.youtube.com/watch
 [^52]: Hebert A. Simon , 1960, "The New Science of Management Decision”
 [^53]: New York Times, 1958, ["NEW NAVY DEVICE LEARNS BY DOING; Psychologist Shows Embryo of Computer Designed to Read and Grow Wiser"](https://www.nytimes.com/1958/07/08/archives/new-navy-device-learns-by-doing-psychologist-shows-embryo-of.html)
 [^54]: James Lighthill, 1973, ["Artificial Intelligence: A General Survey" (aka the Lighthill Report)](https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm)
+[^55]: Rodney Brooks, 2024, ["Predictions Scorecard, 2024 January 01"](https://rodneybrooks.com/predictions-scorecard-2024-january-01/)
+[^56]: "Financial Barriers", CooperGibson Research, ["Education Technology (EdTech) Survey 2020-21"](https://assets.publishing.service.gov.uk/media/621ce8ec8fa8f54915f43838/Education_Technology_EdTech_Survey.pdf)
+[^57]: Kat Lay, The Times, ["Thousands of NHS computers ‘still vulnerable to hackers’"](https://www.thetimes.co.uk/article/thousands-of-nhs-computers-still-vulnerable-to-hackers-fvs2q90vz)
+[^58]: Olivia Powell, Cyber Security Hub, ["IOTW: Almost 50,000 UK government workers vulnerable to cyber attacks"](https://www.cshub.com/attacks/news/uk-government-ministers-vulnerable-to-cyber-attacks)
+[^59]: Richie Koch, Proton, ["Big Tech has already made enough money in 2024 to pay all its 2023 fines", January 8th 2024](https://proton.me/blog/big-tech-2023-fines-vs-revenue)
+[^60]: Engineers' Council for Professional Development (1947), ["Canons of ethics for engineers"](https://books.google.ie/books/about/Canons_of_Ethics_for_Engineers.html?id=cGefHAAACAAJ&redir_esc=y)
+[^61]: David Beers, Mastodon, ["Rolling my eyes at…"](https://dair-community.social/@davidbeers/111585474313351634)
