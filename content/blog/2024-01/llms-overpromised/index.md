@@ -1,5 +1,5 @@
 ---
-title: Large Language Models Are Drunk At The Wheel
+title: Large Language Models Are Drunk at the Wheel
 date: 2024-02-22 00:00:00 +0000
 description: Since ChatGPT we've seen huge amounts of interest in Large Language Models, branded as "AI". Their overpromised claims, uncritically repeated by a naive media, have been a major source of confusion and misunderstanding. Let us examine what these things can actually do, what they can't, and why yet another exaggerated tech industry fad may blow up in our faces again.
 img: ./mechanical-turk.jpg
