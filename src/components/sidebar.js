@@ -18,9 +18,8 @@ const Sidebar = ({ siteMetadata }) => (
         <p>
           I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
         </p>
-        <p>
-          Sometimes I speak at events or conferences and write blog posts. Interested in tech, ethics, AI, gamedev, chess.
-        </p>
+        <p><Link to="/bio">About</Link></p>
+        <p><Link to="/tags">Tags</Link></p>
       </div>
     </header>
     <footer>
