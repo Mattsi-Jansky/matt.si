@@ -16,7 +16,10 @@ const Sidebar = ({ siteMetadata }) => (
         </div>
         <div className="author-name">{siteMetadata.author}</div>
         <p>
-          I'm a Software Craftsman at <a href="https://codurance.com/" target="_blank">Codurance</a>. I love solving problems, learning, and empowering my team.
+          I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
+        </p>
+        <p>
+          Sometimes I speak at events or conferences and write blog posts. Interested in tech, ethics, AI, gamedev, chess.
         </p>
       </div>
     </header>
@@ -27,10 +30,10 @@ const Sidebar = ({ siteMetadata }) => (
           {siteMetadata.social.twitter && (
             <li>
               <a
-                href={`https://twitter.com/${siteMetadata.social.twitter}`}
+                href={`https://todon.eu/@mattsi`}
                 target="_blank"
               >
-                <i className="fa fa-twitter" aria-hidden="true" />
+                <i className="fa-brands fa-mastodon" aria-hidden="true" />
               </a>
             </li>
           )}
@@ -50,7 +53,7 @@ const Sidebar = ({ siteMetadata }) => (
                 href={`https://github.com/${siteMetadata.social.github}`}
                 target="_blank"
               >
-                <i className="fa fa-github" aria-hidden="true" />
+                <i class="fa-brands fa-github"></i>
               </a>
             </li>
           )}
@@ -60,14 +63,14 @@ const Sidebar = ({ siteMetadata }) => (
                 href={`https://linkedin.com/in/${siteMetadata.social.linkedin}`}
                 target="_blank"
               >
-                <i className="fa fa-linkedin" aria-hidden="true" />
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
             </li>
           )}
           {siteMetadata.social.email && (
             <li>
               <a href={`mailto:${siteMetadata.social.email}`} target="_blank">
-                <i className="fa fa-envelope-o" aria-hidden="true" />
+              <i class="fa-solid fa-envelope"></i>
               </a>
             </li>
           )}
