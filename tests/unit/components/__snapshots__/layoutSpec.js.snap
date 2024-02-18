@@ -33,14 +33,10 @@ Array [
           Mattsi Jansky
         </div>
         <p>
-          I'm a Software Craftsman at 
-          <a
-            href="https://codurance.com/"
-            target="_blank"
-          >
-            Codurance
-          </a>
-          . I love solving problems, learning, and empowering my team.
+          I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
+        </p>
+        <p>
+          Sometimes I speak at events or conferences and write blog posts. Interested in tech, ethics, AI, gamedev, chess.
         </p>
       </div>
     </header>
@@ -52,12 +48,12 @@ Array [
         <ul>
           <li>
             <a
-              href="https://twitter.com/mattsijansky"
+              href="https://todon.eu/@mattsi"
               target="_blank"
             >
               <i
                 aria-hidden="true"
-                className="fa fa-twitter"
+                className="fa-brands fa-mastodon"
               />
             </a>
           </li>
@@ -67,8 +63,7 @@ Array [
               target="_blank"
             >
               <i
-                aria-hidden="true"
-                className="fa fa-github"
+                class="fa-brands fa-github"
               />
             </a>
           </li>
@@ -78,8 +73,7 @@ Array [
               target="_blank"
             >
               <i
-                aria-hidden="true"
-                className="fa fa-linkedin"
+                class="fa-brands fa-linkedin-in"
               />
             </a>
           </li>
@@ -89,8 +83,7 @@ Array [
               target="_blank"
             >
               <i
-                aria-hidden="true"
-                className="fa fa-envelope-o"
+                class="fa-solid fa-envelope"
               />
             </a>
           </li>
