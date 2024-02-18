@@ -2,7 +2,7 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const generatePathToTag = require('./src/shared/pathToTagGenerator.js')
 
-const postsPerPage = 10
+const postsPerPage = 7
 const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
 const blogListTemplate = path.resolve("./src/templates/blog-list.js")
 const tagTemplate = path.resolve(`src/templates/tag.js`)
