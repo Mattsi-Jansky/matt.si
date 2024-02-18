@@ -9,7 +9,7 @@ class NotFoundPage extends React.Component {
 
     return (
       <DefaultLayout>
-        <SEO title="404: Not Found" />
+        <SEO title="Not Found - Matt.si" />
         <h1>
           Page not found. If this is in error, please{' '}
           <a href="https://twitter.com/mattsijansky">let me know!</a>
