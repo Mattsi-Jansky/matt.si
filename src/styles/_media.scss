@@ -42,12 +42,6 @@
     text-align: center;
     max-width: 480px;
     margin: 10px auto auto;
-    img.author-image {
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      margin-bottom: 10px;
-    }
   }
 
   main {
@@ -80,6 +74,19 @@
   main {
     padding: 0px 5px 5px 5px;
   }
+  
+  .about {
+    .cover-author-image {
+      width: 105px;
+      height: 105px;
+    }
+    img.author-image {
+      width: 100px;
+      height: 100px;
+      margin: 2px 0 0 0;
+    }
+  }
+
   .post {
     width: 98%;
     max-width: 100%;
