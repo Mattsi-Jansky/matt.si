@@ -1,7 +1,7 @@
 ---
 title: Large Language Models Considered Harmful
 date: 2024-02-22 00:00:00 +0000
-description: Since ChatGPT we've seen huge amounts of interest in Large Language Models, branded as "AI". Their overpromised claims, uncritically repeated by a naive media, have been a major source of confusion and misunderstanding. Let us examine what these things can actually do, what they can't, and why yet another overpromised tech industry fad is going to blow up in our faces again.
+description: Since ChatGPT we've seen huge amounts of interest in Large Language Models, branded as "AI". Their overpromised claims, uncritically repeated by a naive media, have been a major source of confusion and misunderstanding. Let us examine what these things can actually do, what they can't, and why yet another exaggerated tech industry fad may blow up in our faces again.
 img: ./mechanical-turk.jpg
 imgCaption: |
   "The Turk", Joseph Racknitz, 1789
