@@ -36,7 +36,22 @@ Array [
           I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
         </p>
         <p>
-          Sometimes I speak at events or conferences and write blog posts. Interested in tech, ethics, AI, gamedev, chess.
+          <a
+            href="/bio"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            About
+          </a>
+        </p>
+        <p>
+          <a
+            href="/tags"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Tags
+          </a>
         </p>
       </div>
     </header>
