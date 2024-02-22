@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 const InnerFigure = ({ data, children, width, alt }) => {
   if(!width) width = "100%"
   return (
-    <div id="content-figure" style={{width: width}}>
+    <div id="content-figure" style={{width: width, margin: "0 auto"}}>
       <figure>
         <a href={data.src} target="_blank">
           <Img alt={alt} fluid={data}/>
