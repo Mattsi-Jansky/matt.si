@@ -48,15 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        // Defaults used for gatsbyImageData and StaticImage
         defaults: {},
-        // Set to false to allow builds to continue on image errors
-        failOnError: true,
-        // deprecated options and their defaults:
-        base64Width: 20,
-        forceBase64Format: `jpg`,
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
-        stripMetadata: true,
+        failOn: `error`,
         defaultQuality: 50,
       },
     },
@@ -79,7 +72,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { frontmatter: { date: DESC } },
                 ) {
                   nodes {
                     excerpt
@@ -119,7 +112,6 @@ module.exports = {
       },
     },
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
   ],
 }

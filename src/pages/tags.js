@@ -9,14 +9,9 @@ class TagsPage extends React.Component {
   render() {
     const { data } = this.props
     const allTags = data.allMarkdownRemark.group
-    const siteTitle = data.site.siteMetadata.title
 
     return (
       <DefaultLayout>
-        <SEO
-          title={siteTitle}
-          keywords={[`blog`, `mattsi`, `jansky`, `programming`, `technology`]}
-        />
         <div id="tags-list">
           <h1>Tags</h1>
           <ul>
@@ -36,6 +31,11 @@ class TagsPage extends React.Component {
 
 export default TagsPage
 
+export const Head = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title
+  return <SEO title={siteTitle} />
+}
+
 export const pageQuery = graphql`
   query {
     site {
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

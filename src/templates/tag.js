@@ -9,7 +9,6 @@ class Tags extends React.Component {
     const { pageContext, data } = this.props
     const { tag } = pageContext
     const { edges, totalCount } = data.allMarkdownRemark
-    const siteTitle = data.site.siteMetadata.title
 
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? '' : 's'
@@ -17,10 +16,6 @@ class Tags extends React.Component {
 
     return (
       <DefaultLayout>
-        <SEO
-          title={siteTitle}
-          keywords={[`blog`, `mattsi`, `jansky`, `programming`, `technology`]}
-        />
         <div>
           <h1 className="clearfix">{tagHeader}</h1>
           <ul>
@@ -45,6 +40,11 @@ class Tags extends React.Component {
 
 export default Tags
 
+export const Head = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title
+  return <SEO title={siteTitle} />
+}
+
 export const pageQuery = graphql`
   query($tag: String) {
     site {
@@ -54,7 +54,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
