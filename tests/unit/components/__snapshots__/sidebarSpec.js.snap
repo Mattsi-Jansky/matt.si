@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Sidebar hasn't changed 1`] = `
 <aside
@@ -17,7 +17,7 @@ exports[`Sidebar hasn't changed 1`] = `
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          style={Object {}}
+          style={{}}
         >
           <img
             alt="Mattsi Jansky"

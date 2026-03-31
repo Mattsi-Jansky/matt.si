@@ -1,10 +1,10 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Figure hasn't changed 1`] = `
 <div
   id="content-figure"
   style={
-    Object {
+    {
       "margin": "0 auto",
       "width": "100%",
     }
