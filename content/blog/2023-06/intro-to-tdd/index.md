@@ -1,7 +1,7 @@
 ---
 title: Introduction to Test Driven Development (TDD)
 date: 2023-06-10 00:00:00 +0000
-description: A video presentation to TDD- what it is, why we practice it, how to practice it
+description: A video presentation into to TDD- what it is, why we practice it, how to practice it
 img: ./intro_to_tdd_header.jpg
 tags: ["Screencast", "TDD", "Video"]
 ---
