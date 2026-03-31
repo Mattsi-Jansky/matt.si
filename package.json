@@ -47,7 +47,7 @@
     "jest": "30.3.0",
     "jest-environment-jsdom": "30.3.0",
     "sass": "1.75.0",
-    "wait-on": "8.0.0"
+    "wait-on": "9.0.4"
   },
   "license": "GPL-3.0-only"
 }
