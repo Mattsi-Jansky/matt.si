@@ -5,11 +5,8 @@ import SEO from '../components/seo'
 
 class NotFoundPage extends React.Component {
   render() {
-    const { data } = this.props
-
     return (
       <DefaultLayout>
-        <SEO title="Not Found - Matt.si" />
         <h1>
           Page not found. If this is in error, please{' '}
           <a href="https://twitter.com/mattsijansky">let me know!</a>
@@ -21,3 +18,5 @@ class NotFoundPage extends React.Component {
 }
 
 export default NotFoundPage
+
+export const Head = () => <SEO title="Not Found - Matt.si" />

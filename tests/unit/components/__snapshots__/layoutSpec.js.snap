@@ -13,15 +13,10 @@ Array [
           className="cover-author-image"
         >
           <a
-            aria-current="page"
-            className=""
             href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            style={Object {}}
           >
             <img
-              alt="Mattsi Jansky"
+              alt="Test Author"
               className="author-image"
               src="/pic.jpg"
             />
@@ -30,7 +25,7 @@ Array [
         <div
           className="author-name"
         >
-          Mattsi Jansky
+          Test Author
         </div>
         <p>
           I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
@@ -38,8 +33,6 @@ Array [
         <p>
           <a
             href="/bio"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -47,8 +40,6 @@ Array [
         <p>
           <a
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -74,7 +65,7 @@ Array [
           </li>
           <li>
             <a
-              href="https://github.com/mattsi-jansky"
+              href="https://github.com/test"
               target="_blank"
             >
               <i
@@ -84,7 +75,7 @@ Array [
           </li>
           <li>
             <a
-              href="https://linkedin.com/in/mjjansky"
+              href="https://linkedin.com/in/test"
               target="_blank"
             >
               <i
@@ -94,7 +85,7 @@ Array [
           </li>
           <li>
             <a
-              href="mailto:mattsi@jansky.dev"
+              href="mailto:test@test.com"
               target="_blank"
             >
               <i

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import rehypeReact from 'rehype-react'
 
 import DefaultLayout from '../components/layout'
@@ -18,21 +18,15 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <DefaultLayout>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.excerpt}
-          keywords={post.frontmatter.tags}
-          canonicalLink={post.frontmatter.canonicalLink}
-        />
         <article className="article-page">
           <div className="page-content">
             {post.frontmatter.img && (
               <div className="page-cover-image">
                 <figure>
-                  <Img
+                  <GatsbyImage
                     className="page-image"
-                    key={post.frontmatter.img.childImageSharp.fluid.src}
-                    fluid={post.frontmatter.img.childImageSharp.fluid}
+                    alt={post.frontmatter.imgCaption || post.frontmatter.title}
+                    image={getImage(post.frontmatter.img.childImageSharp)}
                   />
                   <figcaption>
                     {!post.frontmatter.imgCaptionLink &&
@@ -74,6 +68,17 @@ class BlogPostTemplate extends React.Component {
 
 export default BlogPostTemplate
 
+export const Head = ({ data }) => {
+  const post = data.markdownRemark
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.excerpt}
+      canonicalLink={post.frontmatter.canonicalLink}
+    />
+  )
+}
+
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
@@ -92,13 +97,7 @@ export const pageQuery = graphql`
         tags
         img {
           childImageSharp {
-            fluid(maxWidth: 3720) {
-              aspectRatio
-              base64
-              sizes
-              src
-              srcSet
-            }
+            gatsbyImageData(width: 3720, layout: CONSTRAINED)
           }
         }
         imgCaption

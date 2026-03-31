@@ -7,7 +7,6 @@ import SEO from '../components/seo'
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
@@ -17,28 +16,17 @@ class BlogIndex extends React.Component {
 
     return (
       <DefaultLayout>
-        <SEO
-          title={siteTitle}
-          keywords={[
-            `blog`,
-            `mattsi`,
-            `jansky`,
-            `programming`,
-            `technology`,
-            `software`,
-          ]}
-        />
         {posts.map(({ node }) => {
           return (
             <article className="post" key={node.fields.slug}>
               {node.frontmatter.img &&
                 node.frontmatter.img.childImageSharp &&
-                node.frontmatter.img.childImageSharp.fluid && (
+                node.frontmatter.img.childImageSharp.gatsbyImageData && (
                   <Link
                     to={node.fields.slug}
                     className="post-thumbnail"
                     style={{
-                      backgroundImage: `url(${node.frontmatter.img.childImageSharp.fluid.src})`,
+                      backgroundImage: `url(${node.frontmatter.img.childImageSharp.gatsbyImageData.images.fallback.src})`,
                     }}
                   />
                 )}
@@ -90,6 +78,15 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
+export const Head = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title
+  return (
+    <SEO
+      title={siteTitle}
+    />
+  )
+}
+
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
     site {
@@ -98,7 +95,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
     ) {
@@ -114,13 +111,7 @@ export const pageQuery = graphql`
             title
             img {
               childImageSharp {
-                fluid(maxWidth: 3720) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
+                gatsbyImageData(width: 3720, layout: CONSTRAINED)
               }
             }
           }

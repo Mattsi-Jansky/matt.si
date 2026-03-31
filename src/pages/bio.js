@@ -7,7 +7,6 @@ import '../styles/main.scss'
 const Bio = () => {
   return (
     <DefaultLayout>
-      <SEO title="Bio - Matt.si" />
       <article class="article-page">
         <div class="page-content wrap-content">
           <h1>Bio</h1>
@@ -40,3 +39,5 @@ const Bio = () => {
 }
 
 export default Bio
+
+export const Head = () => <SEO title="Bio - Matt.si" />
