@@ -18,6 +18,11 @@ exports[`Figure hasn't changed 1`] = `
     >
       <img
         alt=""
+        sizes="(min-width: 1240px) 1240px, 100vw"
+        src="/static/45b26cc583de29f73117dce640a86d75/8a760/banner.jpg"
+        srcSet="/static/45b26cc583de29f73117dce640a86d75/68709/banner.jpg 310w,
+/static/45b26cc583de29f73117dce640a86d75/53593/banner.jpg 620w,
+/static/45b26cc583de29f73117dce640a86d75/8a760/banner.jpg 1240w"
       />
     </a>
     <figcaption>

@@ -21,7 +21,13 @@ jest.mock('gatsby-plugin-image', () => {
   const React = require('react')
   return {
     GatsbyImage: jest.fn(({ image, alt, ...props }) =>
-      React.createElement('img', { alt, ...props })
+      React.createElement('img', {
+        alt,
+        src: image.images.fallback.src,
+        srcSet: image.images.fallback.srcSet,
+        sizes: image.images.fallback.sizes,
+        ...props,
+      })
     ),
     getImage: jest.fn(data => data),
   }
