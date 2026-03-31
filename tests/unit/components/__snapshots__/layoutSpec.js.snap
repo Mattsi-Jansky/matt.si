@@ -45,6 +45,35 @@ exports[`Default Layout hasn't changed 1`] = `
           </a>
         </p>
       </div>
+      <nav
+        className="sidebar-tags"
+      >
+        <h4>
+          Tags
+        </h4>
+        <ul>
+          <li>
+            <a
+              href="/tags/rust/"
+            >
+              Rust
+               (
+              5
+              )
+            </a>
+          </li>
+          <li>
+            <a
+              href="/tags/javascript/"
+            >
+              JavaScript
+               (
+              3
+              )
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <footer>
       <section

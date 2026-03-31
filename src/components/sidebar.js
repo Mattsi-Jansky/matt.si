@@ -1,7 +1,8 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import generatePathToTag from '../shared/pathToTagGenerator'
 
-const Sidebar = ({ siteMetadata }) => (
+const Sidebar = ({ siteMetadata, tags }) => (
   <aside className="sidebar">
     <header>
       <div className="about">
@@ -21,6 +22,20 @@ const Sidebar = ({ siteMetadata }) => (
         <p><Link to="/bio">About</Link></p>
         <p><Link to="/tags">Tags</Link></p>
       </div>
+      {tags && tags.length > 0 && (
+        <nav className="sidebar-tags">
+          <h4>Tags</h4>
+          <ul>
+            {tags.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link to={generatePathToTag(tag.fieldValue)}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
     <footer>
       <section className="contact">

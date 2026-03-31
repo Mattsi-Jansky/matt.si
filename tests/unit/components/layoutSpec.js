@@ -19,6 +19,13 @@ jest.mock('gatsby', () => {
           },
         },
       },
+      allMarkdownRemark: {
+        group: [
+          { fieldValue: "Rust", totalCount: 5 },
+          { fieldValue: "JavaScript", totalCount: 3 },
+          { fieldValue: "OneOff", totalCount: 1 },
+        ],
+      },
     }),
     graphql: jest.fn(),
     Link: jest.fn(({ to, children, ...rest }) =>

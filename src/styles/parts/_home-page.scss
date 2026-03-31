@@ -64,6 +64,41 @@
   }
 }
 
+.sidebar-tags {
+  text-align: center;
+  h4 {
+    font-size: $verySmallFontSize;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $text-color;
+    margin: 0 0 6px;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    li {
+      a {
+        display: inline-block;
+        font-size: $verySmallFontSize;
+        color: $text-link-color;
+        text-decoration: none;
+        padding: 1px 5px;
+        transition: transform 0.2s ease;
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+}
+
 .contact {
   ul {
     margin: 0;

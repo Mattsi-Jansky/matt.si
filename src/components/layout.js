@@ -21,12 +21,22 @@ const DefaultLayout = ({ children }) => {
           }
         }
       }
+      allMarkdownRemark {
+        group(field: { frontmatter: { tags: SELECT } }) {
+          fieldValue
+          totalCount
+        }
+      }
     }
   `)
 
+  const tags = data.allMarkdownRemark.group
+    .filter(tag => tag.totalCount >= 2)
+    .sort((a, b) => b.totalCount - a.totalCount)
+
   return (
     <>
-      <Sidebar siteMetadata={data.site.siteMetadata} />
+      <Sidebar siteMetadata={data.site.siteMetadata} tags={tags} />
       <main className="clearfix">{children}</main>
     </>
   )
