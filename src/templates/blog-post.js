@@ -2,18 +2,26 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import rehypeReact from 'rehype-react'
+import { unified } from 'unified'
+import * as prod from 'react/jsx-runtime'
 
 import DefaultLayout from '../components/layout'
 import SEO from '../components/seo'
 import TagLink from '../components/tagLink'
 import Figure from '../components/figure'
 
+const renderAst = (ast) =>
+  unified()
+    .use(rehypeReact, {
+      Fragment: prod.Fragment,
+      jsx: prod.jsx,
+      jsxs: prod.jsxs,
+      components: { 'tag-link': TagLink, figure: Figure },
+    })
+    .stringify(ast)
+
 class BlogPostTemplate extends React.Component {
   render() {
-    const renderAst = new rehypeReact({
-      createElement: React.createElement,
-      components: { 'tag-link': TagLink, figure: Figure },
-    }).Compiler
     const post = this.props.data.markdownRemark
 
     return (
