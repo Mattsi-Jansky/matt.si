@@ -8,4 +8,4 @@ tags: ["Video", "Rust","Conference","Event","Talk"]
 
 Recently I was lucky enough to talk at [Devoxx UK](https://www.devoxx.co.uk), about one of my favourite subjects! I had a great time, the talk was very well recieved and thanks to an amazing AV team we have a great recording of it too. Check it out:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DO4jJ1O3Cq4?si=A9zJCIn1jD1Xquu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DO4jJ1O3Cq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
