@@ -46,7 +46,7 @@
     "eslint-plugin-react": "7.32.2",
     "jest": "30.3.0",
     "jest-environment-jsdom": "30.3.0",
-    "sass": "1.75.0",
+    "sass": "1.98.0",
     "wait-on": "8.0.0"
   },
   "license": "GPL-3.0-only"
