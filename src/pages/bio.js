@@ -9,7 +9,8 @@ const Bio = () => {
     <DefaultLayout>
       <article class="article-page">
         <div class="page-content wrap-content">
-          <h1>Bio</h1>
+          <h1>About</h1>
+          <h2>About me</h2>
           <blockquote>
             <p>In 1936 Alan Turing published "On Computable Numbers", proving that it was possible to create a computer. This has made many people very angry and has been widely regarded as a bad move.</p>
           </blockquote>
@@ -32,6 +33,8 @@ const Bio = () => {
             <li>Videogames, particularly RPGs and story-rich</li>
             </ul>
           </p>
+          <h2 id="genai-policy">GenAI policy</h2>
+          <p>I will never publish generated writing. Everything that isn't quoted or otherwise attributed to someone else I wrote myself by hand. I may however use some GenAI tooling for code generation, and grammar &amp; spelling checks.</p>
         </div>
       </article>
     </DefaultLayout>

@@ -76,6 +76,17 @@ exports[`Default Layout hasn't changed 1`] = `
       </nav>
     </header>
     <footer>
+      <div
+        className="genai-policy"
+      >
+        <h4>
+          <a
+            href="/bio#genai-policy"
+          >
+            🤖 GenAI policy
+          </a>
+        </h4>
+      </div>
       <section
         className="contact"
       >

@@ -55,6 +55,19 @@ exports[`Sidebar hasn't changed 1`] = `
     </div>
   </header>
   <footer>
+    <div
+      className="genai-policy"
+    >
+      <h4>
+        <a
+          href="/bio#genai-policy"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          🤖 GenAI policy
+        </a>
+      </h4>
+    </div>
     <section
       className="contact"
     >

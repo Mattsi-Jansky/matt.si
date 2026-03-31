@@ -38,6 +38,9 @@ const Sidebar = ({ siteMetadata, tags }) => (
       )}
     </header>
     <footer>
+      <div className="genai-policy">
+        <h4><Link to="/bio#genai-policy">🤖 GenAI policy</Link></h4>
+      </div>
       <section className="contact">
         <hr />
         <ul>
