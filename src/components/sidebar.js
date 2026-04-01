@@ -79,41 +79,41 @@ const Sidebar = ({ siteMetadata, tags }) => (
         <ul>
           {siteMetadata.social.twitter && (
             <li>
-              <a href="https://todon.eu/@mattsi" target="_blank">
+              <a href="https://todon.eu/@mattsi" target="_blank" rel="noopener noreferrer">
                 <MastodonIcon />
               </a>
             </li>
           )}
           {siteMetadata.social.facebook && (
             <li>
-              <a href={`https://facebook.com/${siteMetadata.social.facebook}`} target="_blank">
+              <a href={`https://facebook.com/${siteMetadata.social.facebook}`} target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
               </a>
             </li>
           )}
           {siteMetadata.social.github && (
             <li>
-              <a href={`https://github.com/${siteMetadata.social.github}`} target="_blank">
+              <a href={`https://github.com/${siteMetadata.social.github}`} target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
               </a>
             </li>
           )}
           {siteMetadata.social.linkedin && (
             <li>
-              <a href={`https://linkedin.com/in/${siteMetadata.social.linkedin}`} target="_blank">
+              <a href={`https://linkedin.com/in/${siteMetadata.social.linkedin}`} target="_blank" rel="noopener noreferrer">
                 <LinkedInIcon />
               </a>
             </li>
           )}
           {siteMetadata.social.email && (
             <li>
-              <a href={`mailto:${siteMetadata.social.email}`} target="_blank">
+              <a href={`mailto:${siteMetadata.social.email}`}>
                 <EnvelopeIcon />
               </a>
             </li>
           )}
           <li>
-            <a href="/rss.xml" target="_blank">
+            <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
               <RssIcon />
             </a>
           </li>

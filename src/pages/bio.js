@@ -7,8 +7,8 @@ import '../styles/main.scss'
 const Bio = () => {
   return (
     <DefaultLayout>
-      <article class="article-page">
-        <div class="page-content wrap-content">
+      <article className="article-page">
+        <div className="page-content wrap-content">
           <h1>About</h1>
           <h2>About me</h2>
           <blockquote>
