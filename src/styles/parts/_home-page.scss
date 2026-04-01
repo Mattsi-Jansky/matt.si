@@ -200,6 +200,7 @@ footer {
     background-position: 50% 50%;
     opacity: 0.85;
     transition: opacity 0.25s ease;
+    order: 2;
   }
   &:hover .post-thumbnail {
     opacity: 1;
@@ -208,6 +209,7 @@ footer {
   .post-content {
     padding: 1.25rem;
     width: 70%;
+    order: 1;
     .post-date,
     .post-words {
       font-size: $verySmallFontSize;
