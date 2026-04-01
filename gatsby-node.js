@@ -97,6 +97,18 @@ function CreateTagsPages(tags, createPage) {
   })
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemarkFrontmatter {
+      img: File @fileByRelativePath
+    }
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+  `)
+}
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 

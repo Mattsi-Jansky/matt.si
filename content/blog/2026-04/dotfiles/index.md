@@ -2,7 +2,7 @@
 title: Deterministic(ish) machine configuration with Python
 date: 2026-04-01 00:00:00 +0000
 description: Implementing deterministic(ish) machine configuration without resorting to Nix, using Python scripting
-img: ./intro_to_tdd_header.jpg
+img: ./painted_shed.jpg
 imgCaption: Photo by Danielle Rice, via Unsplash
 tags: ["Python", "Tooling"]
 ---
