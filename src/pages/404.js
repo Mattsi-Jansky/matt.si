@@ -9,7 +9,7 @@ class NotFoundPage extends React.Component {
       <DefaultLayout>
         <h1>
           Page not found. If this is in error, please{' '}
-          <a href="https://twitter.com/mattsijansky">let me know!</a>
+          <a href="https://todon.eu/@mattsi">let me know!</a>
         </h1>
         <br />
       </DefaultLayout>
