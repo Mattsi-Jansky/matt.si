@@ -10,28 +10,28 @@ class Tags extends React.Component {
     const { tag } = pageContext
     const { edges, totalCount } = data.allMarkdownRemark
 
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with "${tag}"`
-
     return (
       <DefaultLayout>
-        <div>
-          <h1 className="clearfix">{tagHeader}</h1>
-          <ul>
+        <div className="tag-archive">
+          <header className="tag-archive-header">
+            <Link to="/tags" className="tag-archive-back">All tags</Link>
+            <h1>{tag}</h1>
+            <p className="tag-archive-count">{totalCount} post{totalCount === 1 ? '' : 's'}</p>
+          </header>
+          <ul className="tag-archive-list">
             {edges.map(({ node }) => {
               const { title, date } = node.frontmatter
               const { slug } = node.fields
               return (
                 <li key={slug}>
-                  <Link to={slug}>
-                    {title} ({date})
+                  <Link to={slug} className="tag-archive-link">
+                    <span className="tag-archive-title">{title}</span>
+                    <span className="tag-archive-date">{date}</span>
                   </Link>
                 </li>
               )
             })}
           </ul>
-          <Link to="/tags">All tags</Link>
         </div>
       </DefaultLayout>
     )
@@ -40,9 +40,8 @@ class Tags extends React.Component {
 
 export default Tags
 
-export const Head = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  return <SEO title={siteTitle} />
+export const Head = ({ pageContext }) => {
+  return <SEO title={`Posts tagged "${pageContext.tag}"`} />
 }
 
 export const pageQuery = graphql`

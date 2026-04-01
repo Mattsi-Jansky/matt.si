@@ -1,3 +1,4 @@
+// Tags on blog post headers
 .tags-container {
   margin: 0;
   padding: 8px 0;
@@ -20,6 +21,86 @@
       &:hover {
         color: $text-link-color;
       }
+    }
+  }
+}
+
+// Tag archive page (/tags/{tag})
+.tag-archive {
+  width: 100%;
+
+  .tag-archive-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsl(220, 15%, 16%);
+
+    .tag-archive-back {
+      font-family: $font-display;
+      font-size: $verySmallFontSize;
+      color: $dark-gray;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $text-link-color;
+      }
+      &::before {
+        content: "\2190\00a0";
+      }
+    }
+
+    h1 {
+      font-family: $font-display;
+      margin: 8px 0 4px;
+    }
+
+    .tag-archive-count {
+      margin: 0;
+      font-size: $verySmallFontSize;
+      color: $dark-gray;
+    }
+  }
+
+  .tag-archive-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid hsl(220, 15%, 16%);
+      &:first-child {
+        border-top: 1px solid hsl(220, 15%, 16%);
+      }
+    }
+
+    .tag-archive-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 14px 4px;
+      text-decoration: none;
+      transition: padding-left 0.2s ease;
+
+      &:hover {
+        padding-left: 10px;
+        .tag-archive-title {
+          color: $text-link-color;
+        }
+      }
+    }
+
+    .tag-archive-title {
+      font-family: $font-display;
+      font-size: 1.1rem;
+      color: $white;
+      transition: color 0.2s ease;
+    }
+
+    .tag-archive-date {
+      font-size: $verySmallFontSize;
+      color: $dark-gray;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
   }
 }
