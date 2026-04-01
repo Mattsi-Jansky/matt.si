@@ -41,13 +41,13 @@
   "devDependencies": {
     "babel-jest": "30.3.0",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.7",
-    "eslint": "8.57.0",
-    "eslint-plugin-react": "7.32.2",
+    "enzyme-adapter-react-16": "1.15.8",
+    "eslint": "10.1.0",
+    "eslint-plugin-react": "7.37.5",
     "jest": "30.3.0",
     "jest-environment-jsdom": "30.3.0",
-    "sass": "1.75.0",
-    "wait-on": "8.0.0"
+    "sass": "1.98.0",
+    "wait-on": "9.0.4"
   },
   "license": "GPL-3.0-only"
 }
