@@ -7,15 +7,16 @@
   margin-left: -1em;
   padding-right: 1em;
   padding-left: 0.75em;
-  border-left: 0.25em solid #f99;
+  border-left: 0.25em solid $text-link-color;
 }
 
 .gatsby-highlight {
-  background-color: $body-color;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
+  background-color: hsl(30, 4%, 8%);
+  border-radius: 3px;
+  margin: 1em 0;
   padding: 1em;
   overflow: auto;
+  border: 1px solid hsl(30, 5%, 16%);
 }
 
 .gatsby-highlight pre[class*="language-"] {
@@ -25,6 +26,7 @@
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+  font-size: 0.9rem;
 }
 
 
@@ -35,5 +37,5 @@
 
 //Custom theme overrides
 .token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin {
-  color: #cc7777
+  color: hsl(0, 40%, 68%);
 }

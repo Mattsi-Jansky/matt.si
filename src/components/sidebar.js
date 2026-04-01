@@ -20,11 +20,10 @@ const Sidebar = ({ siteMetadata, tags }) => (
           I'm Mattsi, a software engineer / consultant / craftsman / tell-computers-what-to-do-guy.
         </p>
         <p><Link to="/bio">About</Link></p>
-        <p><Link to="/tags">Tags</Link></p>
       </div>
       {tags && tags.length > 0 && (
         <nav className="sidebar-tags">
-          <h4>Tags</h4>
+          <h4>Tags <Link to="/tags" className="tags-all">all</Link></h4>
           <ul>
             {tags.map(tag => (
               <li key={tag.fieldValue}>
@@ -38,11 +37,7 @@ const Sidebar = ({ siteMetadata, tags }) => (
       )}
     </header>
     <footer>
-      <div className="genai-policy">
-        <h4><Link to="/bio#genai-policy">🤖 GenAI policy</Link></h4>
-      </div>
       <section className="contact">
-        <hr />
         <ul>
           {siteMetadata.social.twitter && (
             <li>
@@ -98,6 +93,10 @@ const Sidebar = ({ siteMetadata, tags }) => (
           </li>
         </ul>
       </section>
+      <div className="genai-policy">
+        <h4><Link to="/bio#genai-policy">🤖 GenAI policy</Link></h4>
+      </div>
+      <hr className="sidebar-divider" />
       <div className="sidebar-footer-message">
         <p>
           Made with <a href="https://www.gatsbyjs.org">Gatsby</a> and{' '}

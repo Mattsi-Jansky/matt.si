@@ -8,42 +8,44 @@
   bottom: 0;
   width: 240px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 24px 16px;
   background-color: $body-alt-color;
+  border-right: 1px solid hsl(30, 5%, 16%);
 }
 
 .about {
   margin: 0 0 40px;
   text-align: center;
   .cover-author-image {
-    width: 185px;
-    height: 185px;
-    margin: 0 auto 10px;
+    width: 145px;
+    height: 145px;
+    margin: 0 auto 14px;
     border-radius: 100%;
-    overflow: hidden;
-    background-color: $author-image-cover-color;
-    border: 1px solid;
-    overflow:visible;
+    overflow: visible;
+    background-color: transparent;
   }
   img.author-image {
-    width: 175px;
-    height: 175px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin: 5px 0 0 0;
-    transition: transform 0.35s;
+    margin: 2px 0 0 0;
+    transition: transform 0.3s ease;
+    filter: grayscale(20%) contrast(0.95);
     &:hover {
-      transform: scale3d(0.90,0.90,1);
+      transform: scale3d(0.95, 0.95, 1);
+      filter: grayscale(0%) contrast(1);
     }
   }
   
   .author-name {
-    font-family: 'PT Serif', serif;
-    margin: 0 0 10px;
+    font-family: $font-display;
+    margin: 0 0 12px;
     position: relative;
-    padding-bottom: 15px;
-    font-size: $fontSize;
-    text-transform: uppercase;
-    font-weight: 700;
+    padding-bottom: 16px;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 0.02em;
     &::after {
       content: "";
       position: absolute;
@@ -51,16 +53,17 @@
       transform: translateX(-50%);
       bottom: 0;
       display: block;
-      width: 7px;
-      height: 7px;
-      border-radius: 100%;
-      background-color: $text-color;
+      width: 24px;
+      height: 1px;
+      background-color: $text-link-color;
+      opacity: 0.5;
     }
   }
   p {
-    font-size: $smallFontSize;
-    margin: 0 0 10px 0;
-    padding:0;
+    font-size: $verySmallFontSize;
+    margin: 0 0 8px 0;
+    padding: 0;
+    line-height: 1.5;
   }
 }
 
@@ -74,6 +77,20 @@
     margin: 0 0 6px;
     font-weight: 400;
     opacity: 0.6;
+    .tags-all {
+      text-transform: lowercase;
+      letter-spacing: 0;
+      font-size: 11px;
+      color: $dark-gray;
+      text-decoration: none;
+      margin-left: 4px;
+      opacity: 0.7;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $text-link-color;
+        opacity: 1;
+      }
+    }
   }
   ul {
     list-style: none;
@@ -136,8 +153,8 @@
         font-size: $fontSize;
         transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
         &:hover {
-          color: $dark;
-          transform: scale(1.2);
+          color: $text-link-color;
+          transform: scale(1.15);
         }
       }
     }
@@ -146,9 +163,14 @@
 
 footer {
   .sidebar-footer-message {
-    font-size: 14px;
+    font-size: $verySmallFontSize;
     text-align: center;
     margin: 0;
+    color: $dark-gray;
+    opacity: 0.6;
+    a {
+      color: $dark-gray;
+    }
   }
 }
 
@@ -161,13 +183,13 @@ footer {
   flex-direction: row;
   align-items: stretch;
   min-height: 11rem;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
-  transition: all .3s ease;
-  box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+  transition: all .25s ease;
+  border: 1px solid hsl(30, 5%, 16%);
   &:hover {
-    transform: translate(0px, -2px);
-    box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+    border-color: hsl(30, 8%, 22%);
+    background-color: hsl(30, 5%, 14%);
   }
 
   .post-thumbnail {
@@ -176,26 +198,41 @@ footer {
     min-height: 11rem;
     background-size: cover;
     background-position: 50% 50%;
+    opacity: 0.85;
+    transition: opacity 0.25s ease;
+  }
+  &:hover .post-thumbnail {
+    opacity: 1;
   }
 
   .post-content {
-    padding: 1rem;
+    padding: 1.25rem;
     width: 70%;
     .post-date,
     .post-words {
-      font-size: $smallFontSize;
+      font-size: $verySmallFontSize;
+      color: $dark-gray;
+      letter-spacing: 0.03em;
     }
     .post-title {
-      margin: 0 0 10px;
-      font-size: 30px;
+      margin: 0 0 8px;
+      font-size: 1.5rem;
       font-weight: 400;
+      line-height: 1.25;
       a {
-        font-family: 'PT Serif', serif;
+        font-family: $font-display;
         text-decoration: none;
+        color: $white;
+        transition: color 0.2s ease;
+        &:hover {
+          color: $text-link-color;
+        }
       }
     }
     p {
       margin-top: 0;
+      font-size: $smallFontSize;
+      line-height: 1.55;
     }
   }
 }

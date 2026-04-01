@@ -7,16 +7,20 @@
 }
 
 html {
-  line-height: 1.5;
+  line-height: 1.65;
   font-size: $fontSize;
 }
 
 a {
   color: $text-link-color;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $text-link-hover;
+  }
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-body;
   color: $text-color;
   background-color: $body-color;
   margin: 0;
@@ -37,8 +41,24 @@ main {
   align-items: stretch;
 }
 
-h1 {
+h1, h2, h3 {
+  font-family: $font-display;
   font-weight: 400;
+  color: $white;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 p, li, ul, ol {
@@ -55,60 +75,57 @@ img + em {
   text-align: center;
   display: block;
   margin-top: 10px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: $verySmallFontSize;
+  color: $dark-gray;
 }
 
 blockquote {
-  border-left: 5px solid $body-color;
-  padding-left: 1.1rem;
-  margin-left: 1rem;
+  border-left: 2px solid $text-link-color;
+  padding-left: 1.25rem;
+  margin-left: 0;
+  margin-right: 0;
   font-style: italic;
+  color: $dark-gray;
+  p {
+    margin: 0.5em 0;
+  }
 }
 
 table {
-  border: 1px solid #aaa;
-  background-color: #eee;
+  border: 1px solid hsl(30, 5%, 22%);
+  background-color: $body-color;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
+  font-size: $smallFontSize;
 }
-table td, table.blueTable th {
-  border: 1px solid #aaa;
-  padding: 3px 2px;
-}
-table tbody td {
-  font-size: 13px;
+table td, table th {
+  border: 1px solid hsl(30, 5%, 22%);
+  padding: 6px 10px;
 }
 table tr:nth-child(even) {
-  background: #adbecc;
+  background: hsl(30, 5%, 12%);
 }
 table thead {
-  background: #a9c4d1;
-  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
-  border-bottom: 1px solid #8c8c8c;
+  background: hsl(30, 6%, 18%);
+  border-bottom: 1px solid hsl(30, 5%, 25%);
 }
 table thead th {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  border-left: 1px solid #d0e4f5;
-}
-table thead th:first-child {
-  border-left: none;
+  font-size: $smallFontSize;
+  font-weight: 500;
+  color: $white;
 }
 
 table tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background: #d0e4f5;
-  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  border-top: 2px solid #444;
+  font-size: $verySmallFontSize;
+  color: $dark-gray;
+  background: hsl(30, 5%, 15%);
+  border-top: 1px solid hsl(30, 5%, 22%);
 }
 table tfoot td {
-  font-size: 14px;
+  font-size: $verySmallFontSize;
 }
 
 .post, .article-page {
@@ -117,12 +134,12 @@ table tfoot td {
 }
 
 ::-moz-selection {
-  background: rgba(38, 57, 89, 0.8);
+  background: hsla(35, 40%, 30%, 0.8);
   color: $white;
 }
 
 ::selection {
-  background: rgba(38, 57, 89, 0.8);
+  background: hsla(35, 40%, 30%, 0.8);
   color: $white;
 }
 
@@ -135,9 +152,11 @@ table tfoot td {
   clear: both;
 }
 
-.contact hr {
-  border: 1px solid;
-  width:120px;
+hr.sidebar-divider {
+  border: none;
+  border-top: 1px solid hsl(30, 5%, 20%);
+  width: 60px;
+  margin: 8px auto;
 }
 
 .thumbnail-figure {

@@ -1,25 +1,24 @@
 .tags-container {
   margin: 0;
-  padding: 10px;
+  padding: 8px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 4px;
   span {
     display: inline-block;
-    margin: 5px;
     list-style: none;
     text-decoration: none;
-    padding: 0 10px;
-    text-transform: uppercase;
     a {
-      color: $text-color;
+      color: $dark-gray;
       text-decoration: none;
       display: inline-block;
-      padding: 5px 10px;
-      transition: all .3s;
-      font-size: $smallFontSize;
+      padding: 2px 8px;
+      transition: color .2s ease;
+      font-size: $verySmallFontSize;
+      letter-spacing: 0.03em;
       &:hover {
-        font-size:$fontSize;
+        color: $text-link-color;
       }
     }
   }
