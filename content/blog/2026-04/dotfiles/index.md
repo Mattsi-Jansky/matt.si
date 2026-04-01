@@ -1,5 +1,5 @@
 ---
-title: Deterministic(ish) machine configuration with Python
+title: Deterministic(ish) Machine Configuration with Python
 date: 2026-04-01 00:00:00 +0000
 description: Implementing deterministic(ish) machine configuration without resorting to Nix, using Python scripting
 img: ./painted_shed.jpg
