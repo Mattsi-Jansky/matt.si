@@ -23,25 +23,65 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 779px) {
   .sidebar {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
+    padding: 12px 16px;
     box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
 
     footer {
-      margin-bottom: 10px;
+      display: none;
     }
   }
 
   .about {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    margin: 0 auto;
     max-width: 480px;
-    margin: 10px auto auto;
+
+    // Hide bio text on mobile
+    > p {
+      display: none;
+    }
+
+    .cover-author-image {
+      width: 48px !important;
+      height: 48px !important;
+      flex-shrink: 0;
+    }
+    img.author-image {
+      width: 48px !important;
+      height: 48px !important;
+    }
+
+    .author-name {
+      margin: 0;
+      padding-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+
+    .sidebar-nav {
+      margin-top: 0;
+      gap: 16px;
+      a {
+        font-size: $smallFontSize;
+        padding: 6px 0;
+      }
+    }
+  }
+
+  // Hide tags section on mobile
+  .sidebar-tags {
+    display: none;
   }
 
   main {
@@ -56,10 +96,6 @@
     p, li, ul, ol {
       padding: 0 0 0 10px;
     }
-  }
-
-  .sidebar-footer-message {
-    display: none;
   }
 
   .post {
