@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import { siteConfig } from '../shared/siteConfig';
 import pathToTag from '../shared/pathToTagGenerator';
+import profilePic from '../assets/pic.jpg';
 
 const posts = await getCollection('blog');
 const tagCounts = new Map<string, number>();
@@ -20,10 +22,13 @@ const tags = [...tagCounts.entries()]
     <div class="about">
       <div class="cover-author-image">
         <a href="/">
-          <img
-            src="/pic.jpg"
+          <Image
+            src={profilePic}
             alt={siteConfig.author}
             class="author-image"
+            width={140}
+            height={140}
+            loading="eager"
           />
         </a>
       </div>
