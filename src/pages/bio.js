@@ -7,10 +7,9 @@ import '../styles/main.scss'
 const Bio = () => {
   return (
     <DefaultLayout>
-      <article className="article-page">
+      <article className="article-page bio-page">
         <div className="page-content wrap-content">
           <h1>About</h1>
-          <h2>About me</h2>
           <blockquote>
             <p>In 1936 Alan Turing published "On Computable Numbers", proving that it was possible to create a computer. This has made many people very angry and has been widely regarded as a bad move.</p>
           </blockquote>
@@ -20,21 +19,21 @@ const Bio = () => {
           <p>
             You've found yourself on my blog. I mostly write about software development and whatever programming languages, side projects or conferences/events I'm interested in lately. You can find more of my ramblings and code on Mastodon, GitHub, etc linked at the bottom of the sidebar, and an RSS feed for the blog.
           </p>
-          <p>
-            Other interests:
-            <ul>
+          <h2>Interests</h2>
+          <ul className="bio-interests">
             <li>Ethics in tech</li>
-            <li>Digital rights </li>
+            <li>Digital rights</li>
             <li>Tech meetups, conferences, hack camps</li>
             <li>AI</li>
-            <li>Simulations and gamedev</li>
-            <li>Chess (Check out <a href="https://github.com/Mattsi-Jansky/Iroh">my chess engine</a>)</li>
+            <li>Gamedev and simulations</li>
+            <li>Chess (Check out <a href="https://github.com/Mattsi-Jansky/Iroh" target="_blank" rel="noopener noreferrer">my chess engine</a>)</li>
             <li>Animation, anime</li>
             <li>Videogames, particularly RPGs and story-rich</li>
-            </ul>
-          </p>
-          <h2 id="genai-policy">GenAI policy</h2>
-          <p>I will never publish generated writing. Everything that isn't quoted or otherwise attributed to someone else I wrote myself by hand. I may however use some GenAI tooling for code generation, and grammar &amp; spelling checks.</p>
+          </ul>
+          <div className="bio-genai-policy" id="genai-policy">
+            <h2>GenAI policy</h2>
+            <p>I will never publish generated writing. Everything that isn't quoted or otherwise attributed to someone else I wrote myself by hand. I may however use some GenAI tooling for code generation, and grammar &amp; spelling checks.</p>
+          </div>
         </div>
       </article>
     </DefaultLayout>
