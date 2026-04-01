@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
-
-exports[`TagLink hasn't changed 1`] = `
-<a
-  href="/tags/test/"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
-/>
-`;

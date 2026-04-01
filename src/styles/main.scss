@@ -30,10 +30,8 @@ body {
 }
 
 main {
-  padding: 20px;
-  padding-left: 260px;
   padding: 0 20px 20px 260px;
-  max-width:1250px;
+  max-width: 1250px;
   margin: 0 auto;
 
   display: flex;
@@ -70,6 +68,17 @@ img {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
+}
+
+// Blur-up placeholder wrapper for lazy-loaded images
+.img-placeholder {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img {
+    transition: opacity 0.3s ease;
+  }
 }
 
 img + em {
@@ -177,6 +186,10 @@ figure {
   font-size: $verySmallFontSize;
   ol {
     padding-left: 25px;
+    list-style-position: outside;
+  }
+  li p {
+    display: inline;
   }
 }
 

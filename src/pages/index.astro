@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { generatePlaceholder, resolvePostImagePath } from '../shared/generatePlaceholder';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const postImages = await Promise.all(
+  posts.map(async (post) => {
+    if (post.data.img) {
+      const img = await getImage({ src: post.data.img, width: 600 });
+      const imgPath = resolvePostImagePath(post.slug, post.data.img.src);
+      const placeholder = await generatePlaceholder(imgPath);
+      return { src: img.src, placeholder };
+    }
+    return null;
+  })
+);
+
+function excerpt(body: string | undefined, length = 140): string {
+  if (!body) return '';
+  // Strip markdown/HTML syntax
+  const plain = body
+    .replace(/^---[\s\S]*?---/m, '')        // frontmatter
+    .replace(/<[^>]+>/g, '')                 // HTML tags
+    .replace(/!\[.*?\]\(.*?\)/g, '')         // images
+    .replace(/\[([^\]]*)\]\(.*?\)/g, '$1')   // links -> text
+    .replace(/#{1,6}\s/g, '')                // headings
+    .replace(/[*_~`>]/g, '')                 // emphasis, code, blockquote
+    .replace(/\n+/g, ' ')                    // newlines
+    .trim();
+  if (plain.length <= length) return plain;
+  return plain.slice(0, length).replace(/\s+\S*$/, '') + '...';
+}
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+  });
+}
+---
+
+<BaseLayout title="Home">
+  {posts.map((post, i) => {
+    const wordCount = post.body?.split(/\s+/).length || 0;
+    const readingTime = Math.ceil(wordCount / 200);
+    const imgData = postImages[i];
+    return (
+      <article class="post">
+        {imgData && (
+          <a
+            href={`/${post.slug}/`}
+            class="post-thumbnail"
+            style={`background-image: url(${imgData.src}); ${imgData.placeholder ? `--placeholder: url(${imgData.placeholder})` : ''}`}
+          />
+        )}
+        <div class="post-content">
+          <h2 class="post-title">
+            <a href={`/${post.slug}/`}>{post.data.title}</a>
+          </h2>
+          <p>{excerpt(post.body)}</p>
+          <span class="post-date">
+            {formatDate(post.data.date)}&nbsp;&nbsp;—&nbsp;
+          </span>
+          <span class="post-words">
+            {readingTime} minute read
+          </span>
+        </div>
+      </article>
+    );
+  })}
+</BaseLayout>

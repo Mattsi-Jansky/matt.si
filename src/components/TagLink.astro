@@ -1,0 +1,11 @@
+---
+import pathToTag from '../shared/pathToTagGenerator';
+
+interface Props {
+  tag: string;
+}
+
+const { tag } = Astro.props;
+---
+
+<a href={pathToTag(tag)}><slot /></a>

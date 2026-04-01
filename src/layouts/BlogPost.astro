@@ -1,0 +1,75 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from './BaseLayout.astro';
+import pathToTag from '../shared/pathToTagGenerator';
+import { generatePlaceholder, resolvePostImagePath } from '../shared/generatePlaceholder';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { data } = post;
+
+const dateStr = data.date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: '2-digit',
+});
+
+const wordCount = post.body?.split(/\s+/).length || 0;
+const readingTime = Math.ceil(wordCount / 200);
+
+let placeholder = '';
+if (data.img) {
+  const imgPath = resolvePostImagePath(post.slug, data.img.src);
+  placeholder = await generatePlaceholder(imgPath);
+}
+---
+
+<BaseLayout title={data.title} description={data.description} canonicalLink={data.canonicalLink}>
+  <article class="article-page">
+    <div class="page-content">
+      {data.img && (
+        <div class="page-cover-image">
+          <figure>
+            <div class="img-placeholder" style={placeholder ? `background-image: url(${placeholder})` : ''}>
+              <Image
+                class="page-image"
+                src={data.img}
+                alt={data.imgCaption || data.title}
+                width={1240}
+                loading="lazy"
+              />
+            </div>
+            <figcaption>
+              {!data.imgCaptionLink && data.imgCaption}
+              {data.imgCaptionLink && (
+                <a href={data.imgCaptionLink}>{data.imgCaption}</a>
+              )}
+            </figcaption>
+          </figure>
+        </div>
+      )}
+      <div class="wrap-content">
+        <header class="header-page">
+          <h1 class="page-title">{data.title}</h1>
+          <div class="page-date">
+            <span>{dateStr}</span>
+          </div>
+          <div class="tags-container">
+            <div class="page-tag">
+              {data.tags.map(tag => (
+                <span class="tag">
+                  <a href={pathToTag(tag)}># {tag}</a>
+                </span>
+              ))}
+            </div>
+          </div>
+        </header>
+        <slot />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

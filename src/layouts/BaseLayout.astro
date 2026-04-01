@@ -1,0 +1,26 @@
+---
+import Head from '../components/Head.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/main.scss';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonicalLink?: string;
+}
+
+const { title, description, canonicalLink } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Head title={title} description={description} canonicalLink={canonicalLink} />
+  </head>
+  <body>
+    <Sidebar />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -184,12 +184,7 @@ footer {
     min-height: 11rem;
     background-size: cover;
     background-position: 50% 50%;
-    opacity: 0.85;
-    transition: opacity 0.25s ease;
     order: 2;
-  }
-  &:hover .post-thumbnail {
-    opacity: 1;
   }
 
   .post-content {

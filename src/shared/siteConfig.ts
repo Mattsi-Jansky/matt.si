@@ -1,0 +1,13 @@
+export const siteConfig = {
+  title: 'Matt.si',
+  description: "Mattsi Jansky's personal programming/tech blog",
+  author: 'Mattsi Jansky',
+  siteUrl: 'https://www.matt.si',
+  social: {
+    twitter: 'mattsijansky',
+    facebook: '',
+    github: 'mattsi-jansky',
+    linkedin: 'mjjansky',
+    email: 'mattsi@jansky.dev',
+  },
+};

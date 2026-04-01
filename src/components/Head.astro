@@ -1,0 +1,26 @@
+---
+import { siteConfig } from '../shared/siteConfig';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonicalLink?: string;
+}
+
+const { title, description, canonicalLink } = Astro.props;
+const metaDescription = description || siteConfig.description;
+---
+
+<title>{title} | {siteConfig.title}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content={metaDescription} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={metaDescription} />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content={siteConfig.author} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={metaDescription} />
+{canonicalLink && <link rel="canonical" href={canonicalLink} />}
+<link rel="icon" type="image/png" href="/favicon.png" />
