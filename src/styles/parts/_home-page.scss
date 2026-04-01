@@ -1,66 +1,67 @@
-// ─── Top Navigation ───────────────────────────────────
+// ─── Masthead Navigation ──────────────────────────────
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: $body-alt-color;
-  border-bottom: 1px solid $border-color;
+  padding: 36px 40px 28px;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 2px solid $white;
 }
 
 .topnav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 12px 40px;
+  display: contents;
 }
 
 .topnav-left {
   .topnav-home {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     text-decoration: none;
     color: $white;
-    transition: opacity 0.2s ease;
-    &:hover {
-      opacity: 0.8;
-    }
   }
   .author-image {
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    filter: grayscale(15%);
+    border: 2px solid $border-color;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
   }
   .author-name {
     font-family: $font-display;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
   }
 }
 
 .topnav-right {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: $verySmallFontSize;
+  align-items: baseline;
+  gap: 18px;
+  font-size: $smallFontSize;
+  font-family: $font-display;
 
   a {
-    color: $dark-gray;
+    color: $text-color;
     text-decoration: none;
+    font-weight: 500;
+    position: relative;
     transition: color 0.2s ease;
     &:hover {
-      color: $white;
+      color: $text-link-color;
     }
   }
 
   .genai-link {
-    opacity: 0.6;
-    font-size: 12px;
+    opacity: 0.5;
+    font-size: $verySmallFontSize;
     &:hover {
       opacity: 1;
     }
@@ -69,78 +70,81 @@
   .topnav-social {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding-left: 8px;
+    gap: 10px;
+    padding-left: 10px;
     border-left: 1px solid $border-color;
     a {
       font-size: $smallFontSize;
+      color: $dark-gray;
+      &:hover {
+        color: $text-link-color;
+      }
     }
   }
 }
 
-// ─── Post List ────────────────────────────────────────
+// ─── Post Cards ───────────────────────────────────────
 
 .post {
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  border-radius: 0;
+  min-height: 10rem;
+  border-radius: 10px;
   overflow: hidden;
-  transition: all .2s ease;
-  border-bottom: 1px solid $border-color;
-  padding: 24px 0;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: $text-link-color;
-    transform: scaleY(0);
-    transition: transform 0.2s ease;
-  }
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+  box-shadow: 0 1px 3px hsla(240, 10%, 30%, 0.06);
 
   &:hover {
-    padding-left: 16px;
-    &::before {
-      transform: scaleY(1);
-    }
+    transform: translateY(-3px) rotate(-0.3deg);
+    box-shadow: 0 8px 30px hsla(240, 10%, 30%, 0.1);
   }
 
-  &:first-child {
-    border-top: 1px solid $border-color;
-  }
+  // Cycling pastel backgrounds
+  &:nth-child(7n+1) { background-color: $pastel-1; }
+  &:nth-child(7n+2) { background-color: $pastel-2; }
+  &:nth-child(7n+3) { background-color: $pastel-3; }
+  &:nth-child(7n+4) { background-color: $pastel-4; }
+  &:nth-child(7n+5) { background-color: $pastel-5; }
+  &:nth-child(7n+6) { background-color: $pastel-6; }
+  &:nth-child(7n+7) { background-color: $pastel-7; }
 
   .post-thumbnail {
-    display: none;
+    width: 28%;
+    max-width: 100%;
+    min-height: 10rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.9;
+    transition: opacity 0.25s ease;
+  }
+  &:hover .post-thumbnail {
+    opacity: 1;
   }
 
   .post-content {
-    padding: 0;
-    width: 100%;
+    padding: 1.2rem 1.4rem;
+    width: 72%;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 
     .post-date,
     .post-words {
       font-size: $verySmallFontSize;
       color: $dark-gray;
-      letter-spacing: 0.04em;
       font-family: $font-display;
       font-weight: 400;
     }
     .post-title {
-      margin: 0;
+      margin: 0 0 4px;
       font-size: 1.35rem;
       font-weight: 600;
-      line-height: 1.3;
+      line-height: 1.25;
       a {
         font-family: $font-display;
         text-decoration: none;
@@ -152,7 +156,7 @@
       }
     }
     p {
-      margin: 4px 0 0;
+      margin: 2px 0 0;
       font-size: $smallFontSize;
       line-height: 1.5;
       color: $text-color;
@@ -162,11 +166,17 @@
 
 // ─── Pagination ───────────────────────────────────────
 
+.container {
+  width: 100%;
+  margin-top: 24px;
+}
+
 a.older-posts, a.newer-posts {
   font-family: $font-display;
   font-size: $smallFontSize;
+  font-weight: 500;
   display: inline-block;
-  color: $dark-gray;
+  color: $text-color;
   text-decoration: none;
   transition: all .2s ease;
   margin-left: 5px;

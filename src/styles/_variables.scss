@@ -1,21 +1,30 @@
-// Deep ink palette — midnight journal
-$text-color: hsl(215, 15%, 60%);
-$text-link-color: hsl(205, 65%, 58%);
-$text-link-hover: hsl(205, 75%, 70%);
-$body-color: hsl(220, 25%, 7%);
-$body-alt-color: hsl(220, 20%, 10%);
-$code-highlight-line: hsl(220, 20%, 16%);
-$white: hsl(210, 15%, 88%);
-$author-image-cover-color: hsl(220, 15%, 25%);
+// Soft pastel palette — indie print
+$text-color: hsl(240, 10%, 38%);
+$text-link-color: hsl(340, 35%, 55%);
+$text-link-hover: hsl(340, 45%, 45%);
+$body-color: hsl(40, 33%, 96%);
+$body-alt-color: hsl(40, 25%, 93%);
+$code-highlight-line: hsl(45, 30%, 88%);
+$white: hsl(240, 15%, 18%);
+$author-image-cover-color: hsl(40, 20%, 85%);
 $gray: #ecf0f1;
-$dark-gray: hsl(215, 10%, 45%);
-$dark: hsl(220, 15%, 20%);
-$border-color: hsl(220, 20%, 14%);
+$dark-gray: hsl(240, 8%, 55%);
+$dark: hsl(240, 10%, 30%);
+$border-color: hsl(40, 20%, 88%);
 $fontSize: 18px;
 $bigFontSize: 20px;
 $smallFontSize: 15px;
 $verySmallFontSize: 13px;
 
 // Typography
-$font-body: 'Literata', Georgia, serif;
-$font-display: 'Syne', 'Helvetica Neue', sans-serif;
+$font-body: 'Crimson Pro', Georgia, serif;
+$font-display: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif;
+
+// Pastel card tints
+$pastel-1: hsl(340, 45%, 93%);  // rose
+$pastel-2: hsl(200, 45%, 93%);  // sky
+$pastel-3: hsl(150, 35%, 91%);  // sage
+$pastel-4: hsl(45, 50%, 92%);   // butter
+$pastel-5: hsl(270, 35%, 93%);  // lavender
+$pastel-6: hsl(20, 45%, 93%);   // peach
+$pastel-7: hsl(180, 30%, 91%);  // mint
