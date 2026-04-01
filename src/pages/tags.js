@@ -9,16 +9,18 @@ class TagsPage extends React.Component {
   render() {
     const { data } = this.props
     const allTags = data.allMarkdownRemark.group
+      .sort((a, b) => b.totalCount - a.totalCount)
 
     return (
       <DefaultLayout>
-        <div id="tags-list">
+        <div className="tags-page">
           <h1>Tags</h1>
-          <ul>
+          <ul className="tags-page-list">
             {allTags.map(tag => (
               <li key={tag.fieldValue}>
                 <TagLink tag={tag.fieldValue}>
-                  {tag.fieldValue} ({tag.totalCount})
+                  <span className="tags-page-name">{tag.fieldValue}</span>
+                  <span className="tags-page-count">{tag.totalCount}</span>
                 </TagLink>
               </li>
             ))}
