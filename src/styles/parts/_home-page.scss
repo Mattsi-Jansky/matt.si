@@ -116,23 +116,6 @@
   }
 }
 
-.genai-policy {
-  text-align: center;
-  margin: 0 0 10px;
-  h4 {
-    font-size: $verySmallFontSize;
-    margin: 0;
-    font-weight: 400;
-    a {
-      color: $text-color;
-      text-decoration: none;
-      &:hover {
-        color: $text-link-color;
-      }
-    }
-  }
-}
-
 .contact {
   ul {
     margin: 0;

@@ -119,11 +119,9 @@ const Sidebar = ({ siteMetadata, tags }) => (
           </li>
         </ul>
       </section>
-      <div className="genai-policy">
-        <h4><Link to="/bio#genai-policy">GenAI policy</Link></h4>
-      </div>
       <hr className="sidebar-divider" />
       <div className="sidebar-footer-message">
+        <p><Link to="/bio#genai-policy">GenAI policy</Link></p>
         <p>
           Made with <a href="https://www.gatsbyjs.org">Gatsby</a> and{' '}
           <a href="https://github.com/wangonya/flexible-gatsby/">Flexible</a>
