@@ -1,15 +1,15 @@
-// Warm dark palette — lamplight, not LCD
-$text-color: hsl(30, 8%, 62%);
-$text-link-color: hsl(35, 45%, 62%);
-$text-link-hover: hsl(35, 55%, 72%);
-$body-color: hsl(30, 6%, 10%);
-$body-alt-color: hsl(30, 5%, 13%);
-$code-highlight-line: hsl(30, 8%, 20%);
-$white: #f0ebe3;
-$author-image-cover-color: hsl(30, 10%, 30%);
+// Cool blue palette — midnight ink
+$text-color: hsl(215, 15%, 62%);
+$text-link-color: hsl(210, 60%, 62%);
+$text-link-hover: hsl(210, 70%, 72%);
+$body-color: hsl(220, 22%, 10%);
+$body-alt-color: hsl(220, 18%, 13%);
+$code-highlight-line: hsl(220, 15%, 20%);
+$white: hsl(210, 15%, 90%);
+$author-image-cover-color: hsl(220, 12%, 30%);
 $gray: #ecf0f1;
-$dark-gray: hsl(30, 5%, 50%);
-$dark: hsl(30, 5%, 25%);
+$dark-gray: hsl(215, 8%, 50%);
+$dark: hsl(220, 12%, 25%);
 $fontSize: 18px;
 $bigFontSize: 20px;
 $smallFontSize: 15px;

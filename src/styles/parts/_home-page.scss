@@ -10,7 +10,7 @@
   height: 100%;
   padding: 24px 16px;
   background-color: $body-alt-color;
-  border-right: 1px solid hsl(30, 5%, 16%);
+  border-right: 1px solid hsl(220, 15%, 16%);
 }
 
 .about {
@@ -186,10 +186,10 @@ footer {
   border-radius: 4px;
   overflow: hidden;
   transition: all .25s ease;
-  border: 1px solid hsl(30, 5%, 16%);
+  border: 1px solid hsl(220, 15%, 16%);
   &:hover {
-    border-color: hsl(30, 8%, 22%);
-    background-color: hsl(30, 5%, 14%);
+    border-color: hsl(220, 15%, 22%);
+    background-color: hsl(220, 15%, 14%);
   }
 
   .post-thumbnail {
