@@ -1,55 +1,33 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  .post {
-    width: 48%;
-    max-width: 100%;
-    flex-direction: column;
-    margin-right:10px;
+  .topnav {
+    padding: 12px 24px;
+  }
 
-    .post-thumbnail {
-      width: 100%;
-    }
-
-    .post-content {
-      width: 100%;
-      .post-title {
-        margin: 0 0 5px;
-        a {
-          font-size: 21px;
-        }
-      }
-    }
+  main {
+    padding: 24px 24px;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  .sidebar {
-    position: relative;
-    display: flex;
+  .topnav {
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+    gap: 10px;
+    padding: 14px 20px;
+  }
 
-    footer {
-      margin-bottom: 10px;
+  .topnav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    .genai-link {
+      display: none;
     }
   }
 
-  .about {
-    text-align: center;
-    max-width: 480px;
-    margin: 10px auto auto;
-  }
-
   main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    padding: 0px 10px 10px 10px;
+    padding: 20px 16px;
   }
 
   .article-page {
@@ -58,13 +36,12 @@
     }
   }
 
-  .sidebar-footer-message {
-    display: none;
-  }
-
   .post {
-    .post-title {
-      line-height: 1;
+    &:hover {
+      padding-left: 12px;
+    }
+    .post-content .post-title {
+      font-size: 1.15rem;
     }
   }
 }
@@ -72,38 +49,30 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 560px) {
   main {
-    padding: 0px 5px 5px 5px;
+    padding: 16px 12px;
   }
-  
-  .about {
-    .cover-author-image {
-      width: 105px;
-      height: 105px;
-    }
-    img.author-image {
-      width: 100px;
-      height: 100px;
-      margin: 2px 0 0 0;
+
+  .topnav-right {
+    gap: 10px;
+    .topnav-social {
+      padding-left: 0;
+      border-left: none;
     }
   }
 
   .post {
-    width: 98%;
-    max-width: 100%;
-    flex-direction: column;
-
-    .post-thumbnail {
-      width: 100%;
-    }
-
+    padding: 18px 0;
     .post-content {
-      width: 100%;
       .post-title {
-        margin: 0 0 5px;
-        a {
-          font-size: 21px;
-        }
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: $verySmallFontSize;
       }
     }
+  }
+
+  .header-page .page-title {
+    font-size: 1.6rem;
   }
 }

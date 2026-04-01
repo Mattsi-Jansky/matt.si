@@ -1,20 +1,21 @@
-// Warm dark palette — lamplight, not LCD
-$text-color: hsl(30, 8%, 62%);
-$text-link-color: hsl(35, 45%, 62%);
-$text-link-hover: hsl(35, 55%, 72%);
-$body-color: hsl(30, 6%, 10%);
-$body-alt-color: hsl(30, 5%, 13%);
-$code-highlight-line: hsl(30, 8%, 20%);
-$white: #f0ebe3;
-$author-image-cover-color: hsl(30, 10%, 30%);
+// Deep ink palette — midnight journal
+$text-color: hsl(215, 15%, 60%);
+$text-link-color: hsl(205, 65%, 58%);
+$text-link-hover: hsl(205, 75%, 70%);
+$body-color: hsl(220, 25%, 7%);
+$body-alt-color: hsl(220, 20%, 10%);
+$code-highlight-line: hsl(220, 20%, 16%);
+$white: hsl(210, 15%, 88%);
+$author-image-cover-color: hsl(220, 15%, 25%);
 $gray: #ecf0f1;
-$dark-gray: hsl(30, 5%, 50%);
-$dark: hsl(30, 5%, 25%);
+$dark-gray: hsl(215, 10%, 45%);
+$dark: hsl(220, 15%, 20%);
+$border-color: hsl(220, 20%, 14%);
 $fontSize: 18px;
 $bigFontSize: 20px;
 $smallFontSize: 15px;
 $verySmallFontSize: 13px;
 
 // Typography
-$font-body: 'Newsreader', Georgia, serif;
-$font-display: 'Instrument Serif', Georgia, serif;
+$font-body: 'Literata', Georgia, serif;
+$font-display: 'Syne', 'Helvetica Neue', sans-serif;

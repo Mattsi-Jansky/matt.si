@@ -1,8 +1,7 @@
 .tags-container {
   margin: 0;
-  padding: 8px 0;
+  padding: 8px 0 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 4px;
   span {
@@ -13,12 +12,43 @@
       color: $dark-gray;
       text-decoration: none;
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 6px;
       transition: color .2s ease;
       font-size: $verySmallFontSize;
-      letter-spacing: 0.03em;
+      font-family: $font-display;
+      font-weight: 400;
+      letter-spacing: 0.02em;
       &:hover {
         color: $text-link-color;
+      }
+    }
+  }
+}
+
+#tags-list {
+  width: 100%;
+  h1 {
+    font-family: $font-display;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    li a {
+      font-family: $font-display;
+      font-size: $smallFontSize;
+      color: $text-link-color;
+      text-decoration: none;
+      padding: 4px 10px;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      &:hover {
+        border-color: $text-link-color;
+        background-color: hsla(205, 65%, 58%, 0.08);
       }
     }
   }

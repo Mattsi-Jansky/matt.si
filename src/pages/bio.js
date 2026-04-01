@@ -18,7 +18,7 @@ const Bio = () => {
             I am a polygot and use a wide variety of tech in my day work. In my personal projects I've mostly been sticking to Rust in recent years.
             Sometimes I speak at events or conferences, and write blog posts.</p>
           <p>
-            You've found yourself on my blog. I mostly write about software development and whatever programming languages, side projects or conferences/events I'm interested in lately. You can find more of my ramblings and code on Mastodon, GitHub, etc linked at the bottom of the sidebar, and an RSS feed for the blog.
+            You've found yourself on my blog. I mostly write about software development and whatever programming languages, side projects or conferences/events I'm interested in lately. You can find more of my ramblings and code on Mastodon, GitHub, etc linked in the nav bar, and an RSS feed for the blog.
           </p>
           <p>
             Other interests:

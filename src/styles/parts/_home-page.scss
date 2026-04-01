@@ -1,224 +1,146 @@
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
+// ─── Top Navigation ───────────────────────────────────
+
+.site-header {
+  position: sticky;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 240px;
-  height: 100%;
-  padding: 24px 16px;
+  z-index: 100;
   background-color: $body-alt-color;
-  border-right: 1px solid hsl(30, 5%, 16%);
+  border-bottom: 1px solid $border-color;
 }
 
-.about {
-  margin: 0 0 40px;
-  text-align: center;
-  .cover-author-image {
-    width: 145px;
-    height: 145px;
-    margin: 0 auto 14px;
-    border-radius: 100%;
-    overflow: visible;
-    background-color: transparent;
-  }
-  img.author-image {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 2px 0 0 0;
-    transition: transform 0.3s ease;
-    filter: grayscale(20%) contrast(0.95);
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 12px 40px;
+}
+
+.topnav-left {
+  .topnav-home {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: $white;
+    transition: opacity 0.2s ease;
     &:hover {
-      transform: scale3d(0.95, 0.95, 1);
-      filter: grayscale(0%) contrast(1);
+      opacity: 0.8;
     }
   }
-  
+  .author-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    filter: grayscale(15%);
+  }
   .author-name {
     font-family: $font-display;
-    margin: 0 0 12px;
-    position: relative;
-    padding-bottom: 16px;
-    font-size: 1.15rem;
-    font-weight: 400;
-    color: $white;
-    letter-spacing: 0.02em;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0;
-      display: block;
-      width: 24px;
-      height: 1px;
-      background-color: $text-link-color;
-      opacity: 0.5;
-    }
-  }
-  p {
-    font-size: $verySmallFontSize;
-    margin: 0 0 8px 0;
-    padding: 0;
-    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
   }
 }
 
-.sidebar-tags {
-  text-align: center;
-  h4 {
-    font-size: $verySmallFontSize;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $text-color;
-    margin: 0 0 6px;
-    font-weight: 400;
-    opacity: 0.6;
-    .tags-all {
-      text-transform: lowercase;
-      letter-spacing: 0;
-      font-size: 11px;
-      color: $dark-gray;
-      text-decoration: none;
-      margin-left: 4px;
-      opacity: 0.7;
-      transition: color 0.2s ease;
-      &:hover {
-        color: $text-link-color;
-        opacity: 1;
-      }
-    }
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2px;
-    li {
-      a {
-        display: inline-block;
-        font-size: $verySmallFontSize;
-        color: $text-link-color;
-        text-decoration: none;
-        padding: 1px 5px;
-        transition: transform 0.2s ease;
-        &:hover {
-          transform: scale(1.15);
-        }
-      }
-    }
-  }
-}
+.topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: $verySmallFontSize;
 
-.genai-policy {
-  text-align: center;
-  margin: 0 0 10px;
-  h4 {
-    font-size: $verySmallFontSize;
-    margin: 0;
-    font-weight: 400;
-    a {
-      color: $text-color;
-      text-decoration: none;
-      &:hover {
-        color: $text-link-color;
-      }
-    }
-  }
-}
-
-.contact {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    li {
-      display: inline-block;
-      padding:0;
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
-      }
-      a {
-        color: $text-color;
-        display: block;
-        padding: 5px;
-        font-size: $fontSize;
-        transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-        &:hover {
-          color: $text-link-color;
-          transform: scale(1.15);
-        }
-      }
-    }
-  }
-}
-
-footer {
-  .sidebar-footer-message {
-    font-size: $verySmallFontSize;
-    text-align: center;
-    margin: 0;
+  a {
     color: $dark-gray;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .genai-link {
     opacity: 0.6;
+    font-size: 12px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .topnav-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 8px;
+    border-left: 1px solid $border-color;
     a {
-      color: $dark-gray;
+      font-size: $smallFontSize;
     }
   }
 }
+
+// ─── Post List ────────────────────────────────────────
 
 .post {
   width: 100%;
   max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  min-height: 11rem;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
-  transition: all .25s ease;
-  border: 1px solid hsl(30, 5%, 16%);
+  transition: all .2s ease;
+  border-bottom: 1px solid $border-color;
+  padding: 24px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $text-link-color;
+    transform: scaleY(0);
+    transition: transform 0.2s ease;
+  }
+
   &:hover {
-    border-color: hsl(30, 8%, 22%);
-    background-color: hsl(30, 5%, 14%);
+    padding-left: 16px;
+    &::before {
+      transform: scaleY(1);
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid $border-color;
   }
 
   .post-thumbnail {
-    width: 30%;
-    max-width: 100%;
-    min-height: 11rem;
-    background-size: cover;
-    background-position: 50% 50%;
-    opacity: 0.85;
-    transition: opacity 0.25s ease;
-  }
-  &:hover .post-thumbnail {
-    opacity: 1;
+    display: none;
   }
 
   .post-content {
-    padding: 1.25rem;
-    width: 70%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
     .post-date,
     .post-words {
       font-size: $verySmallFontSize;
       color: $dark-gray;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.04em;
+      font-family: $font-display;
+      font-weight: 400;
     }
     .post-title {
-      margin: 0 0 8px;
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 1.25;
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 600;
+      line-height: 1.3;
       a {
         font-family: $font-display;
         text-decoration: none;
@@ -230,26 +152,40 @@ footer {
       }
     }
     p {
-      margin-top: 0;
+      margin: 4px 0 0;
       font-size: $smallFontSize;
-      line-height: 1.55;
+      line-height: 1.5;
+      color: $text-color;
     }
   }
 }
 
+// ─── Pagination ───────────────────────────────────────
+
 a.older-posts, a.newer-posts {
-  font-size: $fontSize;
+  font-family: $font-display;
+  font-size: $smallFontSize;
   display: inline-block;
-  color: $text-color;
-  transition: transform .2s;
+  color: $dark-gray;
+  text-decoration: none;
+  transition: all .2s ease;
   margin-left: 5px;
   margin-right: 5px;
+  &:hover {
+    color: $text-link-color;
+  }
 }
 
 a.older-posts:hover {
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 
 a.newer-posts:hover {
-  transform: translateX(-5px);
+  transform: translateX(-4px);
+}
+
+.page-number {
+  font-family: $font-display;
+  font-size: $verySmallFontSize;
+  color: $dark-gray;
 }
