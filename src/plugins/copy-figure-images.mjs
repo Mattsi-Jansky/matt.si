@@ -18,6 +18,11 @@ export default function copyFigureImages() {
         const outputDir = path.resolve('public/_figure-images');
         const placeholders = {};
 
+        // Clean output directory to remove stale files
+        if (fs.existsSync(outputDir)) {
+          fs.rmSync(outputDir, { recursive: true });
+        }
+
         const imageFiles = [];
 
         function collectImages(srcDir, relativePath = '') {
