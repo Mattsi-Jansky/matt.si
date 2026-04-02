@@ -125,8 +125,6 @@ Whether you are a developer, designer, product manager, or anyone involved in cr
 
 > The **creative application of scientific principles** to design or develop structures, machines, apparatus, or manufacturing processes, or works utilizing them singly or in combination; or to construct or operate the same **with full cognizance of their design**; or to **forecast their behaviour under specific operating conditions**; all as respects an intended function, economics of operation and **safety to life and property**.
 
-## Footnotes
-
 [^1]: Francesca Hornak, Daily Mail, ["My life with an AI assistant: FRANCESCA HORNAK lived with ChatGPT for a week"](https://www.dailymail.co.uk/home/you/article-12369957/My-life-AI-assistant-FRANCESCA-HORNAK-lived-ChatGPT-week-happens.html)
 [^2]: Joe Tidy, BBC, ["Young people turning to AI therapist bots"](https://www.bbc.co.uk/news/technology-67872693)
 [^3]: Subbarao Kambhampati , Association for Computing Machinery, ["Can LLMs Really Reason and Plan?"](https://cacm.acm.org/blogs/blog-cacm/276268-can-llms-really-reason-and-plan/fulltext)
