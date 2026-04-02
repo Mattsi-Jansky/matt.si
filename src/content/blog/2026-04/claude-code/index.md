@@ -47,7 +47,9 @@ I didn't give it any starting place and didn't specify the tech stack. I didn't 
 
 ### Voxel geometry, game development
 
-After seeing that...
+After seeing its capabilities with a simple web app, I earned a persistent desire to see what it could do with something more challenging. I have been doing amateur game development for as long as I've been programming, and in particular in the last maybe 7 years or so I've had an on-again, off-again relationship with voxel terrains. I've gone and written maybe 4 or 5 different voxel terrain engines in several game engines, I just find it a really interesting and fun area to work in. And I'd fantasise about making a full game using my pet projects, but mostly it was only for 'joy of the hunt', the pleasure of coding something cool and solving complex problems. So, what if I tried to get Claude to do the same? _This will be it's downfall!_ I told myself, _simple web development may be one thing, but here is something that will surely be beyond your capabilities!_ 
+
+
 
 ## Do not generate what you could not write yourself
 
