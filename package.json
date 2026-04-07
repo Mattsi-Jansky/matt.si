@@ -19,7 +19,7 @@
     "rehype-raw": "7.0.0",
     "remark-gfm": "^4.0.0",
     "sanitize-html": "^2.13.0",
-    "sass": "^1.75.0",
+    "sass": "^1.99.0",
     "sharp": "^0.34.5",
     "unist-util-visit": "5.1.0"
   },
