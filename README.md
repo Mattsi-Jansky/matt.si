@@ -3,12 +3,7 @@
 [![Deploy Status](https://api.netlify.com/api/v1/badges/dcadbc17-697b-4194-9871-cab8ba07309a/deploy-status)](https://app.netlify.com/sites/mattsi/deploys)
 [![Run tests](https://github.com/Mattsi-Jansky/matt.si/actions/workflows/run-tests.yml/badge.svg)](https://github.com/Mattsi-Jansky/matt.si/actions/workflows/run-tests.yml)
 
-My blog-slash-portfolio, [matt.si](https://matt.si). Built with:
-
-* [Gatsby](https://www.gatsbyjs.org/)
-* [Flexible Gatsby](https://github.com/wangonya/flexible-gatsby/)
-* [Netlify](https://www.netlify.com)
-* [React](https://reactjs.org/)
+My blog-slash-portfolio, [matt.si](https://matt.si). Built with [Astro](https://astro.build/), [Netlify](https://www.netlify.com), [React](https://reactjs.org/).
 
 ## Requirements
 
