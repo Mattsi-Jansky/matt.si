@@ -40,7 +40,7 @@ function formatDate(date: Date): string {
     <ul class="tag-archive-list">
       {posts.map(post => (
         <li>
-          <a href={`/${post.slug}/`} class="tag-archive-link">
+          <a href={`/${post.id}/`} class="tag-archive-link">
             <span class="tag-archive-title">{post.data.title}</span>
             <span class="tag-archive-date">{formatDate(post.data.date)}</span>
           </a>
