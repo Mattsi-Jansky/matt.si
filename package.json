@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.0",
-    "astro": "^6.1.6",
+    "astro": "^6.1.9",
     "markdown-it": "^14.0.0",
     "rehype-raw": "7.0.0",
     "remark-gfm": "^4.0.0",
