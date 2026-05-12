@@ -12,7 +12,7 @@ const postImages = await Promise.all(
   posts.map(async (post) => {
     if (post.data.img) {
       const img = await getImage({ src: post.data.img, width: 600 });
-      const imgPath = resolvePostImagePath(post.slug, post.data.img.src);
+      const imgPath = resolvePostImagePath(post.id, post.data.img.src);
       const placeholder = await generatePlaceholder(imgPath);
       return { src: img.src, placeholder };
     }
@@ -54,14 +54,14 @@ function formatDate(date: Date): string {
       <article class="post">
         {imgData && (
           <a
-            href={`/${post.slug}/`}
+            href={`/${post.id}/`}
             class="post-thumbnail"
             style={`background-image: url(${imgData.src}); ${imgData.placeholder ? `--placeholder: url(${imgData.placeholder})` : ''}`}
           />
         )}
         <div class="post-content">
           <h2 class="post-title">
-            <a href={`/${post.slug}/`}>{post.data.title}</a>
+            <a href={`/${post.id}/`}>{post.data.title}</a>
           </h2>
           <p>{excerpt(post.body)}</p>
           <span class="post-date">
