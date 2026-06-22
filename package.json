@@ -20,7 +20,7 @@
     "remark-gfm": "^4.0.0",
     "sanitize-html": "^2.17.3",
     "sass": "^1.99.0",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.2",
     "unist-util-visit": "5.1.0"
   },
   "devDependencies": {
